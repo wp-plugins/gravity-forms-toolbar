@@ -14,7 +14,7 @@
  * Plugin Name: Gravity Forms Toolbar
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
  * Description: This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
- * Version: 1.0
+ * Version: 1.1
  * Author: David Decker - DECKERWEB
  * Author URI: http://deckerweb.de/
  * License: GPLv2
@@ -68,6 +68,7 @@ add_action( 'admin_bar_menu', 'ddw_gftb_admin_bar_menu', 98 );
  * Add new menu items to the WP Toolbar / Admin Bar.
  * 
  * @since 1.0
+ * @version 1.1
  *
  * @global mixed $wp_admin_bar 
  */
@@ -97,6 +98,10 @@ function ddw_gftb_admin_bar_menu() {
 		$gfaotwilio = $prefix . 'gfaotwilio';				// third level add-on: twilio
 		$gfaouserreg = $prefix . 'gfaouserreg';				// third level add-on: user reg.
 		$gftpaopideal = $prefix . 'gftpaopideal';			// third level third-party add-on: pronamic ideal
+		$gftpaoshootq = $prefix . 'gftpaoshootq';			// third level third-party add-on: shootq
+		$gftpaoicontact = $prefix . 'gftpaoicontact';			// third level third-party add-on: icontact
+		$gftpaomadmimi = $prefix . 'gftpaomadmimi';			// third level third-party add-on: madmimi
+		$gftpaoexacttarget = $prefix . 'gftpaoexacttarget';		// third level third-party add-on: exacttarget
 	$extensions = $prefix . 'extensions';			// sub level: extensions (very last main entry)
 		$extpideal = $prefix . 'extpideal';				// third level third-party add-on: pronamic ideal
 	
@@ -114,12 +119,12 @@ function ddw_gftb_admin_bar_menu() {
 			'href'   => 'http://www.gravityhelp.com/forums/search.php?q=',
 			'meta'   => array( 'title' => __( 'Advanced Forum Search', 'gravity-forms-toolbar' ) )
 		),
-		'gfpriority' => array(
-			'parent' => $gfsupport,
-			'title'  => __( 'Priority Support (Dev License Only)', 'gravity-forms-toolbar' ),
-			'href'   => 'http://www.gravityhelp.com/priority-support/',
-			'meta'   => array( 'title' => __( 'Priority Support (Dev License Only)', 'gravity-forms-toolbar' ) )
-		),
+		/**
+		 * Here 2 more items hook in (parent = $gfsupport) - we have to move them to end
+		 * to be able to run conditional queries and changing their position
+		 *
+		 * @since 1.1
+		 */
 		'gfdocs' => array(
 			'parent' => $gravitybar,
 			'title'  => __( 'Documentation', 'gravity-forms-toolbar' ),
@@ -131,6 +136,18 @@ function ddw_gftb_admin_bar_menu() {
 			'title'  => __( 'Visual CSS Guide', 'gravity-forms-toolbar' ),
 			'href'   => 'http://www.gravityhelp.com/gravity-forms-css-visual-guide/',
 			'meta'   => array( 'title' => __( 'Visual CSS Guide', 'gravity-forms-toolbar' ) )
+		),
+		'gfdocs-css-targeting' => array(
+			'parent' => $gfdocs,
+			'title'  => __( 'CSS: Targeting Specific Elements', 'gravity-forms-toolbar' ),
+			'href'   => 'http://www.rocketgenius.com/gravity-forms-css-targeting-specific-elements/',
+			'meta'   => array( 'title' => __( 'CSS: Targeting Specific Elements', 'gravity-forms-toolbar' ) )
+		),
+		'gfdocs-plugin-cssselector' => array(
+			'parent' => $gfdocs,
+			'title'  => __( 'CSS Plugin: CSS Ready Class Selector', 'gravity-forms-toolbar' ),
+			'href'   => 'http://wordpress.org/extend/plugins/gravity-forms-css-ready-selector/',
+			'meta'   => array( 'title' => __( 'CSS Plugin: CSS Ready Class Selector', 'gravity-forms-toolbar' ) )
 		),
 		'gfdocs-eventscalendar' => array(
 			'parent' => $gfdocs,
@@ -212,6 +229,29 @@ function ddw_gftb_admin_bar_menu() {
 		),
 	);
 
+	/**
+	 * Display these support links only for users who can view Gravity Forms Settings
+	 * Hook in as children of "Support" entry
+	 *
+	 * @since 1.1
+	 */
+	if ( current_user_can( 'gravityforms_view_settings' ) || current_user_can( 'gform_full_access' ) ) {
+		// User profile at Gravity Help
+		$menu_items['gfuprofile'] = array(
+			'parent' => $gfsupport,
+			'title'  => __( 'Your User Profile at Gravity Help', 'gravity-forms-toolbar' ),
+			'href'   => 'http://www.gravityhelp.com/forums/profile/',
+			'meta'   => array( 'title' => __( 'Your User Profile at Gravity Help', 'gravity-forms-toolbar' ) )
+		);
+		// Priority support at Gravity Help
+		$menu_items['gfpriority'] = array(
+			'parent' => $gfsupport,
+			'title'  => __( 'Priority Support (Dev License Only)', 'gravity-forms-toolbar' ),
+			'href'   => 'http://www.gravityhelp.com/priority-support/',
+			'meta'   => array( 'title' => __( 'Priority Support (Dev License Only)', 'gravity-forms-toolbar' ) )
+		);
+	}
+
 	// Display links to language packs only for these locales: de_DE, de_AT, de_CH, de_LU
 	if ( get_locale() == 'de_DE' || get_locale() == 'de_AT' || get_locale() == 'de_CH' || get_locale() == 'de_LU' ) {
 		$menu_items['gf-languages-de'] = array(
@@ -225,7 +265,7 @@ function ddw_gftb_admin_bar_menu() {
 	// Display links to language plugin only for this locale: nl, nl_NL
 	if ( get_locale() == 'nl' || get_locale() == 'nl_NL' ) {
 		$menu_items['languages-nl'] = array(
-			'parent' => $woocommercebar,
+			'parent' => $gravitybar,
 			'title'  => __( 'Dutch language plugin', 'gravity-forms-toolbar' ),
 			'href'   => 'http://wordpress.org/extend/plugins/gravityforms-nl/',
 			'meta'   => array( 'title' => __( 'Dutch language plugin', 'gravity-forms-toolbar' ) )
@@ -237,6 +277,7 @@ function ddw_gftb_admin_bar_menu() {
 
 		// Main Settings
 		if ( current_user_can( 'gravityforms_view_settings' ) || current_user_can( 'gform_full_access' ) ) {
+
 			$menu_items['gfsettings'] = array(
 				'parent' => $gravitybar,
 				'title'  => __( 'Gravity Forms Main Settings', 'gravity-forms-toolbar' ),
@@ -249,7 +290,18 @@ function ddw_gftb_admin_bar_menu() {
 				'href'   => admin_url( 'widgets.php' ),
 				'meta'   => array( 'target' => '', 'title' => __( 'Gravity Forms Widgets', 'gravity-forms-toolbar' ) )
 			);
-		}
+
+			// Check for "Members" plugin + appropiate capabilities, then display settings if activated
+			if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'members/members.php' ) ) && current_user_can( 'edit_roles' ) ) {
+				$menu_items['gfs-pmembers'] = array(
+					'parent' => $gfsettings,
+					'title'  => __( 'Adjust User Roles &amp; Capabilities (Plugin: Members)', 'gravity-forms-toolbar' ),
+					'href'   => admin_url( 'users.php?page=roles' ),
+					'meta'   => array( 'target' => '', 'title' => __( 'Adjust User Roles &amp; Capabilities (Plugin: Members)', 'gravity-forms-toolbar' ) )
+				);
+			}  // end-if members plugin check
+
+		}  // end-if main settings
 
 		// Edit Forms
 		if ( current_user_can( 'gravityforms_edit_forms' ) || current_user_can( 'gform_full_access' ) ) {
@@ -327,7 +379,11 @@ function ddw_gftb_admin_bar_menu() {
 				!class_exists( 'GFUser' ) &&
 				!class_exists( 'Pronamic_IDeal_IDeal' ) &&
 				!class_exists( 'GFDirectory' ) &&
-				!class_exists( 'GFSalesforce' )
+				!class_exists( 'GFSalesforce' ) &&
+				!class_exists( 'GFShootQ' ) &&
+				!class_exists( 'GFiContact' ) &&
+				!class_exists( 'GFMadMimi' ) &&
+				!class_exists( 'GFExactTarget' )
 			) {
 				$menu_items['gfaonone'] = array(
 					'parent' => $gfaddonsinstalled,
@@ -537,7 +593,7 @@ function ddw_gftb_admin_bar_menu() {
 
 
 	// Allow menu items to be filtered, but pass in parent menu item IDs
-	$menu_items = (array) apply_filters( 'ddw_gftb_menu_items', $menu_items, $prefix, $gravitybar, $gfsupport, $gfdocs, $gffaq, $gfsites, $gfsettings, $gfforms, $gfentries, $gfimportexport, $gfaddonsinstalled, $gfaoaweber, $gfaocampaignmonitor, $gfaofreshbooks, $gfaomailchimp, $gfaopaypal, $gfaotwilio, $gfaouserreg, $gftpaopideal, $extensions, $extpideal );
+	$menu_items = (array) apply_filters( 'ddw_gftb_menu_items', $menu_items, $prefix, $gravitybar, $gfsupport, $gfdocs, $gffaq, $gfsites, $gfsettings, $gfforms, $gfentries, $gfimportexport, $gfaddonsinstalled, $gfaoaweber, $gfaocampaignmonitor, $gfaofreshbooks, $gfaomailchimp, $gfaopaypal, $gfaotwilio, $gfaouserreg, $gftpaopideal, $gftpaoshootq, $gftpaoicontact, $gftpaomadmimi, $gftpaoexacttarget, $extensions, $extpideal );
 
 	// Add the top-level item
 	$wp_admin_bar->add_menu( array(

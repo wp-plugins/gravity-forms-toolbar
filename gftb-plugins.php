@@ -8,6 +8,7 @@
  * @copyright  Copyright 2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
+ * @link       http://twitter.com/#!/deckerweb
  *
  * @since 1.0
  * @version 1.0
@@ -164,6 +165,154 @@ if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'contact-form-
 		'meta'   => array( 'target' => '', 'title' => __( 'Contact Form 7 Gravity Forms Importer', 'gravity-forms-toolbar' ) )
 	);
 }  // end-if GF CF7-Importer
+
+
+/**
+ * Gravity Forms ShootQ Add-On (free, by pussycatdev)
+ *
+ * @since 1.1
+ */
+if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-shootq-add-on/shootq.php' ) ) || class_exists( 'GFShootQ' ) ) {
+
+	// Entry at "Add-Ons" level submenu
+	$menu_items['gftpaoshootq'] = array(
+		'parent' => $gfaddonsinstalled,
+		'title'  => __( 'ShootQ Feeds', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_shootq' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'ShootQ Feeds', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoshootq-newfeed'] = array(
+		'parent' => $gftpaoshootq,
+		'title'  => __( 'Add new Feed', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_shootq&view=edit&id=0' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Add new Feed', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoshootq-settings'] = array(
+		'parent' => $gftpaoshootq,
+		'title'  => __( 'ShootQ Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=ShootQ' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'ShootQ Settings', 'gravity-forms-toolbar' ) )
+	);
+
+	// Entry at "Extensions" level submenu
+	$menu_items['ext-gfshootq'] = array(
+		'parent' => $extensions,
+		'title'  => __( 'ShootQ Add-On Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=ShootQ' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'ShootQ Add-On Settings', 'gravity-forms-toolbar' ) )
+	);
+}  // end-if GF ShootQ
+
+
+/**
+ * Gravity Forms iContact Add-On (free, by Katz Web Services, Inc.)
+ *
+ * @since 1.1
+ */
+if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-icontact/icontact.php' ) ) || class_exists( 'GFiContact' ) ) {
+
+	// Entry at "Add-Ons" level submenu
+	$menu_items['gftpaoicontact'] = array(
+		'parent' => $gfaddonsinstalled,
+		'title'  => __( 'iContact Feeds', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_icontact' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'iContact Feeds', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoicontact-newfeed'] = array(
+		'parent' => $gftpaoicontact,
+		'title'  => __( 'Add new Feed', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_icontact&view=edit&id=0' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Add new Feed', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoicontact-settings'] = array(
+		'parent' => $gftpaoicontact,
+		'title'  => __( 'iContact Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=iContact' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'iContact Settings', 'gravity-forms-toolbar' ) )
+	);
+
+	// Entry at "Extensions" level submenu
+	$menu_items['ext-gficontact'] = array(
+		'parent' => $extensions,
+		'title'  => __( 'iContact Add-On Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=iContact' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'iContact Add-On Settings', 'gravity-forms-toolbar' ) )
+	);
+}  // end-if GF iContact
+
+
+/**
+ * Gravity Forms Mad Mimi Add-On (free, by Katz Web Services, Inc.)
+ *
+ * @since 1.1
+ */
+if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-mad-mimi/madmimi.php' ) ) || class_exists( 'GFMadMimi' ) ) {
+
+	// Entry at "Add-Ons" level submenu
+	$menu_items['gftpaomadmimi'] = array(
+		'parent' => $gfaddonsinstalled,
+		'title'  => __( 'Mad Mimi Feeds', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_madmimi' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Mad Mimi Feeds', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaomadmimi-newfeed'] = array(
+		'parent' => $gftpaomadmimi,
+		'title'  => __( 'Add new Feed', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_madmimi&view=edit&id=0' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Add new Feed', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaomadmimi-settings'] = array(
+		'parent' => $gftpaomadmimi,
+		'title'  => __( 'Mad Mimi Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=Mad+Mimi' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Mad Mimi Settings', 'gravity-forms-toolbar' ) )
+	);
+
+	// Entry at "Extensions" level submenu
+	$menu_items['ext-gfmadmimi'] = array(
+		'parent' => $extensions,
+		'title'  => __( 'Mad Mimi Add-On Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=Mad+Mimi' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Mad Mimi Add-On Settings', 'gravity-forms-toolbar' ) )
+	);
+}  // end-if GF Mad Mimi
+
+
+/**
+ * Gravity Forms ExactTarget Add-On (free, by Katz Web Services, Inc.)
+ *
+ * @since 1.1
+ */
+if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-exacttarget/exacttarget.php' ) ) || class_exists( 'GFExactTarget' ) ) {
+
+	// Entry at "Add-Ons" level submenu
+	$menu_items['gftpaoexacttarget'] = array(
+		'parent' => $gfaddonsinstalled,
+		'title'  => __( 'ExactTarget Feeds', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_exacttarget' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'ExactTarget Feeds', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoexacttarget-newfeed'] = array(
+		'parent' => $gftpaoexacttarget,
+		'title'  => __( 'Add new Feed', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_exacttarget&view=edit&id=0' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Add new Feed', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoexacttarget-settings'] = array(
+		'parent' => $gftpaoexacttarget,
+		'title'  => __( 'ExactTarget Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=ExactTarget' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'ExactTarget Settings', 'gravity-forms-toolbar' ) )
+	);
+
+	// Entry at "Extensions" level submenu
+	$menu_items['ext-gfexacttarget'] = array(
+		'parent' => $extensions,
+		'title'  => __( 'ExactTarget Add-On Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=ExactTarget' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'ExactTarget Add-On Settings', 'gravity-forms-toolbar' ) )
+	);
+}  // end-if GF ExactTarget
 
 
 /**
