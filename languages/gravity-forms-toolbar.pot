@@ -1,0 +1,619 @@
+# Copyright (C) 2012 Gravity Forms Toolbar by David Decker of deckerweb.de
+# This file is distributed under the same license as the Gravity Forms Toolbar Plugin package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Toolbar\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/gravity-forms-toolbar?forum_id=10\n"
+"POT-Creation-Date: 2012-01-16 16:32+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: gftb-plugins.php:27
+#: gftb-plugins.php:29
+#: gftb-plugins.php:53
+#: gftb-plugins.php:55
+#@ gravity-forms-toolbar
+msgid "iDEAL Feeds"
+msgstr ""
+
+#: gftb-plugins.php:33
+#: gftb-plugins.php:35
+#: gftb-plugins.php:59
+#: gftb-plugins.php:61
+#: gftb-plugins.php:186
+#: gftb-plugins.php:188
+#: gftb-plugins.php:223
+#: gftb-plugins.php:225
+#: gftb-plugins.php:260
+#: gftb-plugins.php:262
+#: gftb-plugins.php:297
+#: gftb-plugins.php:299
+#: gravity-forms-toolbar.php:405
+#: gravity-forms-toolbar.php:407
+#: gravity-forms-toolbar.php:427
+#: gravity-forms-toolbar.php:429
+#: gravity-forms-toolbar.php:449
+#: gravity-forms-toolbar.php:451
+#: gravity-forms-toolbar.php:471
+#: gravity-forms-toolbar.php:473
+#: gravity-forms-toolbar.php:493
+#: gravity-forms-toolbar.php:495
+#: gravity-forms-toolbar.php:515
+#: gravity-forms-toolbar.php:517
+#: gravity-forms-toolbar.php:537
+#: gravity-forms-toolbar.php:539
+#@ gravity-forms-toolbar
+msgid "Add new Feed"
+msgstr ""
+
+#: gftb-plugins.php:39
+#: gftb-plugins.php:41
+#: gftb-plugins.php:65
+#: gftb-plugins.php:67
+#@ gravity-forms-toolbar
+msgid "Pronamic iDEAL Settings"
+msgstr ""
+
+#: gftb-plugins.php:47
+#: gftb-plugins.php:49
+#@ gravity-forms-toolbar
+msgid "Pronamic iDEAL Payment Gateway"
+msgstr ""
+
+#: gftb-plugins.php:71
+#: gftb-plugins.php:73
+#@ gravity-forms-toolbar
+msgid "Payments"
+msgstr ""
+
+#: gftb-plugins.php:77
+#: gftb-plugins.php:79
+#@ gravity-forms-toolbar
+msgid "Settings"
+msgstr ""
+
+#: gftb-plugins.php:83
+#: gftb-plugins.php:85
+#@ gravity-forms-toolbar
+msgid "Pages Generator"
+msgstr ""
+
+#: gftb-plugins.php:89
+#: gftb-plugins.php:91
+#@ gravity-forms-toolbar
+msgid "Variants"
+msgstr ""
+
+#: gravity-forms-toolbar.php:129
+#: gravity-forms-toolbar.php:131
+#@ gravity-forms-toolbar
+msgid "Documentation"
+msgstr ""
+
+#: gftb-plugins.php:113
+#: gftb-plugins.php:115
+#: gftb-plugins.php:121
+#: gftb-plugins.php:123
+#@ gravity-forms-toolbar
+msgid "Gravity Forms Directory & Addons"
+msgstr ""
+
+#. translators: plugin header field 'Name'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "Gravity Forms Toolbar"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "David Decker - DECKERWEB"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "http://deckerweb.de/"
+msgstr ""
+
+#: gravity-forms-toolbar.php:57
+#: gravity-forms-toolbar.php:165
+#: gravity-forms-toolbar.php:167
+#@ gravity-forms-toolbar
+msgid "FAQ"
+msgstr ""
+
+#: gravity-forms-toolbar.php:58
+#@ gravity-forms-toolbar
+msgid "Support"
+msgstr ""
+
+#: gravity-forms-toolbar.php:59
+#@ gravity-forms-toolbar
+msgid "http://genesisthemes.de/en/donate/"
+msgstr ""
+
+#: gravity-forms-toolbar.php:59
+#@ gravity-forms-toolbar
+msgid "Donate"
+msgstr ""
+
+#: gravity-forms-toolbar.php:111
+#: gravity-forms-toolbar.php:113
+#@ gravity-forms-toolbar
+msgid "Support Forums"
+msgstr ""
+
+#: gravity-forms-toolbar.php:117
+#: gravity-forms-toolbar.php:119
+#@ gravity-forms-toolbar
+msgid "Advanced Forum Search"
+msgstr ""
+
+#: gravity-forms-toolbar.php:248
+#: gravity-forms-toolbar.php:250
+#@ gravity-forms-toolbar
+msgid "Priority Support (Dev License Only)"
+msgstr ""
+
+#: gravity-forms-toolbar.php:135
+#: gravity-forms-toolbar.php:137
+#@ gravity-forms-toolbar
+msgid "Visual CSS Guide"
+msgstr ""
+
+#: gravity-forms-toolbar.php:153
+#: gravity-forms-toolbar.php:155
+#@ gravity-forms-toolbar
+msgid "Gravity Forms + Events Calendar Submissions (creativeslice.com)"
+msgstr ""
+
+#: gravity-forms-toolbar.php:159
+#: gravity-forms-toolbar.php:161
+#@ gravity-forms-toolbar
+msgid "Dev Tutorials &amp; Code Snippets (wpsmith.net)"
+msgstr ""
+
+#: gravity-forms-toolbar.php:171
+#: gravity-forms-toolbar.php:173
+#@ gravity-forms-toolbar
+msgid "Installation"
+msgstr ""
+
+#: gravity-forms-toolbar.php:177
+#: gravity-forms-toolbar.php:179
+#@ gravity-forms-toolbar
+msgid "Using Gravity Forms"
+msgstr ""
+
+#: gravity-forms-toolbar.php:183
+#: gravity-forms-toolbar.php:185
+#@ gravity-forms-toolbar
+msgid "Formatting &amp; Styling"
+msgstr ""
+
+#: gravity-forms-toolbar.php:189
+#: gravity-forms-toolbar.php:191
+#@ gravity-forms-toolbar
+msgid "Notifications"
+msgstr ""
+
+#: gravity-forms-toolbar.php:195
+#: gravity-forms-toolbar.php:197
+#@ gravity-forms-toolbar
+msgid "General Questions"
+msgstr ""
+
+#: gravity-forms-toolbar.php:201
+#: gravity-forms-toolbar.php:203
+#@ gravity-forms-toolbar
+msgid "Gravity Forms HQ"
+msgstr ""
+
+#: gravity-forms-toolbar.php:207
+#: gravity-forms-toolbar.php:209
+#@ gravity-forms-toolbar
+msgid "Feature List & Demonstration"
+msgstr ""
+
+#: gravity-forms-toolbar.php:213
+#: gravity-forms-toolbar.php:215
+#@ gravity-forms-toolbar
+msgid "Official Blog"
+msgstr ""
+
+#: gravity-forms-toolbar.php:219
+#: gravity-forms-toolbar.php:221
+#@ gravity-forms-toolbar
+msgid "Official Add-Ons Info"
+msgstr ""
+
+#: gravity-forms-toolbar.php:225
+#: gravity-forms-toolbar.php:227
+#@ gravity-forms-toolbar
+msgid "More free plugins/extensions at WP.org"
+msgstr ""
+
+#: gravity-forms-toolbar.php:258
+#: gravity-forms-toolbar.php:260
+#@ gravity-forms-toolbar
+msgid "German language files"
+msgstr ""
+
+#: gravity-forms-toolbar.php:268
+#: gravity-forms-toolbar.php:270
+#@ gravity-forms-toolbar
+msgid "Dutch language plugin"
+msgstr ""
+
+#: gravity-forms-toolbar.php:282
+#: gravity-forms-toolbar.php:284
+#@ gravity-forms-toolbar
+msgid "Gravity Forms Main Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:288
+#: gravity-forms-toolbar.php:290
+#@ gravity-forms-toolbar
+msgid "Gravity Forms Widgets"
+msgstr ""
+
+#: gravity-forms-toolbar.php:309
+#: gravity-forms-toolbar.php:311
+#@ gravity-forms-toolbar
+msgid "Edit Forms"
+msgstr ""
+
+#: gravity-forms-toolbar.php:319
+#: gravity-forms-toolbar.php:321
+#@ gravity-forms-toolbar
+msgid "Add new Form"
+msgstr ""
+
+#: gravity-forms-toolbar.php:329
+#: gravity-forms-toolbar.php:331
+#@ gravity-forms-toolbar
+msgid "View Entries"
+msgstr ""
+
+#: gravity-forms-toolbar.php:339
+#: gravity-forms-toolbar.php:341
+#@ gravity-forms-toolbar
+msgid "Import & Export"
+msgstr ""
+
+#: gravity-forms-toolbar.php:345
+#: gravity-forms-toolbar.php:347
+#@ gravity-forms-toolbar
+msgid "Export Entries"
+msgstr ""
+
+#: gravity-forms-toolbar.php:351
+#: gravity-forms-toolbar.php:353
+#@ gravity-forms-toolbar
+msgid "Export Forms"
+msgstr ""
+
+#: gravity-forms-toolbar.php:357
+#: gravity-forms-toolbar.php:359
+#@ gravity-forms-toolbar
+msgid "Import Forms"
+msgstr ""
+
+#: gravity-forms-toolbar.php:366
+#: gravity-forms-toolbar.php:368
+#@ gravity-forms-toolbar
+msgid "Installed Add-Ons"
+msgstr ""
+
+#: gravity-forms-toolbar.php:399
+#: gravity-forms-toolbar.php:401
+#@ gravity-forms-toolbar
+msgid "AWeber Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:411
+#: gravity-forms-toolbar.php:413
+#@ gravity-forms-toolbar
+msgid "AWeber Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:421
+#: gravity-forms-toolbar.php:423
+#@ gravity-forms-toolbar
+msgid "Campaign Monitor Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:433
+#: gravity-forms-toolbar.php:435
+#@ gravity-forms-toolbar
+msgid "Campaign Monitor Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:443
+#: gravity-forms-toolbar.php:445
+#@ gravity-forms-toolbar
+msgid "FreshBooks Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:455
+#: gravity-forms-toolbar.php:457
+#@ gravity-forms-toolbar
+msgid "FreshBooks Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:465
+#: gravity-forms-toolbar.php:467
+#@ gravity-forms-toolbar
+msgid "MailChimp Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:477
+#: gravity-forms-toolbar.php:479
+#@ gravity-forms-toolbar
+msgid "MailChimp Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:487
+#: gravity-forms-toolbar.php:489
+#@ gravity-forms-toolbar
+msgid "PayPal Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:499
+#: gravity-forms-toolbar.php:501
+#@ gravity-forms-toolbar
+msgid "PayPal Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:509
+#: gravity-forms-toolbar.php:511
+#@ gravity-forms-toolbar
+msgid "Twilio Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:521
+#: gravity-forms-toolbar.php:523
+#@ gravity-forms-toolbar
+msgid "Twilio Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:531
+#: gravity-forms-toolbar.php:533
+#@ gravity-forms-toolbar
+msgid "User Registration Feeds"
+msgstr ""
+
+#: gravity-forms-toolbar.php:543
+#: gravity-forms-toolbar.php:545
+#@ gravity-forms-toolbar
+msgid "User Registration Settings"
+msgstr ""
+
+#: gftb-plugins.php:326
+#: gftb-plugins.php:328
+#@ gravity-forms-toolbar
+msgid "Purchase more Add-Ons"
+msgstr ""
+
+#: gravity-forms-toolbar.php:557
+#: gravity-forms-toolbar.php:559
+#@ gravity-forms-toolbar
+msgid "Updates Available?"
+msgstr ""
+
+#: gravity-forms-toolbar.php:566
+#: gravity-forms-toolbar.php:568
+#@ gravity-forms-toolbar
+msgid "Help &amp; Links"
+msgstr ""
+
+#: gravity-forms-toolbar.php:578
+#: gravity-forms-toolbar.php:580
+#@ gravity-forms-toolbar
+msgid "Active Extensions"
+msgstr ""
+
+#: gravity-forms-toolbar.php:600
+#: gravity-forms-toolbar.php:602
+#@ gravity-forms-toolbar
+msgid "Gravity Forms"
+msgstr ""
+
+#: gftb-plugins.php:95
+#: gftb-plugins.php:97
+#@ gravity-forms-toolbar
+msgid "Pronamic iDEAL Documentation"
+msgstr ""
+
+#: gravity-forms-toolbar.php:389
+#: gravity-forms-toolbar.php:391
+#@ gravity-forms-toolbar
+msgid "Currently none"
+msgstr ""
+
+#: gftb-plugins.php:138
+#: gftb-plugins.php:140
+#: gftb-plugins.php:146
+#: gftb-plugins.php:148
+#@ gravity-forms-toolbar
+msgid "Gravity Forms Salesforce Add-On"
+msgstr ""
+
+#: gftb-plugins.php:163
+#: gftb-plugins.php:165
+#@ gravity-forms-toolbar
+msgid "Contact Form 7 Gravity Forms Importer"
+msgstr ""
+
+#: gftb-plugins.php:180
+#: gftb-plugins.php:182
+#@ gravity-forms-toolbar
+msgid "ShootQ Feeds"
+msgstr ""
+
+#: gftb-plugins.php:192
+#: gftb-plugins.php:194
+#@ gravity-forms-toolbar
+msgid "ShootQ Settings"
+msgstr ""
+
+#: gftb-plugins.php:200
+#: gftb-plugins.php:202
+#@ gravity-forms-toolbar
+msgid "ShootQ Add-On Settings"
+msgstr ""
+
+#: gftb-plugins.php:217
+#: gftb-plugins.php:219
+#@ gravity-forms-toolbar
+msgid "iContact Feeds"
+msgstr "iContact Feeds"
+
+#: gftb-plugins.php:229
+#: gftb-plugins.php:231
+#@ gravity-forms-toolbar
+msgid "iContact Settings"
+msgstr ""
+
+#: gftb-plugins.php:237
+#: gftb-plugins.php:239
+#@ gravity-forms-toolbar
+msgid "iContact Add-On Settings"
+msgstr ""
+
+#: gftb-plugins.php:254
+#: gftb-plugins.php:256
+#@ gravity-forms-toolbar
+msgid "Mad Mimi Feeds"
+msgstr ""
+
+#: gftb-plugins.php:266
+#: gftb-plugins.php:268
+#@ gravity-forms-toolbar
+msgid "Mad Mimi Settings"
+msgstr ""
+
+#: gftb-plugins.php:274
+#: gftb-plugins.php:276
+#@ gravity-forms-toolbar
+msgid "Mad Mimi Add-On Settings"
+msgstr ""
+
+#: gftb-plugins.php:291
+#: gftb-plugins.php:293
+#@ gravity-forms-toolbar
+msgid "ExactTarget Feeds"
+msgstr ""
+
+#: gftb-plugins.php:303
+#: gftb-plugins.php:305
+#@ gravity-forms-toolbar
+msgid "ExactTarget Settings"
+msgstr ""
+
+#: gftb-plugins.php:311
+#: gftb-plugins.php:313
+#@ gravity-forms-toolbar
+msgid "ExactTarget Add-On Settings"
+msgstr ""
+
+#: gravity-forms-toolbar.php:141
+#: gravity-forms-toolbar.php:143
+#@ gravity-forms-toolbar
+msgid "CSS: Targeting Specific Elements"
+msgstr ""
+
+#: gravity-forms-toolbar.php:147
+#: gravity-forms-toolbar.php:149
+#@ gravity-forms-toolbar
+msgid "CSS Plugin: CSS Ready Class Selector"
+msgstr ""
+
+#: gravity-forms-toolbar.php:241
+#: gravity-forms-toolbar.php:243
+#@ gravity-forms-toolbar
+msgid "Your User Profile at Gravity Help"
+msgstr ""
+
+#: gravity-forms-toolbar.php:297
+#: gravity-forms-toolbar.php:299
+#@ gravity-forms-toolbar
+msgid "Adjust User Roles &amp; Capabilities (Plugin: Members)"
+msgstr ""
+
+#: admin/tabs/settings.php:25
+#: admin/tabs/settings.php:28
+#@ gravity-forms-toolbar
+msgid "Menu Items Visibility"
+msgstr "Sichtbarkeit von Menüeinträgen"
+
+#: admin/tabs/settings.php:31
+#@ gravity-forms-toolbar
+msgid "Help, Documnetation and FAQ options"
+msgstr "Hilfe-, Dokumentations- und FAQ-Einträge"
+
+#: admin/tabs/settings.php:41
+#: admin/tabs/settings.php:44
+#@ gravity-forms-toolbar
+msgid "Forms Details"
+msgstr "Gravity Forms Formular-Details"
+
+#: admin/tabs/settings.php:47
+#@ gravity-forms-toolbar
+msgid "Include list of forms and entries counts"
+msgstr "Liste von Formularen und Einträgen mit Zähler einschließen"
+
+#: admin/tabs/settings.php:49
+#@ gravity-forms-toolbar
+msgid "Note: This will generate additional SQL queries to get forms information."
+msgstr "Hinweis: Dies wird zusätzliche Datenbankabfragen generieren, um die Formularinformationen von Gravity Forms zu erhalten."
+
+#: admin/tabs/settings.php:57
+#@ gravity-forms-toolbar
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#. translators: plugin header field 'Author'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "David Decker - DECKERWEB / Milan Petrovic - Dev4Press"
+msgstr "David Decker - DECKERWEB.de / Milan Petrovic - Dev4Press.com"
+
+#. translators: plugin header field 'Version'
+#: gravity-forms-toolbar.php:0
+#@ gravity-forms-toolbar
+msgid "1.2"
+msgstr "1.2"
+
+#: gravity-forms-toolbar.php:696
+#@ gravity-forms-toolbar
+msgid "Unread Entries"
+msgstr "Ungelesene Einträge"
+
