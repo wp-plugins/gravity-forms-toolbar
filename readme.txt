@@ -59,9 +59,12 @@ As the name suggests this plugin is primarily intended towards website admins/ d
 
 Credit where credit is due: This plugin here is inspired and based on the work of Remkus de Vries @defries and his awesome "WooThemes Admin Bar Addition" plugin.
 
-This plugin is a co-work from:
+*This plugin is a co-work from:*
+
 [David Decker - DECKERWEB from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
+
 *and*
+
 [Milan Petrovic - Dev4Press from dev4press.com](http://dev4press.com/)
 
 = Feedback =
