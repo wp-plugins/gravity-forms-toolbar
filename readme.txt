@@ -1,7 +1,7 @@
 === Gravity Forms Toolbar ===
-Contributors: daveshine, gdragon
+Contributors: daveshine, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
-Tags: toolbar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb
+Tags: toolbar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, dev4press, gdragon
 Requires at least: 3.1
 Tested up to: 3.3.1
 Stable tag: 1.2
