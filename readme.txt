@@ -1,10 +1,10 @@
 === Gravity Forms Toolbar ===
-Contributors: daveshine
+Contributors: daveshine, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
-Tags: toolbar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb
+Tags: toolbar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, dev4press, gdragon
 Requires at least: 3.1
 Tested up to: 3.3.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
 
@@ -13,6 +13,11 @@ This plugin adds useful admin links and resources for Gravity Forms to the WordP
 This small and lightweight plugin just adds a lot Gravity Forms related resources to your toolbar / admin bar. Also links to all admin settings pages pages of the plugin are included, making the life of form administrators/ developers a lot easier. So you might just switch from the fontend of your site to read current 'Entries' or just 'Add a new Form' etc. *How cool is that? :)* Also, support for all official and lots of third-party add-ons is included!
 
 As the name suggests this plugin is primarily intended towards website admins/ developers. Beside the forum, support links etc. the main plugin settings links will only appear if the current user has the appropiate rights/ capabillities for these. This just goes hand in hand with the very same user rights Gravity Forms itself uses to display its menu entries. So also Editors or any user user with the proper rights could view 'Entries' etc (you could easily tweak all those roles & caps with the awesome ["Members" plugin](http://wordpress.org/extend/plugins/members/)!).
+
+= NEW Features since v1.2 =
+* Admin settings page to optinally remove Support/Docs/FAQ and/or "Active Extensions" sections from menu (settings under "General Settings")
+* Admin settings allow also to dynamically add existing Forms (link to their edit pages) and Entries of these forms
+* Visual notification of new entries in the Toolbar (top level) and on "Entries" sub-level (if dynamic entries are activated)
 
 = Official Add-Ons Support =
 *The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 7 to date:*
@@ -54,13 +59,16 @@ As the name suggests this plugin is primarily intended towards website admins/ d
 
 Credit where credit is due: This plugin here is inspired and based on the work of Remkus de Vries @defries and his awesome "WooThemes Admin Bar Addition" plugin.
 
-[A plugin from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
+This plugin is a co-work from:
+[David Decker - DECKERWEB from deckerweb.de and GenesisThemes](http://genesisthemes.de/en/)
+*and*
+[Milan Petrovic - Dev4Press from dev4press.com](http://dev4press.com/)
 
 = Feedback =
-* I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
-* Drop me a line [@deckerweb](http://twitter.com/#!/deckerweb) on Twitter
-* Follow me on [my Facebook page](http://www.facebook.com/deckerweb.service)
-* Or follow me on [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
+* We are open for your suggestions and feedback - Thank you for using or trying out one of our plugins!
+* Drop us a line [@deckerweb](http://twitter.com/#!/deckerweb) or [@dev4press](http://twitter.com/#!/dev4press) on Twitter
+* Follow [DECKERWEB Facebook page](http://www.facebook.com/deckerweb.service) and [Dev4Press Facebook page](http://www.facebook.com/dev4press)
+* Or follow [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
 
 = More =
 * [Also see my other plugins](http://genesisthemes.de/en/wp-plugins/) or see [my WordPress.org profile page](http://profiles.wordpress.org/users/daveshine/)
@@ -71,7 +79,8 @@ Credit where credit is due: This plugin here is inspired and based on the work o
 1. Upload the entire `gravity-forms-toolbar` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Look at your toolbar / admin bar and enjoy using the new Gravity Forms links there :)
-4. Go and manage your forms or develop new ones :)
+4. Adjust a few options on the settings page - under "General Settings" > "Gravity Forms Toolbar"
+5. Go and manage your entries and forms or develop new ones :)
 
 == Frequently Asked Questions ==
 
@@ -95,8 +104,19 @@ Simple answer: Linking/ adding is only possible where a plugin has its own admin
 2. Gravity Forms Toolbar in action - primary level (running with WordPress 3.3+ here)
 3. Gravity Forms Toolbar in action - a secondary level (running with WordPress 3.3+ here)
 4. Gravity Forms Toolbar in action - a third level, for the official (and some third-party) Add-Ons (running with WordPress 3.3+ here)
+5. Gravity Forms Toolbar - Notification of new entries on top-level (running with WordPress 3.3+ here)
+6. Gravity Forms Toolbar - Little admin settings page (running with WordPress 3.3+ here)
 
 == Changelog ==
+
+= 1.2 =
+* Extended plugin functionality a lot, making it even more useful! - Thanx to new plugin co-author Milan Petrovic of Dev4Press!
+ * NEW: Admin settings page to optinally remove "Support/Docs/FAQ" and/or "Active Extensions" sections from menu (settings under "General Settings")
+ * NEW: Admin settings allow also to dynamically add existing "Forms" (link to their edit pages) and "Entries" of these forms
+ * NEW: Visual notification of new entries in the toolbar (top level) and on "Entries" sub-level (if dynamic entries are activated)
+* CODE: Improved conditional check for Dutch language plugin (only display link if plugin is not activated)
+* UPDATE: Extended and improved readme.txt file
+* UPDATE: Updated German translations and also the .pot file for all translators!
 
 = 1.1 =
 * Extended the third-party plugin support even more:
@@ -118,6 +138,9 @@ Simple answer: Linking/ adding is only possible where a plugin has its own admin
 
 == Upgrade Notice ==
 
+= 1.2 =
+Major improvement - Added little admin settings page to optionally remove unwanted entries. Added visual notifications for new form entries. New plugin co-author Milan Petrovic of Dev4Press - big thanks! Further, improved readme.txt file; made a few code tweaks. Also, updated .pot file for translators together with German translations. 
+
 = 1.1 =
 Several additions and improvements - Added 3 more useful user/resource links. Further, added plugin support for 5 more free plugins. Also, updated .pot file for translators together with German translations.
 
@@ -134,3 +157,6 @@ Just released into the wild.
 == Additional Info ==
 **Idea Behind / Philosophy:** Just a little leightweight plugin for all the form developers and managers out there working 
 with the incredible Gravity Forms to make their daily admin life a bit easier. I'll try to add more add-on/plugin support if it makes some sense. So stay tuned :).
+
+== Credits ==
+**Big thanks** to Milan Petrovic of Dev4Press who made the options panel for this plugin - so it's still lightweight but even more useful!
