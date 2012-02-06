@@ -572,48 +572,53 @@ msgstr ""
 #: admin/tabs/settings.php:28
 #@ gravity-forms-toolbar
 msgid "Menu Items Visibility"
-msgstr "Sichtbarkeit von Menüeinträgen"
+msgstr ""
 
 #: admin/tabs/settings.php:31
 #@ gravity-forms-toolbar
 msgid "Help, Documnetation and FAQ options"
-msgstr "Hilfe-, Dokumentations- und FAQ-Einträge"
+msgstr ""
 
 #: admin/tabs/settings.php:41
 #: admin/tabs/settings.php:44
 #@ gravity-forms-toolbar
 msgid "Forms Details"
-msgstr "Gravity Forms Formular-Details"
+msgstr ""
 
 #: admin/tabs/settings.php:47
 #@ gravity-forms-toolbar
 msgid "Include list of forms and entries counts"
-msgstr "Liste von Formularen und Einträgen mit Zähler einschließen"
+msgstr ""
 
 #: admin/tabs/settings.php:49
 #@ gravity-forms-toolbar
 msgid "Note: This will generate additional SQL queries to get forms information."
-msgstr "Hinweis: Dies wird zusätzliche Datenbankabfragen generieren, um die Formularinformationen von Gravity Forms zu erhalten."
+msgstr ""
 
 #: admin/tabs/settings.php:57
 #@ gravity-forms-toolbar
 msgid "Save Changes"
-msgstr "Änderungen speichern"
+msgstr ""
 
 #. translators: plugin header field 'Author'
 #: gravity-forms-toolbar.php:0
 #@ gravity-forms-toolbar
 msgid "David Decker - DECKERWEB / Milan Petrovic - Dev4Press"
-msgstr "David Decker - DECKERWEB.de / Milan Petrovic - Dev4Press.com"
+msgstr ""
 
 #. translators: plugin header field 'Version'
 #: gravity-forms-toolbar.php:0
 #@ gravity-forms-toolbar
-msgid "1.2"
-msgstr "1.2"
+msgid "1.2.1"
+msgstr "1.2.1"
 
 #: gravity-forms-toolbar.php:696
 #@ gravity-forms-toolbar
 msgid "Unread Entries"
-msgstr "Ungelesene Einträge"
+msgstr ""
+
+#: gravity-forms-toolbar.php:317
+#@ gravity-forms-toolbar
+msgid "German language files for Gravity Forms and Add-Ons"
+msgstr "Deutsche Sprachdateien für Gravity Forms und Zusatzmodule (Add-Ons) - jeweils als SIE- und DU-Version!"
 

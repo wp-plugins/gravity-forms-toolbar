@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Gravity Forms Toolbar\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/gravity-forms-toolbar?forum_id=10\n"
 "POT-Creation-Date: 2012-01-16 16:32+0100\n"
-"PO-Revision-Date: 2012-02-03 21:25+0100\n"
+"PO-Revision-Date: 2012-02-06 18:01+0100\n"
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
 "MIME-Version: 1.0\n"
@@ -115,7 +115,7 @@ msgstr "Gravity Forms Verzeichnis"
 
 #@ gravity-forms-toolbar
 #. translators: plugin header field 'Name'
-#: admin/admin.php:23
+#: admin/admin.php:33
 #: admin/form.php:23
 #: gravity-forms-toolbar.php:0
 msgid "Gravity Forms Toolbar"
@@ -140,24 +140,24 @@ msgid "http://deckerweb.de/"
 msgstr "http://deckerweb.de/"
 
 #@ gravity-forms-toolbar
-#: gravity-forms-toolbar.php:99
+#: gravity-forms-toolbar.php:59
 #: gravity-forms-toolbar.php:219
 #: gravity-forms-toolbar.php:221
 msgid "FAQ"
 msgstr "FAQ - Häufige Fragen"
 
 #@ gravity-forms-toolbar
-#: gravity-forms-toolbar.php:100
+#: gravity-forms-toolbar.php:60
 msgid "Support"
 msgstr "Hilfe und Unterstützung (Support)"
 
 #@ gravity-forms-toolbar
-#: gravity-forms-toolbar.php:101
+#: gravity-forms-toolbar.php:61
 msgid "http://genesisthemes.de/en/donate/"
 msgstr "http://genesisthemes.de/spenden/"
 
 #@ gravity-forms-toolbar
-#: gravity-forms-toolbar.php:101
+#: gravity-forms-toolbar.php:61
 msgid "Donate"
 msgstr "Spenden"
 
@@ -259,7 +259,6 @@ msgstr "Mehr freie Plugins/ Erweiterungen bei WP.org"
 
 #@ gravity-forms-toolbar
 #: gravity-forms-toolbar.php:315
-#: gravity-forms-toolbar.php:317
 msgid "German language files"
 msgstr "Deutsche Sprachdateien"
 
@@ -605,13 +604,18 @@ msgid "David Decker - DECKERWEB / Milan Petrovic - Dev4Press"
 msgstr "David Decker - DECKERWEB.de / Milan Petrovic - Dev4Press.com"
 
 #@ gravity-forms-toolbar
-#. translators: plugin header field 'Version'
-#: gravity-forms-toolbar.php:0
-msgid "1.2"
-msgstr "1.2"
-
-#@ gravity-forms-toolbar
 #: gravity-forms-toolbar.php:696
 msgid "Unread Entries"
 msgstr "Ungelesene Einträge"
+
+#@ gravity-forms-toolbar
+#. translators: plugin header field 'Version'
+#: gravity-forms-toolbar.php:0
+msgid "1.2.1"
+msgstr "1.2.1"
+
+#@ gravity-forms-toolbar
+#: gravity-forms-toolbar.php:317
+msgid "German language files for Gravity Forms and Add-Ons"
+msgstr "Deutsche Sprachdateien für Gravity Forms und Zusatzmodule (Add-Ons) - jeweils als SIE- und DU-Version!"
 

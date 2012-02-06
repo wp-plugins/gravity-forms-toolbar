@@ -13,11 +13,11 @@
  * @version 1.0
  */
 
-$options = ddw_gtfb_get_options();
+$options = ddw_gftb_get_options();
 
 ?>
 <form method="post" action="options.php">
-	<?php settings_fields( 'ddw_gtfb_options' ); ?>
+	<?php settings_fields( 'ddw_gftb_options' ); ?>
 
 	<table class="form-table">
 	<tbody>
@@ -26,12 +26,12 @@ $options = ddw_gtfb_get_options();
 			<td>
 				<fieldset>
                        			<legend class="screen-reader-text"><span><?php _e( 'Menu Items Visibility', 'gravity-forms-toolbar' ); ?></span></legend>
-                        		<label for="ddw_gtfb_help_and_support">
-                            			<input<?php if ($options['help_and_support']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gtfb_help_and_support" name="ddw_gtfb[help_and_support]">
+                        		<label for="ddw_gftb_help_and_support">
+                            			<input<?php if ($options['help_and_support']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_help_and_support" name="ddw_gftb[help_and_support]">
                             			<?php _e( 'Help, Documnetation and FAQ options', 'gravity-forms-toolbar' ); ?>
                        			</label><br>
-                        		<label for="ddw_gtfb_extensions">
-                            			<input<?php if ($options['extensions']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gtfb_extensions" name="ddw_gtfb[extensions]">
+                        		<label for="ddw_gftb_extensions">
+                            			<input<?php if ($options['extensions']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_extensions" name="ddw_gftb[extensions]">
 						<?php _e( 'Active Extensions', 'gravity-forms-toolbar' ); ?>
 					</label>
 				</fieldset>
@@ -43,7 +43,7 @@ $options = ddw_gtfb_get_options();
 				<fieldset>
 					<legend class="screen-reader-text"><span><?php _e( 'Forms Details', 'gravity-forms-toolbar' ); ?></span></legend>
 					<label for="forms_details">
-						<input<?php if ($options['forms_details']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gtfb_forms_details" name="ddw_gtfb[forms_details]">
+						<input<?php if ($options['forms_details']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_forms_details" name="ddw_gftb[forms_details]">
 						<?php _e( 'Include list of forms and entries counts', 'gravity-forms-toolbar' ); ?>
 					</label><br>
 					<small><em>(<?php _e( 'Note: This will generate additional SQL queries to get forms information.', 'gravity-forms-toolbar' ); ?>)</em></small>

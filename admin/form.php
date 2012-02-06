@@ -27,7 +27,7 @@ $tabs = array(
 
 		foreach( $tabs as $tab => $name ){
 		$class = ( $tab == $current ) ? ' nav-tab-active' : '';
-		echo '<a class="nav-tab' . $class . '" href="options-general.php?page=ddw_gtfb_options_page&tab=' . $tab . '">' . $name . '</a>';
+		echo '<a class="nav-tab' . $class . '" href="options-general.php?page=ddw_gftb_options_page&tab=' . $tab . '">' . $name . '</a>';
 	}
 
 	?>

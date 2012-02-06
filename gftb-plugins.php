@@ -319,8 +319,9 @@ if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms
  * Placing of "Purchase more official Add-Ons" as very last entry of "Add-On" first-level menu
  *
  * @since 1.0
+ * @version 1.1
  */
-if ( current_user_can( 'gravityforms_view_addons' ) || current_user_can( 'gform_full_access' ) ) {
+if ( current_user_can( 'gravityforms_view_addons' ) || current_user_can( 'gravityforms_addon_browser' ) || current_user_can( 'gform_full_access' ) ) {
 	$menu_items['gfaddonsinstalled-purchase'] = array(
 		'parent' => $gfaddonsinstalled,
 		'title'  => __( 'Purchase more Add-Ons', 'gravity-forms-toolbar' ),

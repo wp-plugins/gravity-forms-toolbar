@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, dev4press, gdragon
 Requires at least: 3.1
 Tested up to: 3.3.1
-Stable tag: 1.2
+Stable tag: 1.2.1
 
 This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
 
@@ -14,7 +14,7 @@ This small and lightweight plugin just adds a lot Gravity Forms related resource
 
 As the name suggests this plugin is primarily intended towards website admins/ developers. Beside the forum, support links etc. the main plugin settings links will only appear if the current user has the appropiate rights/ capabillities for these. This just goes hand in hand with the very same user rights Gravity Forms itself uses to display its menu entries. So also Editors or any user user with the proper rights could view 'Entries' etc (you could easily tweak all those roles & caps with the awesome ["Members" plugin](http://wordpress.org/extend/plugins/members/)!).
 
-= NEW Features since v1.2 =
+= NEW Features since v1.2+ =
 * Admin settings page to optinally remove Support/Docs/FAQ and/or "Active Extensions" sections from menu (settings under "General Settings")
 * Admin settings allow also to dynamically add existing Forms (link to their edit pages) and Entries of these forms
 * Visual notification of new entries in the Toolbar (top level) and on "Entries" sub-level (if dynamic entries are activated)
@@ -112,6 +112,11 @@ Simple answer: Linking/ adding is only possible where a plugin has its own admin
 
 == Changelog ==
 
+= 1.2.1 =
+* BUGFIX: Fixed capability issue for displaying plugin's options page when "Members" plugin is installed
+* CODE: Improved conditional check for Dutch language plugin; also, some more minor tweaks and improvements
+* UPDATE: Fixed errors in .pot file from v1.2 - updated German translations and also the .pot file for all translators!
+
 = 1.2 =
 * Extended plugin functionality a lot, making it even more useful! - Thanx to new plugin co-author Milan Petrovic of Dev4Press!
  * NEW: Admin settings page to optinally remove "Support/Docs/FAQ" and/or "Active Extensions" sections from menu (settings under "General Settings")
@@ -140,6 +145,9 @@ Simple answer: Linking/ adding is only possible where a plugin has its own admin
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Minor changes - Fixed/improved capability issues and conditional checks. Also, updated .pot file for translators together with German translations. 
 
 = 1.2 =
 Major improvement - Added little admin settings page to optionally remove unwanted entries. Added visual notifications for new form entries. New plugin co-author Milan Petrovic of Dev4Press - big thanks! Further, improved readme.txt file; made a few code tweaks. Also, updated .pot file for translators together with German translations. 

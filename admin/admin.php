@@ -13,25 +13,35 @@
  * @version 1.0
  */
 
-add_action( 'admin_menu', 'ddw_gtfb_admin_menu' );
+add_action( 'admin_menu', 'ddw_gftb_admin_menu' );
 /**
  * Registrer plugin menu panel.
  *
  * @since 1.2
+ * @version 1.1
  */
-function ddw_gtfb_admin_menu() {
-	add_options_page( __( 'Gravity Forms Toolbar', 'gravity-forms-toolbar' ), __( 'Gravity Forms Toolbar', 'gravity-forms-toolbar' ), 'gform_full_access', 'ddw_gtfb_options_page', 'ddw_gtfb_options_page' );
+function ddw_gftb_admin_menu() {
+	
+	// Set capability for displaying the menu panel
+	if ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'members/members.php' ) ) {  // Check for "Members" plugin
+		$ddw_gftb_options = 'gravityforms_edit_forms';
+	} else {  // Otherwise use GF full access cap
+		$ddw_gftb_options = 'gform_full_access';
+	}
+
+	// Add the menu panel & options page
+	add_options_page( __( 'Gravity Forms Toolbar', 'gravity-forms-toolbar' ), __( 'Gravity Forms Toolbar', 'gravity-forms-toolbar' ), $ddw_gftb_options, 'ddw_gftb_options_page', 'ddw_gftb_options_page' );
 }
 
 
-add_action( 'admin_init', 'ddw_gtfb_admin_init' );
+add_action( 'admin_init', 'ddw_gftb_admin_init' );
 /**
  * Registrer settings for the plugin.
  *
  * @since 1.2
  */
-function ddw_gtfb_admin_init() {
-	register_setting( 'ddw_gtfb_options', 'ddw_gtfb', 'ddw_gtfb_options_validate' );
+function ddw_gftb_admin_init() {
+	register_setting( 'ddw_gftb_options', 'ddw_gftb', 'ddw_gftb_options_validate' );
 }
 
 
@@ -43,9 +53,9 @@ function ddw_gtfb_admin_init() {
  * @param array $input raw options data
  * @return array valid options data
  */
-function ddw_gtfb_options_validate( $input ) {
+function ddw_gftb_options_validate( $input ) {
 
-	$default = ddw_gtfb_default_options();
+	$default = ddw_gftb_default_options();
 
 	if ( !isset( $input['help_and_support'] ) ) {
 		$default['help_and_support'] = false;
@@ -64,7 +74,7 @@ function ddw_gtfb_options_validate( $input ) {
  *
  * @since 1.2
  */
-function ddw_gtfb_options_page() {
+function ddw_gftb_options_page() {
 
 	include( 'form.php' );
 }

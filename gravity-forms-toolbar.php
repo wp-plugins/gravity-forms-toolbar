@@ -16,7 +16,7 @@
  * Plugin Name: Gravity Forms Toolbar
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
  * Description: This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
- * Version: 1.2
+ * Version: 1.2.1
  * Author: David Decker - DECKERWEB / Milan Petrovic - Dev4Press
  * Author URI: http://deckerweb.de/
  * License: GPLv2
@@ -30,46 +30,6 @@
  * @since 1.0
  */
 define( 'GFTB_PLUGIN_BASEDIR', dirname( plugin_basename( __FILE__ ) ) );
-
-
-/**
- * Get default plugin options.
- *
- * @since 1.2
- *
- * @return array 
- */
-function ddw_gtfb_default_options() {
-	return array(
-		'help_and_support' => true,
-		'extensions' => true,
-		'forms_details' => true
-	);
-}
-
-
-/**
- * Get current plugin options.
- *
- * @since 1.2
- *
- * @return array 
- */
-function ddw_gtfb_get_options() {
-	$from_db = get_option( 'ddw_gtfb' );
-	$default = ddw_gtfb_default_options();
-	return wp_parse_args( $from_db, $default );
-}
-
-
-/**
- * Include admin settings
- * 
- * @since 1.2
- */
-if ( is_admin() ) {
-    require_once( 'admin/admin.php' );
-}
 
 
 add_action( 'init', 'ddw_gftb_init' );
@@ -105,6 +65,46 @@ function ddw_gftb_plugin_links( $gftb_links, $gftb_file ) {
 }
 
 
+/**
+ * Get default plugin options.
+ *
+ * @since 1.2
+ *
+ * @return array 
+ */
+function ddw_gftb_default_options() {
+	return array(
+		'help_and_support' => true,
+		'extensions' => true,
+		'forms_details' => true
+	);
+}
+
+
+/**
+ * Get current plugin options.
+ *
+ * @since 1.2
+ *
+ * @return array 
+ */
+function ddw_gftb_get_options() {
+	$from_db = get_option( 'ddw_gftb' );
+	$default = ddw_gftb_default_options();
+	return wp_parse_args( $from_db, $default );
+}
+
+
+/**
+ * Include admin settings
+ * 
+ * @since 1.2
+ */
+if ( is_admin() ) {
+    require_once( 'admin/admin.php' );
+}
+
+
 add_action( 'admin_bar_menu', 'ddw_gftb_admin_bar_menu', 98 );
 /**
  * Add new menu items to the WP Toolbar / Admin Bar.
@@ -118,11 +118,11 @@ function ddw_gftb_admin_bar_menu() {
 
 	global $wp_admin_bar;
 
-        $options = ddw_gtfb_get_options();
+        $options = ddw_gftb_get_options();
         $forms = array();
         $count = 0;
 
-        if ( class_exists( 'RGForms' ) && $options['forms_details'] && current_user_can( 'gform_full_access' ) ) {
+        if ( class_exists( 'RGForms' ) && $options['forms_details'] && ( current_user_can( 'gform_full_access' ) || current_user_can( 'gravityforms_edit_forms' ) ) ) {
 		$forms = RGFormsModel::get_form_summary();
         }
 
@@ -314,12 +314,12 @@ function ddw_gftb_admin_bar_menu() {
 			'parent' => $gravitybar,
 			'title'  => __( 'German language files', 'gravity-forms-toolbar' ),
 			'href'   => 'http://deckerweb.de/material/sprachdateien/gravityforms-und-addons/',
-			'meta'   => array( 'title' => __( 'German language files', 'gravity-forms-toolbar' ) )
+			'meta'   => array( 'title' => __( 'German language files for Gravity Forms and Add-Ons', 'gravity-forms-toolbar' ) )
 		);
 	}
 
 	// Display links to language plugin only for this locale: nl, nl_NL - and when NL plugin not active
-	if ( ( get_locale() == 'nl' || get_locale() == 'nl_NL' ) && !is_plugin_active( 'gravityforms-nl/gravityforms-nl.php' ) ) {
+	if ( ( get_locale() == 'nl' || get_locale() == 'nl_NL' ) && !class_exists( 'GravityFormsNL' ) ) {
 		$menu_items['languages-nl'] = array(
 			'parent' => $gravitybar,
 			'title'  => __( 'Dutch language plugin', 'gravity-forms-toolbar' ),
@@ -385,7 +385,7 @@ function ddw_gftb_admin_bar_menu() {
 		 * @since 1.2
 		 */
                 if ( !empty( $forms ) ) {
-                        $class_first = 'ddw_gtfb-first-form';
+                        $class_first = 'ddw_gftb-first-form';
 			foreach ( $forms as $form ) {
 				$view_title = $form['title'];
 				if ( $form['unread_count'] > 0 ) {
@@ -757,7 +757,7 @@ function ddw_gftb_admin_style() {
 			background-position: 0.85em 50%;
 			padding-left: 30px;
 		}
-                li.ddw_gtfb-first-form,
+                li.ddw_gftb-first-form,
 		#wp-admin-bar-ddw-gravityforms-gfsettings,
 		#wp-admin-bar-ddw-gravityforms-extensions {
     			border-top: 1px solid;
