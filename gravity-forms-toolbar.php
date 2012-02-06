@@ -101,7 +101,7 @@ function ddw_gftb_get_options() {
  * @since 1.2
  */
 if ( is_admin() ) {
-    require_once( 'admin/admin.php' );
+	require_once( 'admin/admin.php' );
 }
 
 

@@ -610,7 +610,7 @@ msgstr ""
 #: gravity-forms-toolbar.php:0
 #@ gravity-forms-toolbar
 msgid "1.2.1"
-msgstr "1.2.1"
+msgstr ""
 
 #: gravity-forms-toolbar.php:696
 #@ gravity-forms-toolbar
@@ -620,5 +620,5 @@ msgstr ""
 #: gravity-forms-toolbar.php:317
 #@ gravity-forms-toolbar
 msgid "German language files for Gravity Forms and Add-Ons"
-msgstr "Deutsche Sprachdateien für Gravity Forms und Zusatzmodule (Add-Ons) - jeweils als SIE- und DU-Version!"
+msgstr ""
 
