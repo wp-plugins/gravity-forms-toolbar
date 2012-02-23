@@ -7,7 +7,7 @@
  * @author     Milan Petrovic - Dev4Press
  * @copyright  Copyright 2012, Milan Petrovic - Dev4Press
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
- * @link       http://twitter.com/#!/dev4press
+ * @link       http://twitter.com/#!/milangd
  *
  * @since 1.2
  * @version 1.0

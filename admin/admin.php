@@ -7,10 +7,10 @@
  * @author     Milan Petrovic - Dev4Press
  * @copyright  Copyright 2012, Milan Petrovic - Dev4Press
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
- * @link       http://twitter.com/#!/dev4press
+ * @link       http://twitter.com/#!/milangd
  *
  * @since 1.2
- * @version 1.0
+ * @version 1.1
  */
 
 add_action( 'admin_menu', 'ddw_gftb_admin_menu' );
@@ -49,6 +49,7 @@ function ddw_gftb_admin_init() {
  * Validation of the options to save.
  *
  * @since 1.2
+ * @version 1.1
  *
  * @param array $input raw options data
  * @return array valid options data
@@ -63,6 +64,18 @@ function ddw_gftb_options_validate( $input ) {
 
 	if ( !isset( $input['extensions'] ) ) {
 		$default['extensions'] = false;
+	}
+
+	if ( !isset( $input['forms_details'] ) ) {
+		$default['forms_details'] = false;
+	}
+
+	if ( !isset( $input['update_notification'] ) ) {
+		$default['update_notification'] = false;
+	}
+
+	if ( !isset( $input['unread_notification'] ) ) {
+		$default['unread_notification'] = false;
 	}
 
 	return $default;

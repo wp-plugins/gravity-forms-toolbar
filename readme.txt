@@ -1,10 +1,10 @@
 === Gravity Forms Toolbar ===
 Contributors: daveshine, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
-Tags: toolbar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, dev4press, gdragon
+Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, dev4press, gdragon
 Requires at least: 3.1
 Tested up to: 3.3.1
-Stable tag: 1.2.1
+Stable tag: 1.3
 
 This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
 
@@ -14,13 +14,18 @@ This small and lightweight plugin just adds a lot Gravity Forms related resource
 
 As the name suggests this plugin is primarily intended towards website admins/ developers. Beside the forum, support links etc. the main plugin settings links will only appear if the current user has the appropiate rights/ capabillities for these. This just goes hand in hand with the very same user rights Gravity Forms itself uses to display its menu entries. So also Editors or any user user with the proper rights could view 'Entries' etc (you could easily tweak all those roles & caps with the awesome ["Members" plugin](http://wordpress.org/extend/plugins/members/)!).
 
-= NEW Features since v1.2+ =
+= NEW Features since v1.3+ =
+* Display notifications when new Gravity Forms plugin update is available
+* Settings to control menu items notifications display for updates and unread entries
+* Toolbar menu item for Gravity Forms Toolbar plugin settings
+
+= Plus the new features since v1.2+ =
 * Admin settings page to optinally remove Support/Docs/FAQ and/or "Active Extensions" sections from menu (settings under "General Settings")
 * Admin settings allow also to dynamically add existing Forms (link to their edit pages) and Entries of these forms
 * Visual notification of new entries in the Toolbar (top level) and on "Entries" sub-level (if dynamic entries are activated)
 
 = Official Add-Ons Support =
-*The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 7 to date:*
+*The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 8 to date (counting only the ones with settings pages!):*
 
 * User Registration
 * PayPal
@@ -29,6 +34,7 @@ As the name suggests this plugin is primarily intended towards website admins/ d
 * Campaign Monitor
 * Freshbooks
 * Twilio
+* Authorize.Net
 
 = Add-Ons/ Plugin Support =
 *At this time the plugin out of the box supports also links to settings pages of some third-party Gravity Forms related plugins:*
@@ -54,10 +60,11 @@ As the name suggests this plugin is primarily intended towards website admins/ d
 = Localization =
 * English (default) - always included
 * German - always included
+* Serbian by Dev4Press
 * .pot file (`gravity-forms-toolbar.pot`) for translators is also always included :)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
 
-Credit where credit is due: This plugin here is inspired and based on the work of Remkus de Vries @defries and his awesome "WooThemes Admin Bar Addition" plugin.
+Credit where credit is due: This plugin here is inspired and based on the work of Remkus de Vries @defries and his original "WooThemes Admin Bar Addition" plugin.
 
 *This plugin is a co-work from:*
 
@@ -85,6 +92,8 @@ Credit where credit is due: This plugin here is inspired and based on the work o
 4. Adjust a few options on the settings page - under "General Settings" > "Gravity Forms Toolbar"
 5. Go and manage your entries and forms or develop new ones :)
 
+Note: For custom and update-secure language files please upload them to `/wp-content/languages/gravity-forms-toolbar/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `gravity-forms-toolbar-en_US.mo/.po` to achieve that.
+
 == Frequently Asked Questions ==
 
 = Does this plugin work with newest WP version and also older versions? =
@@ -104,13 +113,33 @@ Simple answer: Linking/ adding is only possible where a plugin has its own admin
 == Screenshots ==
 
 1. Gravity Forms Toolbar in default state (running with WordPress 3.3+ here)
-2. Gravity Forms Toolbar in action - primary level (running with WordPress 3.3+ here)
-3. Gravity Forms Toolbar in action - a secondary level (running with WordPress 3.3+ here)
-4. Gravity Forms Toolbar in action - a third level, for the official (and some third-party) Add-Ons (running with WordPress 3.3+ here)
-5. Gravity Forms Toolbar - Notification of new entries on top-level (running with WordPress 3.3+ here)
-6. Gravity Forms Toolbar - Little admin settings page (running with WordPress 3.3+ here)
+2. Gravity Forms Toolbar in action - a secondary level - form management (running with WordPress 3.3+ here)
+3. Gravity Forms Toolbar in action - a third level, for the official (and some third-party) Add-Ons (running with WordPress 3.3+ here)
+4. Gravity Forms Toolbar in action - a secondary level - docs (running with WordPress 3.3+ here)
+5. Gravity Forms Toolbar in action - a primary level - notification of new entries & updates (running with WordPress 3.3+ here)
+6. Gravity Forms Toolbar in action - notification of new entries & updates on top-level (running with WordPress 3.3+ here)
+7. Gravity Forms Toolbar - little admin settings page of the plugin (running with WordPress 3.3+ here)
 
 == Changelog ==
+
+= 1.3 =
+* *Further enhancements and additions for plugin's own settings/features:*
+ * NEW: Display notifications when new Gravity Forms plugin update is available.
+ * NEW: Settings to control menu items notifications display for updates and unread entries.
+ * NEW: Toolbar menu item for Gravity Forms Toolbar plugin settings.
+* *Extended add-on and resources support:*
+ * NEW: Added support for newly released official "Authorize.Net Add-On"
+ * NEW: Added *Gravity Forms News Planet* feed link to resource links (you can also access this from here: http://friendfeed.com/gravityforms-news)
+* *Other stuff:*
+ * CHANGE: Changed wording from "Gravity Forms Main Settings" to just "Plugin Settings"
+ * IMPROVEMENT: For WordPress 3.3+ changed display of resource links group: now at the bottom, below settings links and in WP 3.3 group style :)
+ * CODE: No longer loading CSS styles or menu items for not logged-in users when plugins like "GD Press Tools" are active (which have options to show toolbar / admin bar also for visitors...)
+ * CODE: Minor code/ code documenation tweaks.
+ * UPDATE: Updated readme.txt file and all screenshots.
+* *Translations related:*
+ * NEW: Added possibility for custom and update-secure language files for this plugin - just upload them to `/wp-content/languages/gravity-forms-toolbar/` (just create this folder) - this enables you to use complete custom wording or translations.
+ * NEW: Added Serbian translations by Dev4Press :)
+ * UPDATE: Updated German translations and also the .pot file for all translators!
 
 = 1.2.1 =
 * BUGFIX: Fixed capability issue for displaying plugin's options page when "Members" plugin is installed
@@ -146,6 +175,9 @@ Simple answer: Linking/ adding is only possible where a plugin has its own admin
 
 == Upgrade Notice ==
 
+= 1.3 =
+Several additions and improvements - Added GF update notification plus plugin setting for notifications. Further, added new Add-On and resource links. Also, updated .pot file for translators together with German translations - and added new Serbian translation!
+
 = 1.2.1 =
 Minor changes - Fixed/improved capability issues and conditional checks. Also, updated .pot file for translators together with German translations. 
 
@@ -162,12 +194,16 @@ Just released into the wild.
 
 * English - default, always included
 * German: Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/gravityforms-und-addons/#gravity-forms-toolbar)
+* Serbian: српски - by Dev4Press
+* For custom and update-secure language files please upload them to `/wp-content/languages/gravity-forms-toolbar/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `gravity-forms-toolbar-en_US.mo/.po` to achieve that.
 
-*Note:* All my plugins are localized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/).
+*Note:* All my plugins are localized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
 
 == Additional Info ==
 **Idea Behind / Philosophy:** Just a little leightweight plugin for all the form developers and managers out there working 
 with the incredible Gravity Forms to make their daily admin life a bit easier. I'll try to add more add-on/plugin support if it makes some sense. So stay tuned :).
+
+**Gravity Forms News Planet** I also have started a little news/feed service via "FriendFeed" that you can subscribe to: http://friendfeed.com/gravityforms-news -- Please contact me via my Twitter for new resources (that have an RSS feed and are related to Gravity Forms!)
 
 == Credits ==
 **Big thanks** to Milan Petrovic of Dev4Press who made the options panel for this plugin - so it's still lightweight but even more useful!

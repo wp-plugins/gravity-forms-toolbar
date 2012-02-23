@@ -7,10 +7,10 @@
  * @author     Milan Petrovic - Dev4Press
  * @copyright  Copyright 2012, Milan Petrovic - Dev4Press
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
- * @link       http://twitter.com/#!/dev4press
+ * @link       http://twitter.com/#!/milangd
  *
  * @since 1.2
- * @version 1.0
+ * @version 1.1
  */
 
 $options = ddw_gftb_get_options();
@@ -33,6 +33,22 @@ $options = ddw_gftb_get_options();
                         		<label for="ddw_gftb_extensions">
                             			<input<?php if ($options['extensions']) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_extensions" name="ddw_gftb[extensions]">
 						<?php _e( 'Active Extensions', 'gravity-forms-toolbar' ); ?>
+					</label>
+				</fieldset>
+			</td>
+		</tr>
+		<tr valign="top">
+			<th scope="row"><?php _e( 'Notifications', 'gravity-forms-toolbar' ); ?></th>
+			<td>
+				<fieldset>
+					<legend class="screen-reader-text"><span><?php _e( 'Notifications', 'gravity-forms-toolbar' ); ?></span></legend>
+					<label for="forms_details">
+						<input<?php if ( $options['unread_notification'] ) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_unread_notification" name="ddw_gftb[unread_notification]">
+						<?php _e( 'Display notification about number of all unread entries', 'gravity-forms-toolbar' ); ?>
+					</label><br>
+					<label for="forms_details">
+						<input<?php if ( $options['update_notification'] ) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_update_notification" name="ddw_gftb[update_notification]">
+						<?php _e( 'Display notification in menu when plugin update is available', 'gravity-forms-toolbar' ); ?>
 					</label>
 				</fieldset>
 			</td>
