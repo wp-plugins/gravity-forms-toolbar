@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Gravity Forms Toolbar package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-05-19 21:08+0100\n"
+"PO-Revision-Date: 2012-05-20 00:45+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +12,10 @@ msgstr ""
 "POT-Creation-Date: \n"
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: \n"
+
+#: gravity-forms-toolbar.php:0
+msgid "1.4.1"
+msgstr "1.4.1"
 
 #: admin/tabs/settings.php:51
 msgid "Display notification about number of all unread entries"
@@ -82,10 +86,6 @@ msgstr "Constant Contact Nuostatos"
 #: lib/gftb-plugins.php:299
 msgid "Constant Contact Add-On Settings"
 msgstr "Constant Contact Papildinio Nuostatos "
-
-#: gravity-forms-toolbar.php:0
-msgid "1.4"
-msgstr "1.4"
 
 #: gravity-forms-toolbar.php:661
 msgctxt "Translators: Main item - for the tooltip"

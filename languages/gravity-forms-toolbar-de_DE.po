@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Gravity Forms Toolbar\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/gravity-forms-toolbar\n"
 "POT-Creation-Date: 2012-01-16 16:32+0100\n"
-"PO-Revision-Date: 2012-05-19 21:08+0100\n"
+"PO-Revision-Date: 2012-05-20 00:43+0100\n"
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
 "MIME-Version: 1.0\n"
@@ -706,8 +706,8 @@ msgstr "Constant Contact Zusatzmodul Einstellungen"
 #@ gravity-forms-toolbar
 #. translators: plugin header field 'Version'
 #: gravity-forms-toolbar.php:0
-msgid "1.4"
-msgstr "1.4"
+msgid "1.4.1"
+msgstr "1.4.1"
 
 #@ gravity-forms-toolbar
 #: gravity-forms-toolbar.php:661

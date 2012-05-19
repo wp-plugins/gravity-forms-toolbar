@@ -17,7 +17,7 @@
  * Plugin Name: Gravity Forms Toolbar
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
  * Description: This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
- * Version: 1.4
+ * Version: 1.4.1
  * Author: David Decker - DECKERWEB / Milan Petrovic - Dev4Press
  * Author URI: http://deckerweb.de/
  * License: GPLv2 or later
@@ -75,7 +75,7 @@ function ddw_gftb_init() {
 	load_plugin_textdomain( 'gravity-forms-toolbar', false, GFTB_PLUGIN_BASEDIR . '/languages/' );
 
 	/** If 'wp-admin' include admin functions */
-	if ( is_admin() || is_network_admin() ) {
+	if ( is_admin() ) {
 
 		/** Admin settings */
 		require_once( GFTB_PLUGIN_DIR . '/admin/admin.php' );
@@ -158,7 +158,7 @@ add_action( 'admin_bar_menu', 'ddw_gftb_admin_bar_menu', 98 );
  * @since 1.0
  * @version 1.1
  *
- * @global mixed $wp_admin_bar 
+ * @global mixed $wp_admin_bar
  */
 function ddw_gftb_admin_bar_menu() {
 
@@ -171,7 +171,9 @@ function ddw_gftb_admin_bar_menu() {
 	 *
 	 * @since 1.4
 	 */
-	$gftb_filter_capability = apply_filters( 'gftb_filter_capability_all', 'gravityforms_edit_forms' );
+	$gftb_init_cap_check = current_user_can( 'gravityforms_edit_forms' ) ? 'gravityforms_edit_forms' : 'gform_full_access';
+
+	$gftb_filter_capability = apply_filters( 'gftb_filter_capability_all', $gftb_init_cap_check );
 
 	/**
 	 * Required Gravity Forms/ WordPress cabability to display new admin bar entry
@@ -869,14 +871,21 @@ function ddw_gftb_admin_style() {
  * Gravity Forms version compare for update check
  *
  * @since 1.3
+ * @version 1.1
  *
  * @return version string
  */
 function ddw_gftb_update_available() {
 
-	$version_info = GFCommon::get_version_info();
+	/** Check if Gravity Forms is active - class 'GFCommon' available */
+	if ( class_exists( 'GFCommon' ) ) {
 
-	return version_compare( GFCommon::$version, $version_info["version"], '<' );
+		$version_info = GFCommon::get_version_info();
+
+		return version_compare( GFCommon::$version, $version_info["version"], '<' );
+
+	}  // end-if class check
+
 }
 
 

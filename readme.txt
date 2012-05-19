@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, ddwtoolbar, dev4press, gdragon
 Requires at least: 3.1
 Tested up to: 3.4
-Stable tag: 1.4
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -355,6 +355,12 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 
 == Changelog ==
 
+= 1.4.1 (2012-05-20) =
+* *Important bugfix release!*
+* FIX: Fixed problem with capabilities not set correctly when using/not using "Members" plugin. Now *Gravity Forms Toolbar* has more additional checks built in and this should finally work for all, at least all admins (for which this plugin is!).
+* FIX: Fixed another bug when Gravity Forms is not active, to properly activate this plugin.
+* CODE: Other minor code and documentation tweaks & improvements.
+
 = 1.4 (2012-05-19) =
 * *New features:*
  * NEW: Added new plugin setting (plus an additional constant) for removing the official add-on items/hook place in the menu.
@@ -434,6 +440,9 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+Important bugfixes and improvements. Please update - stable release for 1.4.x branch of *Gravity Forms Toolbar*! :)
 
 = 1.4 =
 Major additions & improvements: Extended plugin add-on support! Added new admin setting plus additional hooks, filters & constants for customizing. Added new Lithuanian translations, updated existing ones plus .pot file for translators.

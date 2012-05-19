@@ -72,7 +72,7 @@ msgid "Constant Contact Add-On Settings"
 msgstr ""
 
 #: gravity-forms-toolbar.php:0
-msgid "1.4"
+msgid "1.4.1"
 msgstr ""
 
 #: gravity-forms-toolbar.php:661
