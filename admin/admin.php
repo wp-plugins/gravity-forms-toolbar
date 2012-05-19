@@ -22,21 +22,17 @@ add_action( 'admin_menu', 'ddw_gftb_admin_menu' );
  */
 function ddw_gftb_admin_menu() {
 
-	/** Set capability for displaying the menu panel */
-		/** Check for "Members" plugin */
-	if ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'members/members.php' ) ) {
-		$gftb_options_capability = 'gravityforms_edit_forms';
-	}
-		/** Otherwise use GF full access cap */
-	else {
-		$gftb_options_capability = 'gform_full_access';
-	}
+	/** Check for available Gravity Forms capabilities */
+	$gftb_options_cap_check = current_user_can( 'gravityforms_edit_forms' ) ? 'gravityforms_edit_forms' : 'gform_full_access';
+
+	/** Set filter for options page capability */
+	$gftb_options_capability = apply_filters( 'gftb_filter_options_capability', $gftb_options_cap_check );
 
 	/** Add the menu panel & options page */
 	add_options_page(
 		__( 'Gravity Forms Toolbar', 'gravity-forms-toolbar' ),
 		__( 'Gravity Forms Toolbar', 'gravity-forms-toolbar' ),
-		apply_filters( 'gftb_filter_options_capability', $gftb_options_capability ),
+		esc_attr( $gftb_options_capability ),
 		'ddw_gftb_options_page',
 		'ddw_gftb_options_page'
 	);

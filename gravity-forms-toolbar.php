@@ -171,7 +171,9 @@ function ddw_gftb_admin_bar_menu() {
 	 *
 	 * @since 1.4
 	 */
-	$gftb_filter_capability = apply_filters( 'gftb_filter_capability_all', 'gravityforms_edit_forms' );
+	$gftb_init_cap_check = current_user_can( 'gravityforms_edit_forms' ) ? 'gravityforms_edit_forms' : 'gform_full_access';
+
+	$gftb_filter_capability = apply_filters( 'gftb_filter_capability_all', $gftb_init_cap_check );
 
 	/**
 	 * Required Gravity Forms/ WordPress cabability to display new admin bar entry

@@ -16,7 +16,7 @@
 $options = ddw_gftb_get_options();
 
 ?>
-<form method="post" action="options.php" id="gftb-form">
+<form method="post" action="options.php">
 	<?php settings_fields( 'ddw_gftb_options' ); ?>
 
 	<table class="form-table">
