@@ -33,6 +33,6 @@ $tabs = array(
 	?>
 	</h2>
 	<div id="ddw-panel" class="ddw-panel-<?php echo $current; ?>">
-		<?php include( 'tabs/' . $current . '.php' ); ?>
+		<?php include( GFTB_PLUGIN_DIR . '/admin/tabs/' . $current . '.php' ); ?>
 	</div>  
 </div><!-- .wrap -->
