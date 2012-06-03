@@ -58,7 +58,7 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * Plugin: ["Gravity to Solve360" (free, by Steve Barnett)](http://wordpress.org/extend/plugins/gravity-to-solve360/)
 * Plugin: ["Gravity Forms HubSpot Add-On" (free, by Dan Zappone)](http://wordpress.org/extend/plugins/hubspot-for-gravity-forms/)
 * Plugin: ["Gravity Forms CapsuleCRM Add-On" (free, by Alinea.im)](http://wordpress.org/extend/plugins/gravity-forms-capsulecrm-add-on/)
-* Plugin: ["GravityForms eWAY" (free, by WebAware)]http://wordpress.org/extend/plugins/gravityforms-eway/)
+* Plugin: ["GravityForms eWAY" (free, by WebAware)](http://wordpress.org/extend/plugins/gravityforms-eway/)
 * Plugin: ["PixCaptcha Image Captcha for Gravity Forms" (free, by Picatcha, Inc.)](http://wordpress.org/extend/plugins/picatcha-for-gravity-forms/)
 * Plugin: ["Gravity Forms - SMS Notifications" (free, by Mediaburst)](http://wordpress.org/extend/plugins/gravity-forms-sms-notifications/)
 * Plugin: ["Gravity Forms Contact Form 7 Importer" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/contact-form-7-gravity-forms/)
@@ -98,7 +98,8 @@ Credit where credit is due: This plugin here is inspired and based on the work o
 * Follow [DECKERWEB Facebook page](http://www.facebook.com/deckerweb.service) and [Dev4Press Facebook page](http://www.facebook.com/dev4press)
 * Or follow [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
 
-= More =
+= Tips & More =
+* [See my Toolbar / Admin Bar plugin series](http://wordpress.org/extend/plugins/tags/ddwtoolbar) - great time savers and helper tools :)
 * [Also see my other plugins](http://genesisthemes.de/en/wp-plugins/) or see [my WordPress.org profile page](http://profiles.wordpress.org/daveshine/)
 * Tip: [*GenesisFinder* - Find then create. Your Genesis Framework Search Engine.](http://genesisfinder.com/)
 
@@ -478,7 +479,7 @@ Enjoy using *Gravity Forms Toolbar*? Please consider [making a small donation](h
 * Lithuanian: Lietuvos - by Vincent G.
 * For custom and update-secure language files please upload them to `/wp-content/languages/gravity-forms-toolbar/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `gravity-forms-toolbar-en_US.mo/.po` to achieve that.
 
-**Easy plugin translation platform with GlotPress tool: [Translate "Gravity Forms Toolbar"...](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)**
+**Easy plugin translation platform with GlotPress tool:** [**Translate "Gravity Forms Toolbar"...**](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 
 *Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
 
