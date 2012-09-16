@@ -364,6 +364,7 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 = 1.5.0 (2012-09-16) =
 * *Extended Add-On/ Plugin support:*
  * NEW: Added support for newly released official "Picatcha Add-On" (anti spam).
+ * UPDATE: Updated support for official "User Registration" Add-On to support new features introduced with v1.5+ of this Add-On.
  * NEW: Added plugin support for ["Gravity Forms Fat Zebra Add-On (free, by Matthew Savage)](http://wordpress.org/extend/plugins/gravityforms-fatzebra/).
  * NEW: Added plugin support for ["Gravity Forms Survey Funnel Add-On (free, by Pronamic)](http://wordpress.org/extend/plugins/gravity-forms-survey-funnel/).
  * NEW: Added plugin support for ["Gravity Forms Infusionsoft Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/infusionsoft/)
@@ -371,7 +372,7 @@ All the custom & branding stuff code above can also be found as a Gist on Github
  * NEW: Added help tab on plugin's settings page.
  * NEW: Moved resources and links group from plugin main file to extra files for performance optimization if this group might be disabled via settings/ constant.
  * CODE: Minor code/documentation updates & improvements.
- * UPDATE: Updated German and Serbian translations and also the .pot file for all translators!
+ * UPDATE: Updated German translations and also the .pot file for all translators!
  * UPDATE: Initiated new three digits versioning, starting with this version.
  * UPDATE: Moved screenshots to 'assets' folder in WP.org SVN to reduce plugin package size.
 
