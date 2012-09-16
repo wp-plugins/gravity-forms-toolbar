@@ -3,8 +3,8 @@ Contributors: daveshine, deckerweb, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, ddwtoolbar, dev4press, gdragon
 Requires at least: 3.1
-Tested up to: 3.4
-Stable tag: 1.4.1
+Tested up to: 3.4.2
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -28,12 +28,12 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * 5 filters included to change wording/tooltip and icon of the main item - for more info [see FAQ section here](http://wordpress.org/extend/plugins/gravity-forms-toolbar/faq/)
 * Fully internationalized! Real-life tested and developed with international users in mind! Also supports update-secure custom language file (if you need special wording...)
 * Fully WPML compatible!
-* Tested with WordPress versions 3.2-branch, 3.3.1, 3.3.2 and 3.4-beta releases - also in debug mode (no stuff there, ok? :)
+* Tested with WordPress versions 3.2-branch, 3.3-branch and 3.4-branch releases - also in debug mode (no stuff there, ok? :)
 
 = Official Add-Ons Support =
-*The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 9 to date (counting only the ones with settings pages!):*
+*The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 10 to date (counting only the ones with settings pages!):*
 
-* User Registration
+* User Registration (inluding v1.5+!)
 * PayPal
 * PayPal Pro
 * MailChimp
@@ -42,6 +42,7 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * Freshbooks
 * Twilio
 * Authorize.Net
+* Picatcha
 
 = Add-Ons/ Plugin Support =
 *At this time the plugin out of the box supports also all third-party Gravity Forms related plugins (only the ones with settings pages!):*
@@ -54,12 +55,15 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * Plugin: ["Gravity Forms iContact Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-icontact/)
 * Plugin: ["Gravity Forms Mad Mimi Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-mad-mimi/)
 * Plugin: ["Gravity Forms ExactTarget Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-exacttarget/)
+* Plugin: ["Gravity Forms Infusionsoft Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/infusionsoft/)
 * Plugin: ["Gravity Forms ShootQ Add-On" (free, by pussycatdev)](http://wordpress.org/extend/plugins/gravity-forms-shootq-add-on/)
 * Plugin: ["Gravity to Solve360" (free, by Steve Barnett)](http://wordpress.org/extend/plugins/gravity-to-solve360/)
 * Plugin: ["Gravity Forms HubSpot Add-On" (free, by Dan Zappone)](http://wordpress.org/extend/plugins/hubspot-for-gravity-forms/)
+* Plugin: ["Gravity Forms Fat Zebra Add-On" (free, by Matthew Savage)](http://wordpress.org/extend/plugins/gravityforms-fatzebra/)
 * Plugin: ["Gravity Forms CapsuleCRM Add-On" (free, by Alinea.im)](http://wordpress.org/extend/plugins/gravity-forms-capsulecrm-add-on/)
 * Plugin: ["GravityForms eWAY" (free, by WebAware)](http://wordpress.org/extend/plugins/gravityforms-eway/)
 * Plugin: ["PixCaptcha Image Captcha for Gravity Forms" (free, by Picatcha, Inc.)](http://wordpress.org/extend/plugins/picatcha-for-gravity-forms/)
+* Plugin: ["Gravity Forms Survey Funnel Add-On" (free, by Pronamic)](http://wordpress.org/extend/plugins/gravity-forms-survey-funnel/)
 * Plugin: ["Gravity Forms - SMS Notifications" (free, by Mediaburst)](http://wordpress.org/extend/plugins/gravity-forms-sms-notifications/)
 * Plugin: ["Gravity Forms Contact Form 7 Importer" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/contact-form-7-gravity-forms/)
 * Plugin: ["Members" (free, by Justin Tadlock)](http://wordpress.org/extend/plugins/members/)
@@ -75,9 +79,9 @@ As the name suggests this plugin is primarily **intended towards website admins/
 
 = Localization =
 * English (default) - always included
-* German - always included
-* Serbian by Dev4Press - currently 87% complete
-* Lithuanian by Vincent G. - currently 87% complete
+* German (de_DE) - always included
+* Serbian (sr_RS) by Dev4Press - currently 75% complete for v1.5.0
+* Lithuanian (lt_LT) by Vincent G. - currently 75% complete for v1.5.0
 * .pot file (`gravity-forms-toolbar.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Gravity Forms Toolbar"...](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
@@ -353,8 +357,23 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 5. Gravity Forms Toolbar in action - a primary level - notification of new entries & updates (running with WordPress 3.3+ here)
 6. Gravity Forms Toolbar in action - notification of new entries & updates on top-level (running with WordPress 3.3+ here)
 7. Gravity Forms Toolbar - little admin settings page of the plugin (running with WordPress 3.3+ here)
+8. Gravity Forms Toolbar - help tab on admin settings page of the plugin ([Click to see larger version of image](https://www.dropbox.com/s/l23uais5v7jhvd0/screenshot-8.png))
 
 == Changelog ==
+
+= 1.5.0 (2012-09-16) =
+* *Extended Add-On/ Plugin support:*
+ * NEW: Added support for newly released official "Picatcha Add-On" (anti spam).
+ * NEW: Added plugin support for ["Gravity Forms Fat Zebra Add-On (free, by Matthew Savage)](http://wordpress.org/extend/plugins/gravityforms-fatzebra/).
+ * NEW: Added plugin support for ["Gravity Forms Survey Funnel Add-On (free, by Pronamic)](http://wordpress.org/extend/plugins/gravity-forms-survey-funnel/).
+ * NEW: Added plugin support for ["Gravity Forms Infusionsoft Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/infusionsoft/)
+* *More stuff:*
+ * NEW: Added help tab on plugin's settings page.
+ * NEW: Moved resources and links group from plugin main file to extra files for performance optimization if this group might be disabled via settings/ constant.
+ * CODE: Minor code/documentation updates & improvements.
+ * UPDATE: Updated German and Serbian translations and also the .pot file for all translators!
+ * UPDATE: Initiated new three digits versioning, starting with this version.
+ * UPDATE: Moved screenshots to 'assets' folder in WP.org SVN to reduce plugin package size.
 
 = 1.4.1 (2012-05-20) =
 * *Important bugfix release!*
@@ -362,7 +381,7 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * FIX: Fixed another bug when Gravity Forms is not active, to properly activate this plugin.
 * CODE: Other minor code and documentation tweaks & improvements.
 
-= 1.4 (2012-05-19) =
+= 1.4.0 (2012-05-19) =
 * *New features:*
  * NEW: Added new plugin setting (plus an additional constant) for removing the official add-on items/hook place in the menu.
  * COOL: Plugin can now be branded and customized a lot more!
@@ -389,7 +408,7 @@ All the custom & branding stuff code above can also be found as a Gist on Github
  * UPDATE: Updated documentation and FAQ of readme.txt file.
  * UPDATE: Extended GPL License info in readme.txt as well as main plugin file.
 
-= 1.3 (2012-02-24) =
+= 1.3.0 (2012-02-24) =
 * *Further enhancements and additions for plugin's own settings/features:*
  * NEW: Display notifications when new Gravity Forms plugin update is available.
  * NEW: Settings to control menu items notifications display for updates and unread entries.
@@ -411,9 +430,9 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 = 1.2.1 (2012-02-06) =
 * BUGFIX: Fixed capability issue for displaying plugin's options page when "Members" plugin is installed
 * CODE: Improved conditional check for Dutch language plugin; also, some more minor tweaks and improvements
-* UPDATE: Fixed errors in .pot file from v1.2 - updated German translations and also the .pot file for all translators!
+* UPDATE: Fixed errors in .pot file from v1.2.0 - updated German translations and also the .pot file for all translators!
 
-= 1.2 (2012-02-03) =
+= 1.2.0 (2012-02-03) =
 * Extended plugin functionality a lot, making it even more useful! - Thanx to new plugin co-author Milan Petrovic of Dev4Press!
  * NEW: Admin settings page to optinally remove "Support/Docs/FAQ" and/or "Active Extensions" sections from menu (settings under "General Settings")
  * NEW: Admin settings allow also to dynamically add existing "Forms" (link to their edit pages) and "Entries" of these forms
@@ -422,7 +441,7 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * UPDATE: Extended and improved readme.txt file
 * UPDATE: Updated German translations and also the .pot file for all translators!
 
-= 1.1 (2012-01-31) =
+= 1.1.0 (2012-01-31) =
 * Extended the third-party plugin support even more:
  * NEW: Added link to user profile at Gravity Help - for even easier access to your forum favorites etc. (only displaying for admins)
  * NEW: Added link to official blog post, documenting about "Gravity Forms CSS: Targeting Specific Elements" (Rocket Genius Blog)
@@ -437,30 +456,33 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * UPDATE: Updated German and translations and also the .pot file for all translators!
 * NEW: Added banner image on WordPress.org for better plugin branding :)
 
-= 1.0 (2012-01-22) =
+= 1.0.0 (2012-01-22) =
 * Initial release
 
 == Upgrade Notice ==
 
+= 1.5.0 =
+Several additions & improvements: Extended Add-On/ plugin support, added help tab, a few code/ performance optimizations. Updated German translations plus .pot file for translators.
+
 = 1.4.1 =
 Important bugfixes and improvements. Please update - stable release for 1.4.x branch of *Gravity Forms Toolbar*! :)
 
-= 1.4 =
+= 1.4.0 =
 Major additions & improvements: Extended plugin add-on support! Added new admin setting plus additional hooks, filters & constants for customizing. Added new Lithuanian translations, updated existing ones plus .pot file for translators.
 
-= 1.3 =
+= 1.3.0 =
 Several additions and improvements - Added GF update notification plus plugin setting for notifications. Further, added new Add-On and resource links. Also, updated .pot file for translators together with German translations - and added new Serbian translation!
 
 = 1.2.1 =
 Minor changes - Fixed/improved capability issues and conditional checks. Also, updated .pot file for translators together with German translations. 
 
-= 1.2 =
+= 1.2.0 =
 Major improvement - Added little admin settings page to optionally remove unwanted entries. Added visual notifications for new form entries. New plugin co-author Milan Petrovic of Dev4Press - big thanks! Further, improved readme.txt file; made a few code tweaks. Also, updated .pot file for translators together with German translations. 
 
-= 1.1 =
+= 1.1.0 =
 Several additions and improvements - Added 3 more useful user/resource links. Further, added plugin support for 5 more free plugins. Also, updated .pot file for translators together with German translations.
 
-= 1.0 =
+= 1.0.0 =
 Just released into the wild.
 
 == Plugin Links ==
@@ -474,9 +496,9 @@ Enjoy using *Gravity Forms Toolbar*? Please consider [making a small donation](h
 == Translations ==
 
 * English - default, always included
-* German: Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/gravityforms-und-addons/#gravity-forms-toolbar)
-* Serbian: српски - by Dev4Press
-* Lithuanian: Lietuvos - by Vincent G.
+* German (de_DE): Deutsch - immer dabei! [Download auch via deckerweb.de](http://deckerweb.de/material/sprachdateien/gravityforms-und-addons/#gravity-forms-toolbar)
+* Serbian (sr_RS): српски - by Dev4Press
+* Lithuanian (lt_LT): Lietuvos - by Vincent G.
 * For custom and update-secure language files please upload them to `/wp-content/languages/gravity-forms-toolbar/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `gravity-forms-toolbar-en_US.mo/.po` to achieve that.
 
 **Easy plugin translation platform with GlotPress tool:** [**Translate "Gravity Forms Toolbar"...**](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)

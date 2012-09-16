@@ -8,22 +8,22 @@
  * @copyright  Copyright 2012, David Decker - DECKERWEB
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link       http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
- * @link       http://twitter.com/#!/deckerweb
+ * @link       http://twitter.com/deckerweb
  *
- * @since 1.4
+ * @since 1.4.0
  */
 
 /**
  * Helper functions for returning a few popular roles/capabilities.
  *
- * @since 1.4
+ * @since 1.4.0
  *
  * @return role/capability
  */
 	/**
 	 * Helper function for returning 'administrator' role/capability.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return 'administrator' role
 	 */
@@ -35,7 +35,7 @@
 	/**
 	 * Helper function for returning 'editor' role/capability.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return 'editor' role
 	 */
@@ -47,7 +47,7 @@
 	/**
 	 * Helper function for returning 'manage_options' capability.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return 'manage_options' capability
 	 */
@@ -59,7 +59,7 @@
 	/**
 	 * Helper function for returning 'install_plugins' capability.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return 'install_plugins' capability
 	 */
@@ -71,7 +71,7 @@
 	/**
 	 * Helper function for returning 'activate_plugins' capability.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return 'activate_plugins' capability
 	 */
@@ -83,7 +83,7 @@
 	/**
 	 * Helper function for returning 'edit_theme_options' capability.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return 'edit_theme_options' capability
 	 */
@@ -98,14 +98,14 @@
 /**
  * Helper functions for returning colored icons.
  *
- * @since 1.4
+ * @since 1.4.0
  *
  * @return colored icon image
  */
 	/**
 	 * Helper function for returning the blue icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return blue icon
 	 */
@@ -117,7 +117,7 @@
 	/**
 	 * Helper function for returning the lightgreen icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return lightgreen icon
 	 */
@@ -129,7 +129,7 @@
 	/**
 	 * Helper function for returning the lightgrey icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return lightgrey icon
 	 */
@@ -141,7 +141,7 @@
 	/**
 	 * Helper function for returning the orange icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return orange icon
 	 */
@@ -153,7 +153,7 @@
 	/**
 	 * Helper function for returning the pink icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return pink icon
 	 */
@@ -165,7 +165,7 @@
 	/**
 	 * Helper function for returning the red icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return red icon
 	 */
@@ -177,7 +177,7 @@
 	/**
 	 * Helper function for returning the turquoise icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return turquoise icon
 	 */
@@ -189,7 +189,7 @@
 	/**
 	 * Helper function for returning the yellow icon.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return yellow icon
 	 */
@@ -201,7 +201,7 @@
 	/**
 	 * Helper function for returning a custom icon (icon-gftb.png) from stylesheet/child/theme "images" folder.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return gftb custom icon
 	 */
@@ -216,14 +216,14 @@
 /**
  * Helper functions for returning icon class.
  *
- * @since 1.4
+ * @since 1.4.0
  *
  * @return icon class
  */
 	/**
 	 * Helper function for returning no icon class.
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 *
 	 * @return no icon class
 	 */

@@ -5,19 +5,19 @@
  *
  * @package   Gravity Forms Toolbar
  * @author    David Decker
- * @link      http://twitter.com/#!/deckerweb
+ * @link      http://twitter.com/deckerweb
  * @author    Milan Petrovic
- * @link      http://twitter.com/#!/milangd
+ * @link      http://twitter.com/milangd
  * @copyright Copyright 2012, David Decker - DECKERWEB
  *
  * @credits   Inspired and based on the plugin "WooThemes Admin Bar Addition" by Remkus de Vries @defries.
  * @link      http://remkusdevries.com/
- * @link      http://twitter.com/#!/defries
+ * @link      http://twitter.com/defries
  *
  * Plugin Name: Gravity Forms Toolbar
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
  * Description: This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
- * Version: 1.4.1
+ * Version: 1.5.0
  * Author: David Decker - DECKERWEB / Milan Petrovic - Dev4Press
  * Author URI: http://deckerweb.de/
  * License: GPLv2 or later
@@ -48,7 +48,7 @@
 /**
  * Setting constants
  *
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 /** Plugin directory */
@@ -63,7 +63,7 @@ add_action( 'init', 'ddw_gftb_init' );
  * Load the text domain for translation of the plugin.
  * Load admin settings & helper functions - only within 'wp-admin'.
  * 
- * @since 1.0
+ * @since 1.0.0
  * @version 1.2
  */
 function ddw_gftb_init() {
@@ -120,7 +120,7 @@ function ddw_gftb_init() {
 /**
  * Get default plugin options.
  *
- * @since 1.2
+ * @since 1.2.0
  * @version 1.1
  *
  * @return array 
@@ -140,7 +140,7 @@ function ddw_gftb_default_options() {
 /**
  * Get current plugin options.
  *
- * @since 1.2
+ * @since 1.2.0
  *
  * @return array 
  */
@@ -155,7 +155,7 @@ add_action( 'admin_bar_menu', 'ddw_gftb_admin_bar_menu', 98 );
 /**
  * Add new menu items to the WordPress Toolbar / Admin Bar.
  * 
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  *
  * @global mixed $wp_admin_bar
@@ -167,9 +167,9 @@ function ddw_gftb_admin_bar_menu() {
 	/**
 	 * Allows for filtering the general user role/capability to display main & sub-level items
 	 *
-	 * Default role: 'gravityforms_edit_forms' (set by Gravity Forms plugin itself!)
+	 * Default capability: 'gravityforms_edit_forms' or 'gform_full_access' (set by Gravity Forms plugin itself!)
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 */
 	$gftb_init_cap_check = current_user_can( 'gravityforms_edit_forms' ) ? 'gravityforms_edit_forms' : 'gform_full_access';
 
@@ -179,7 +179,7 @@ function ddw_gftb_admin_bar_menu() {
 	 * Required Gravity Forms/ WordPress cabability to display new admin bar entry
 	 * Only showing items if toolbar / admin bar is activated and user is logged in!
 	 *
-	 * @since 1.3
+	 * @since 1.3.0
 	 * @version 1.1
 	 */
 	if ( ! is_user_logged_in() || 
@@ -230,6 +230,7 @@ function ddw_gftb_admin_bar_menu() {
 		$gftpaoicontact = $prefix . 'gftpaoicontact';			// third level third-party add-on: icontact
 		$gftpaomadmimi = $prefix . 'gftpaomadmimi';			// third level third-party add-on: madmimi
 		$gftpaoexacttarget = $prefix . 'gftpaoexacttarget';		// third level third-party add-on: exacttarget
+		$gftpaoinfusionsoft = $prefix . 'gftpaoinfusionsoft';		// third level third-party add-on: infusionsoft
 	$extensions = $prefix . 'extensions';				// sub level: extensions (very last main entry)
 		$extpideal = $prefix . 'extpideal';				// third level third-party add-on: pronamic ideal
 		$extgfsolve360 = $prefix . 'extgfsolve360';			// third level third-party add-on: solve360
@@ -240,7 +241,7 @@ function ddw_gftb_admin_bar_menu() {
 	 * Check against WP 3.3+ only function 'wp_editor' - if true use "$wcgroup" as parent (WP 3.3+ style)
 	 * otherwise use "$gravitybar" as parent (WP 3.1/3.2 style)
 	 *
-	 * @since 1.3
+	 * @since 1.3.0
 	 *
 	 * @param $wcgroup_check_item
 	 */
@@ -256,156 +257,8 @@ function ddw_gftb_admin_bar_menu() {
 		/** Display items depending on plugin setting */
 		if ( $options['help_and_support'] && GFTB_RESOURCES_DISPLAY ) {
 
-			$menu_items_help = array(
-				/** Support section */
-				'gfsupport' => array(
-					'parent' => $gfgroup_check_item,
-					'title'  => __( 'Support Forums', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/forums/',
-					'meta'   => array( 'title' => __( 'Support Forums', 'gravity-forms-toolbar' ) )
-				),
-				'gfsearch' => array(
-					'parent' => $gfsupport,
-					'title'  => __( 'Advanced Forum Search', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/forums/search.php?q=',
-					'meta'   => array( 'title' => __( 'Advanced Forum Search', 'gravity-forms-toolbar' ) )
-				),
-
-				/**
-				 * Here 2 more items hook in (parent = $gfsupport) - we have to move them to end
-				 * to be able to run conditional queries and changing their position
-				 *
-				 * @since 1.1
-				 */
-
-				/** Documentation section */
-				'gfdocs' => array(
-					'parent' => $gfgroup_check_item,
-					'title'  => __( 'Documentation', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/documentation/',
-					'meta'   => array( 'title' => __( 'Documentation', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-css' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'Visual CSS Guide', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/gravity-forms-css-visual-guide/',
-					'meta'   => array( 'title' => __( 'Visual CSS Guide', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-css-targeting' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'CSS: Targeting Specific Elements', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.rocketgenius.com/gravity-forms-css-targeting-specific-elements/',
-					'meta'   => array( 'title' => __( 'CSS: Targeting Specific Elements', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-plugin-cssselector' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'CSS Plugin: CSS Ready Class Selector', 'gravity-forms-toolbar' ),
-					'href'   => 'http://wordpress.org/extend/plugins/gravity-forms-css-ready-selector/',
-					'meta'   => array( 'title' => __( 'CSS Plugin: CSS Ready Class Selector', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-eventscalendar' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'Gravity Forms + Events Calendar Submissions', 'gravity-forms-toolbar' ),
-					'href'   => 'http://creativeslice.com/tutorials/gravity-forms-events-calendar-submissions/',
-					'meta'   => array( 'title' => _x( 'Gravity Forms + Events Calendar Submissions (creativeslice.com)', 'Translators: For the tooltip', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-gwztutorials' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'Tutorials (Gravity Wiz)', 'gravity-forms-toolbar' ),
-					'href'   => 'http://gravitywiz.com/category/tutorials/',
-					'meta'   => array( 'title' => _x( 'Tutorials (Gravity Wiz)', 'Translators: For the tooltip', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-gwzsnippets' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'Snippets (Gravity Wiz)', 'gravity-forms-toolbar' ),
-					'href'   => 'http://gravitywiz.com/category/snippets/',
-					'meta'   => array( 'title' => _x( 'Snippets (Gravity Wiz)', 'Translators: For the tooltip', 'gravity-forms-toolbar' ) )
-				),
-				'gfdocs-wpstutorials-wpssnippets' => array(
-					'parent' => $gfdocs,
-					'title'  => __( 'Dev Tutorials &amp; Code Snippets', 'gravity-forms-toolbar' ),
-					'href'   => 'http://wpsmith.net/tag/gravity-forms/',
-					'meta'   => array( 'title' => _x( 'Dev Tutorials &amp; Code Snippets (wpsmith.net)', 'Translators: For the tooltip', 'gravity-forms-toolbar' ) )
-				),
-
-				/** FAQ section */
-				'gffaq' => array(
-					'parent' => $gfgroup_check_item,
-					'title'  => __( 'FAQ', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/frequently-asked-questions/',
-					'meta'   => array( 'title' => __( 'FAQ', 'gravity-forms-toolbar' ) )
-				),
-				'gffaq-installation' => array(
-					'parent' => $gffaq,
-					'title'  => __( 'Installation', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/frequently-asked-questions/faq-installation/',
-					'meta'   => array( 'title' => __( 'Installation', 'gravity-forms-toolbar' ) )
-				),
-				'gffaq-usinggf' => array(
-					'parent' => $gffaq,
-					'title'  => __( 'Using Gravity Forms', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/frequently-asked-questions/faq-using-gravity-forms/',
-					'meta'   => array( 'title' => __( 'Using Gravity Forms', 'gravity-forms-toolbar' ) )
-				),
-				'gffaq-format' => array(
-					'parent' => $gffaq,
-					'title'  => __( 'Formatting &amp; Styling', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/frequently-asked-questions/faq-styling-formatting/',
-					'meta'   => array( 'title' => __( 'Formatting &amp; Styling', 'gravity-forms-toolbar' ) )
-				),
-				'gffaq-notifications' => array(
-					'parent' => $gffaq,
-					'title'  => __( 'Notifications', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/frequently-asked-questions/faq-notifications/',
-					'meta'   => array( 'title' => __( 'Notifications', 'gravity-forms-toolbar' ) )
-				),
-				'gffaq-general' => array(
-					'parent' => $gffaq,
-					'title'  => __( 'General Questions', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/frequently-asked-questions/faq-general-questions/',
-					'meta'   => array( 'title' => __( 'General Questions', 'gravity-forms-toolbar' ) )
-				),
-
-				/** Gravity Forms HQ section */
-				'gfsites' => array(
-					'parent' => $gfgroup_check_item,
-					'title'  => __( 'Gravity Forms HQ', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityforms.com/',
-					'meta'   => array( 'title' => __( 'Gravity Forms HQ', 'gravity-forms-toolbar' ) )
-				),
-				'gffeatures' => array(
-					'parent' => $gfsites,
-					'title'  => __( 'Feature List & Demonstration', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityforms.com/features/form-builder/',
-					'meta'   => array( 'title' => __( 'Feature List & Demonstration', 'gravity-forms-toolbar' ) )
-				),
-				'gfblog' => array(
-					'parent' => $gfsites,
-					'title'  => __( 'Official Blog', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityhelp.com/',
-					'meta'   => array( 'title' => __( 'Official Blog', 'gravity-forms-toolbar' ) )
-				),
-				'gfaddons-web' => array(
-					'parent' => $gfsites,
-					'title'  => __( 'Official Add-Ons Info', 'gravity-forms-toolbar' ),
-					'href'   => 'http://www.gravityforms.com/add-ons/',
-					'meta'   => array( 'title' => __( 'Official Add-Ons Info', 'gravity-forms-toolbar' ) )
-				),
-				'gfplugins' => array(
-					'parent' => $gfsites,
-					'title'  => __( 'More free plugins/extensions at WP.org', 'gravity-forms-toolbar' ),
-					'href'   => 'http://wordpress.org/extend/plugins/search.php?q=gravity+forms',
-					'meta'   => array( 'title' => __( 'More free plugins/extensions at WP.org', 'gravity-forms-toolbar' ) )
-				),
-				'gfffnews' => array(
-					'parent' => $gfsites,
-					'title'  => __( 'Gravity Forms News Planet', 'gravity-forms-toolbar' ),
-					'href'   => 'http://friendfeed.com/gravityforms-news',
-					'meta'   => array( 'title' => __( 'Gravity Forms News Planet (official and community news via FriendFeed service)', 'gravity-forms-toolbar' ) )
-				),
-			);
-
-			$menu_items = $menu_items_help;
+			/** Include plugin file with resources links */
+			require_once( GFTB_PLUGIN_DIR . '/lib/gftb-resources.php' );
 
 		}  // end-if help & support items
 
@@ -414,7 +267,7 @@ function ddw_gftb_admin_bar_menu() {
 	 * Display these support links only for users who can view Gravity Forms Settings
 	 * Hook in as children of "Support" entry
 	 *
-	 * @since 1.1
+	 * @since 1.1.0
 	 */
 	if ( current_user_can( 'gravityforms_view_settings' ) || current_user_can( 'gform_full_access' ) ) {
 		/** User profile at Gravity Help */
@@ -516,7 +369,7 @@ function ddw_gftb_admin_bar_menu() {
 		/**
 		 * Dynamically add existing Forms and/or Entries at their sub-levels
 		 *
-		 * @since 1.2
+		 * @since 1.2.0
 		 */
                 if ( ! empty( $forms ) ) {
                         $class_first = 'ddw_gftb-first-form';
@@ -627,7 +480,7 @@ function ddw_gftb_admin_bar_menu() {
 		 * Display last main item in the menu for active extensions/plugins
 		 * ATTENTION: This is where plugins/extensions hook in on the sub-level hierarchy
 		 *
-		 * @since 1.0
+		 * @since 1.0.0
 		 * @version 1.1
 		 */       
                 if ( $options['extensions'] && GFTB_EXTENSIONS_DISPLAY ) {
@@ -643,7 +496,7 @@ function ddw_gftb_admin_bar_menu() {
 		 * Action Hook 'gftb_custom_extension_items'
 		 * allows for hooking other extension-related items in
 		 *
-		 * @since 1.4
+		 * @since 1.4.0
 		 */
 		do_action( 'gftb_custom_extension_items' );
 
@@ -653,14 +506,47 @@ function ddw_gftb_admin_bar_menu() {
 	/**
 	 * Display links to active plugins/extensions settings' pages
 	 *
-	 * @since 1.0
+	 * @since 1.0.0
 	 */
 		/** Include plugin file with plugin support links */
 		require_once( GFTB_PLUGIN_DIR . '/lib/gftb-plugins.php' );
 
 
 	/** Allow menu items to be filtered, but pass in parent menu item IDs */
-	$menu_items = (array) apply_filters( 'ddw_gftb_menu_items', $menu_items, $prefix, $gravitybar, $gfsupport, $gfdocs, $gffaq, $gfsites, $gfsettings, $gfforms, $gfentries, $gfimportexport, $gfaddonsinstalled, $gfaoauthorizenet, $gfaoaweber, $gfaocampaignmonitor, $gfaofreshbooks, $gfaomailchimp, $gfaopaypal, $gfaopaypalpro, $gfaotwilio, $gfaouserreg, $gftpaopideal, $gftpaostripe, $gftpaoshootq, $gftpaoconstantcontact, $gftpaoicontact, $gftpaomadmimi, $gftpaoexacttarget, $extensions, $extpideal, $extgfsolve360, $gfgroup );
+	$menu_items = (array) apply_filters( 'ddw_gftb_menu_items', $menu_items,
+									$prefix,
+									$gravitybar,
+									$gfsupport,
+									$gfdocs,
+									$gffaq,
+									$gfsites,
+									$gfsettings,
+									$gfforms,
+									$gfentries,
+									$gfimportexport,
+									$gfaddonsinstalled,
+										$gfaoauthorizenet,
+										$gfaoaweber,
+										$gfaocampaignmonitor,
+										$gfaofreshbooks,
+										$gfaomailchimp,
+										$gfaopaypal,
+										$gfaopaypalpro,
+										$gfaotwilio,
+										$gfaouserreg,
+										$gftpaopideal,
+										$gftpaostripe,
+										$gftpaoshootq,
+										$gftpaoconstantcontact,
+										$gftpaoicontact,
+										$gftpaomadmimi,
+										$gftpaoexacttarget,
+										$gftpaoinfusionsoft,
+									$extensions,
+									$extpideal,
+									$extgfsolve360,
+									$gfgroup
+	);  // end of array
 
 
 	/** Top level title, unread entries count display/styling, plus update info/check */
@@ -732,7 +618,7 @@ function ddw_gftb_admin_bar_menu() {
 	 * Action Hook 'gftb_custom_main_items'
 	 * allows for hooking other main items in
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 */
 	do_action( 'gftb_custom_main_items' );
 
@@ -742,7 +628,7 @@ function ddw_gftb_admin_bar_menu() {
 	 * Check against WP 3.3+ only function "wp_editor" - if true display group styling
 	 * otherwise display links in WP 3.1/3.2 style
 	 *
-	 * @since 1.3
+	 * @since 1.3.0
 	 */
 	if ( function_exists( 'wp_editor' ) ) {
 
@@ -766,7 +652,7 @@ function ddw_gftb_admin_bar_menu() {
 	 * Action Hook 'gftb_custom_group_items'
 	 * allows for hooking other Gravity Forms Group items in
 	 *
-	 * @since 1.4
+	 * @since 1.4.0
 	 */
 	do_action( 'gftb_custom_group_items' );
 
@@ -778,7 +664,7 @@ add_action( 'admin_head', 'ddw_gftb_admin_style' );
 /**
  * Add the styles for new WordPress Toolbar / Admin Bar entry
  * 
- * @since 1.0
+ * @since 1.0.0
  * @version 1.1
  */
 function ddw_gftb_admin_style() {
@@ -870,7 +756,7 @@ function ddw_gftb_admin_style() {
 /**
  * Gravity Forms version compare for update check
  *
- * @since 1.3
+ * @since 1.3.0
  * @version 1.1
  *
  * @return version string
@@ -892,7 +778,33 @@ function ddw_gftb_update_available() {
 /**
  * Helper functions for custom branding of the plugin
  *
- * @since 1.4
+ * @since 1.4.0
  */
 	/** Include plugin file with special custom stuff */
 	require_once( GFTB_PLUGIN_DIR . '/lib/gftb-branding.php' );
+
+
+/**
+ * Returns current plugin's header data in a flexible way.
+ *
+ * @since 1.5.0
+ *
+ * @uses get_plugins()
+ *
+ * @param $gftb_plugin_value
+ * @param $gftb_plugin_folder
+ * @param $gftb_plugin_file
+ *
+ * @return string Plugin version
+ */
+function ddw_gftb_plugin_get_data( $gftb_plugin_value ) {
+
+	if ( ! function_exists( 'get_plugins' ) )
+		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+	$gftb_plugin_folder = get_plugins( '/' . plugin_basename( dirname( __FILE__ ) ) );
+	$gftb_plugin_file = basename( ( __FILE__ ) );
+
+	return $gftb_plugin_folder[ $gftb_plugin_file ][ $gftb_plugin_value ];
+
+}  // end of function ddw_gftb_plugin_get_data

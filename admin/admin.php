@@ -7,9 +7,9 @@
  * @author     Milan Petrovic - Dev4Press
  * @copyright  Copyright 2012, Milan Petrovic - Dev4Press
  * @license    http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
- * @link       http://twitter.com/#!/milangd
+ * @link       http://twitter.com/milangd
  *
- * @since 1.2
+ * @since 1.2.0
  * @version 1.1
  */
 
@@ -17,7 +17,7 @@ add_action( 'admin_menu', 'ddw_gftb_admin_menu' );
 /**
  * Registrer plugin menu panel.
  *
- * @since 1.2
+ * @since 1.2.0
  * @version 1.2
  */
 function ddw_gftb_admin_menu() {
@@ -43,7 +43,7 @@ add_action( 'admin_init', 'ddw_gftb_admin_init' );
 /**
  * Registrer settings for the plugin.
  *
- * @since 1.2
+ * @since 1.2.0
  */
 function ddw_gftb_admin_init() {
 	register_setting( 'ddw_gftb_options', 'ddw_gftb', 'ddw_gftb_options_validate' );
@@ -53,7 +53,7 @@ function ddw_gftb_admin_init() {
 /**
  * Validation of the options to save.
  *
- * @since 1.2
+ * @since 1.2.0
  * @version 1.2
  *
  * @param array $input raw options data
@@ -94,7 +94,7 @@ function ddw_gftb_options_validate( $input ) {
 /**
  * Include form
  *
- * @since 1.2
+ * @since 1.2.0
  */
 function ddw_gftb_options_page() {
 

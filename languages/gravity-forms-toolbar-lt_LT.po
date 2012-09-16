@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Gravity Forms Toolbar package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-05-20 00:45+0100\n"
+"PO-Revision-Date: 2012-09-16 20:21+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,9 +13,106 @@ msgstr ""
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: \n"
 
+#: lib/gftb-plugins.php:428
+#: lib/gftb-plugins.php:430
+msgid "Infusionsoft Feeds"
+msgstr ""
+
+#: lib/gftb-plugins.php:440
+#: lib/gftb-plugins.php:442
+msgid "Infusionsoft Settings"
+msgstr ""
+
+#: lib/gftb-plugins.php:448
+#: lib/gftb-plugins.php:450
+msgid "Infusionsoft Add-On Settings"
+msgstr ""
+
 #: gravity-forms-toolbar.php:0
-msgid "1.4.1"
-msgstr "1.4.1"
+msgid "1.5.0"
+msgstr "1.5.0"
+
+#: lib/gftb-addons.php:275
+#: lib/gftb-addons.php:277
+msgid "Picatcha Settings"
+msgstr ""
+
+#: lib/gftb-addons.php:337
+#: lib/gftb-addons.php:339
+msgid "Pending Activations"
+msgstr ""
+
+#: lib/gftb-admin.php:112
+msgid "More about the plugin author"
+msgstr ""
+
+#: lib/gftb-admin.php:113
+msgid "Social:"
+msgstr ""
+
+#: lib/gftb-admin.php:127
+msgid "Plugin"
+msgstr ""
+
+#: lib/gftb-admin.php:130
+msgid "Code snippets for customizing &amp; branding"
+msgstr ""
+
+#: lib/gftb-admin.php:162
+msgid "Miscellaneous"
+msgstr ""
+
+#: lib/gftb-admin.php:167
+msgid "Important plugin links:"
+msgstr ""
+
+#: lib/gftb-admin.php:168
+msgid "Plugin website"
+msgstr ""
+
+#: lib/gftb-admin.php:168
+msgctxt "Translators: Plugin support links"
+msgid "Support"
+msgstr ""
+
+#: lib/gftb-admin.php:76
+#: lib/gftb-admin.php:168
+msgid "Translations"
+msgstr ""
+
+#: lib/gftb-plugins.php:538
+#: lib/gftb-plugins.php:540
+#: lib/gftb-plugins.php:546
+#: lib/gftb-plugins.php:548
+msgid "Fat Zebra Add-On"
+msgstr ""
+
+#: lib/gftb-admin.php:138
+msgid "Other, recommended Gravity Forms plugins"
+msgstr ""
+
+#: lib/gftb-plugins.php:488
+#: lib/gftb-plugins.php:490
+#: lib/gftb-plugins.php:496
+#: lib/gftb-plugins.php:498
+msgid "Survey Funnel Add-On"
+msgstr ""
+
+#: lib/gftb-admin.php:142
+msgid "map forms that create posts to a custom post type, also map dropdown select, radio buttons list and checkboxes lists to a custom taxonomy"
+msgstr ""
+
+#: lib/gftb-admin.php:148
+msgid "easily select a CSS \"Ready Class\" for your fields within Gravity Forms"
+msgstr ""
+
+#: lib/gftb-admin.php:154
+msgid "save/view/download a PDF from the front- and back-end, and automate PDF creation on form submission"
+msgstr ""
+
+#: lib/gftb-admin.php:129
+msgid "Suggest new resource items or Add-Ons/ plugins for support"
+msgstr ""
 
 #: admin/tabs/settings.php:51
 msgid "Display notification about number of all unread entries"
@@ -25,35 +122,35 @@ msgstr "Rodyti pranešimus apie neperskaitytų įrašų kiekį"
 msgid "Display notification in menu when plugin update is available"
 msgstr "Rodyti pranešimus meniu laukelyje, kuomet įmanomas papildinio atnaujinimas"
 
-#: gravity-forms-toolbar.php:465
+#: gravity-forms-toolbar.php:320
 msgid "Plugin Settings"
 msgstr "Papildinio Nuostatos"
 
-#: gravity-forms-toolbar.php:467
+#: gravity-forms-toolbar.php:322
 msgctxt "Translators: For the tooltip"
 msgid "Plugin Settings"
 msgstr "Papildinio Sisteminiai nustatymai"
 
-#: gravity-forms-toolbar.php:471
+#: gravity-forms-toolbar.php:326
 msgid "Toolbar Menu"
 msgstr "Įrankių Juostos nuostatos"
 
-#: gravity-forms-toolbar.php:473
+#: gravity-forms-toolbar.php:328
 msgctxt "Translators: For the tooltip"
 msgid "Toolbar Menu"
 msgstr "Gravity Forms nuostatos: Įrankių juostos Nuostatos"
 
-#: gravity-forms-toolbar.php:477
-#: gravity-forms-toolbar.php:479
+#: gravity-forms-toolbar.php:332
+#: gravity-forms-toolbar.php:334
 msgid "Manage Widgets"
 msgstr "Valdyti Valdiklius"
 
-#: gravity-forms-toolbar.php:603
-#: gravity-forms-toolbar.php:681
+#: gravity-forms-toolbar.php:458
+#: gravity-forms-toolbar.php:577
 msgid "Update Is Available"
 msgstr "Yra atnaujinimas"
 
-#: gravity-forms-toolbar.php:603
+#: gravity-forms-toolbar.php:458
 msgid "Check for Update"
 msgstr "Patikrinti ar yra Atnaujinimų"
 
@@ -87,50 +184,50 @@ msgstr "Constant Contact Nuostatos"
 msgid "Constant Contact Add-On Settings"
 msgstr "Constant Contact Papildinio Nuostatos "
 
-#: gravity-forms-toolbar.php:661
+#: gravity-forms-toolbar.php:557
 msgctxt "Translators: Main item - for the tooltip"
 msgid "Gravity Forms"
 msgstr "Gravity Forms"
 
-#: lib/gftb-plugins.php:428
+#: lib/gftb-plugins.php:465
 msgid "Gravity to Solve360"
 msgstr ""
 
-#: lib/gftb-plugins.php:434
-#: lib/gftb-plugins.php:436
+#: lib/gftb-plugins.php:471
+#: lib/gftb-plugins.php:473
 msgid "Options"
 msgstr ""
 
-#: lib/gftb-plugins.php:451
-#: lib/gftb-plugins.php:453
-#: lib/gftb-plugins.php:459
-#: lib/gftb-plugins.php:461
+#: lib/gftb-plugins.php:513
+#: lib/gftb-plugins.php:515
+#: lib/gftb-plugins.php:521
+#: lib/gftb-plugins.php:523
 msgid "HubSpot Add-On"
 msgstr "HubSpot Papildiniai"
 
-#: lib/gftb-plugins.php:476
-#: lib/gftb-plugins.php:478
-#: lib/gftb-plugins.php:484
-#: lib/gftb-plugins.php:486
+#: lib/gftb-plugins.php:563
+#: lib/gftb-plugins.php:565
+#: lib/gftb-plugins.php:571
+#: lib/gftb-plugins.php:573
 msgid "CapsuleCRM Add-On"
 msgstr "CapsuleCRM Papildiniai"
 
-#: lib/gftb-plugins.php:525
-#: lib/gftb-plugins.php:527
+#: lib/gftb-plugins.php:612
+#: lib/gftb-plugins.php:614
 msgid "PixCaptcha Image Captcha"
 msgstr ""
 
-#: lib/gftb-plugins.php:430
+#: lib/gftb-plugins.php:467
 msgctxt "Translators: For the tooltip"
 msgid "Gravity to Solve360 Export"
 msgstr ""
 
-#: lib/gftb-addons.php:220
+#: lib/gftb-addons.php:246
 msgid "PayPal Pro Feeds"
 msgstr "PayPal Pro Padavimai"
 
-#: lib/gftb-addons.php:232
-#: lib/gftb-addons.php:234
+#: lib/gftb-addons.php:258
+#: lib/gftb-addons.php:260
 msgid "PayPal Pro Settings"
 msgstr "PayPal Pro Nuostatos"
 
@@ -138,59 +235,59 @@ msgstr "PayPal Pro Nuostatos"
 msgid "Active official Add-Ons"
 msgstr ""
 
-#: lib/gftb-admin.php:28
+#: lib/gftb-admin.php:49
 msgid "Go to the settings page"
 msgstr ""
 
-#: lib/gftb-plugins.php:501
-#: lib/gftb-plugins.php:503
-#: lib/gftb-plugins.php:509
-#: lib/gftb-plugins.php:511
+#: lib/gftb-plugins.php:588
+#: lib/gftb-plugins.php:590
+#: lib/gftb-plugins.php:596
+#: lib/gftb-plugins.php:598
 msgid "eWAY Add-On"
 msgstr "eWAY Papildiniai"
 
-#: lib/gftb-plugins.php:541
+#: lib/gftb-plugins.php:628
 msgid "SMS Notifications (Mediaburst)"
 msgstr ""
 
-#: lib/gftb-plugins.php:543
+#: lib/gftb-plugins.php:630
 msgctxt "Translators: For the tooltip"
 msgid "SMS Notifications by Mediaburst"
 msgstr ""
 
-#: gravity-forms-toolbar.php:306
+#: lib/gftb-resources.php:71
 msgid "Gravity Forms + Events Calendar Submissions"
 msgstr ""
 
-#: gravity-forms-toolbar.php:308
+#: lib/gftb-resources.php:73
 msgctxt "Translators: For the tooltip"
 msgid "Gravity Forms + Events Calendar Submissions (creativeslice.com)"
 msgstr ""
 
-#: gravity-forms-toolbar.php:312
+#: lib/gftb-resources.php:77
 msgid "Tutorials (Gravity Wiz)"
 msgstr ""
 
-#: gravity-forms-toolbar.php:314
+#: lib/gftb-resources.php:79
 msgctxt "Translators: For the tooltip"
 msgid "Tutorials (Gravity Wiz)"
 msgstr ""
 
-#: gravity-forms-toolbar.php:318
+#: lib/gftb-resources.php:83
 msgid "Snippets (Gravity Wiz)"
 msgstr ""
 
-#: gravity-forms-toolbar.php:320
+#: lib/gftb-resources.php:85
 msgctxt "Translators: For the tooltip"
 msgid "Snippets (Gravity Wiz)"
 msgstr ""
 
-#: gravity-forms-toolbar.php:326
+#: lib/gftb-resources.php:91
 msgctxt "Translators: For the tooltip"
 msgid "Dev Tutorials &amp; Code Snippets (wpsmith.net)"
 msgstr ""
 
-#: gravity-forms-toolbar.php:324
+#: lib/gftb-resources.php:89
 msgid "Dev Tutorials &amp; Code Snippets"
 msgstr ""
 
@@ -201,22 +298,22 @@ msgstr ""
 msgid "iDEAL Feeds"
 msgstr "iDEAL Padavimai"
 
-#: lib/gftb-addons.php:96
-#: lib/gftb-addons.php:98
-#: lib/gftb-addons.php:122
-#: lib/gftb-addons.php:124
-#: lib/gftb-addons.php:148
-#: lib/gftb-addons.php:150
-#: lib/gftb-addons.php:174
-#: lib/gftb-addons.php:176
-#: lib/gftb-addons.php:200
-#: lib/gftb-addons.php:202
-#: lib/gftb-addons.php:226
-#: lib/gftb-addons.php:228
+#: lib/gftb-addons.php:107
+#: lib/gftb-addons.php:109
+#: lib/gftb-addons.php:136
+#: lib/gftb-addons.php:138
+#: lib/gftb-addons.php:165
+#: lib/gftb-addons.php:167
+#: lib/gftb-addons.php:194
+#: lib/gftb-addons.php:196
+#: lib/gftb-addons.php:223
+#: lib/gftb-addons.php:225
 #: lib/gftb-addons.php:252
 #: lib/gftb-addons.php:254
-#: lib/gftb-addons.php:278
-#: lib/gftb-addons.php:280
+#: lib/gftb-addons.php:298
+#: lib/gftb-addons.php:300
+#: lib/gftb-addons.php:328
+#: lib/gftb-addons.php:330
 #: lib/gftb-plugins.php:35
 #: lib/gftb-plugins.php:37
 #: lib/gftb-plugins.php:64
@@ -233,6 +330,8 @@ msgstr "iDEAL Padavimai"
 #: lib/gftb-plugins.php:361
 #: lib/gftb-plugins.php:397
 #: lib/gftb-plugins.php:399
+#: lib/gftb-plugins.php:434
+#: lib/gftb-plugins.php:436
 msgid "Add new Feed"
 msgstr "Pridėti naują Padavimą"
 
@@ -254,7 +353,7 @@ msgid "Payments"
 msgstr "Mokėjimai"
 
 #: admin/form.php:18
-#: lib/gftb-admin.php:28
+#: lib/gftb-admin.php:49
 #: lib/gftb-plugins.php:82
 #: lib/gftb-plugins.php:84
 msgid "Settings"
@@ -270,8 +369,8 @@ msgstr "Puslapių Generatorius"
 msgid "Variants"
 msgstr "Variantai"
 
-#: gravity-forms-toolbar.php:282
-#: gravity-forms-toolbar.php:284
+#: lib/gftb-resources.php:47
+#: lib/gftb-resources.php:49
 msgid "Documentation"
 msgstr "Dokumentacija"
 
@@ -282,11 +381,12 @@ msgstr "Dokumentacija"
 msgid "Gravity Forms Directory & Addons"
 msgstr "Gravity Forms Žodynas ir Papildiniai"
 
-#: admin/admin.php:37
-#: admin/admin.php:38
-#: admin/admin_14-test-ms.php:49
+#: admin/admin.php:33
+#: admin/admin.php:34
 #: admin/form.php:23
 #: gravity-forms-toolbar.php:0
+#: lib/gftb-admin.php:106
+#: lib/gftb-admin.php:127
 msgid "Gravity Forms Toolbar"
 msgstr "Gravity Forms Įrankių juosta"
 
@@ -302,139 +402,137 @@ msgstr "Šis papildinys prideda naudingus Gravity Forms administravimo resursus 
 msgid "http://deckerweb.de/"
 msgstr "http://deckerweb.de/"
 
-#: gravity-forms-toolbar.php:332
-#: gravity-forms-toolbar.php:334
-#: lib/gftb-admin.php:53
+#: lib/gftb-admin.php:74
+#: lib/gftb-admin.php:168
+#: lib/gftb-resources.php:97
+#: lib/gftb-resources.php:99
 msgid "FAQ"
 msgstr "Dažniausiai Užduodami Klausimai"
 
-#: lib/gftb-admin.php:54
+#: lib/gftb-admin.php:75
 msgid "Support"
 msgstr "Pagalba"
 
-#: lib/gftb-admin.php:55
-msgid "http://genesisthemes.de/en/donate/"
-msgstr "http://genesisthemes.de/en/donate/"
-
-#: lib/gftb-admin.php:55
+#: lib/gftb-admin.php:77
+#: lib/gftb-admin.php:168
 msgid "Donate"
 msgstr "Paaukoti"
 
-#: gravity-forms-toolbar.php:261
-#: gravity-forms-toolbar.php:263
+#: lib/gftb-resources.php:26
+#: lib/gftb-resources.php:28
 msgid "Support Forums"
 msgstr "Pagalbos Forumas"
 
-#: gravity-forms-toolbar.php:267
-#: gravity-forms-toolbar.php:269
+#: lib/gftb-resources.php:32
+#: lib/gftb-resources.php:34
 msgid "Advanced Forum Search"
 msgstr "Išplėstinė Forumo Paieška"
 
-#: gravity-forms-toolbar.php:428
-#: gravity-forms-toolbar.php:430
+#: gravity-forms-toolbar.php:283
+#: gravity-forms-toolbar.php:285
 msgid "Priority Support (Dev License Only)"
 msgstr "Prioritetinė Pagalba (Tik Dev Licencija)"
 
-#: gravity-forms-toolbar.php:288
-#: gravity-forms-toolbar.php:290
+#: lib/gftb-resources.php:53
+#: lib/gftb-resources.php:55
 msgid "Visual CSS Guide"
 msgstr "Vizualinis CSS Gidas"
 
-#: gravity-forms-toolbar.php:338
-#: gravity-forms-toolbar.php:340
+#: lib/gftb-resources.php:103
+#: lib/gftb-resources.php:105
 msgid "Installation"
 msgstr "Įdiegimas"
 
-#: gravity-forms-toolbar.php:344
-#: gravity-forms-toolbar.php:346
+#: lib/gftb-resources.php:109
+#: lib/gftb-resources.php:111
 msgid "Using Gravity Forms"
 msgstr "Gravity Forms naudojimas"
 
-#: gravity-forms-toolbar.php:350
-#: gravity-forms-toolbar.php:352
+#: lib/gftb-resources.php:115
+#: lib/gftb-resources.php:117
 msgid "Formatting &amp; Styling"
 msgstr "Formatavimas ir Stilių kūrimas"
 
 #: admin/tabs/settings.php:45
 #: admin/tabs/settings.php:48
-#: gravity-forms-toolbar.php:356
-#: gravity-forms-toolbar.php:358
+#: lib/gftb-resources.php:121
+#: lib/gftb-resources.php:123
 msgid "Notifications"
 msgstr "Pranešimai"
 
-#: gravity-forms-toolbar.php:362
-#: gravity-forms-toolbar.php:364
+#: lib/gftb-resources.php:127
+#: lib/gftb-resources.php:129
 msgid "General Questions"
 msgstr "Bendrieji Klausimai"
 
-#: gravity-forms-toolbar.php:370
-#: gravity-forms-toolbar.php:372
+#: lib/gftb-resources.php:135
+#: lib/gftb-resources.php:137
 msgid "Gravity Forms HQ"
 msgstr "Gravity Forms HQ"
 
-#: gravity-forms-toolbar.php:376
-#: gravity-forms-toolbar.php:378
+#: lib/gftb-resources.php:141
+#: lib/gftb-resources.php:143
 msgid "Feature List & Demonstration"
 msgstr "Funkcijų Sąrašas ir Demonstracija"
 
-#: gravity-forms-toolbar.php:382
-#: gravity-forms-toolbar.php:384
+#: lib/gftb-resources.php:147
+#: lib/gftb-resources.php:149
 msgid "Official Blog"
 msgstr "Oficialus Tinklaraštis"
 
-#: gravity-forms-toolbar.php:388
-#: gravity-forms-toolbar.php:390
+#: lib/gftb-resources.php:153
+#: lib/gftb-resources.php:155
 msgid "Official Add-Ons Info"
 msgstr "Oficiali Papildinių Informacija"
 
-#: gravity-forms-toolbar.php:394
-#: gravity-forms-toolbar.php:396
+#: lib/gftb-resources.php:159
+#: lib/gftb-resources.php:161
 msgid "More free plugins/extensions at WP.org"
 msgstr "Daugiau nemokamų papildinių/plėtinių rasite WP.org"
 
-#: gravity-forms-toolbar.php:439
+#: gravity-forms-toolbar.php:294
 msgid "German language files"
 msgstr "Vokiečių kalbos rinkmenos"
 
-#: gravity-forms-toolbar.php:450
-#: gravity-forms-toolbar.php:452
+#: gravity-forms-toolbar.php:305
+#: gravity-forms-toolbar.php:307
 msgid "Dutch language plugin"
 msgstr "Papildinys olandų kalba"
 
-#: gravity-forms-toolbar.php:498
-#: gravity-forms-toolbar.php:500
+#: gravity-forms-toolbar.php:353
+#: gravity-forms-toolbar.php:355
 msgid "Edit Forms"
 msgstr "Redaguoti Formas"
 
-#: gravity-forms-toolbar.php:508
-#: gravity-forms-toolbar.php:510
-#: lib/gftb-addons.php:70
-#: lib/gftb-addons.php:72
+#: gravity-forms-toolbar.php:363
+#: gravity-forms-toolbar.php:365
+#: lib/gftb-addons.php:78
+#: lib/gftb-addons.php:80
 msgid "Add new Form"
 msgstr "Pridėti naują Formą"
 
-#: gravity-forms-toolbar.php:555
-#: gravity-forms-toolbar.php:557
+#: gravity-forms-toolbar.php:410
+#: gravity-forms-toolbar.php:412
 msgid "View Entries"
 msgstr "Peržiūrėti Įrašus"
 
-#: gravity-forms-toolbar.php:566
-#: gravity-forms-toolbar.php:568
+#: gravity-forms-toolbar.php:421
+#: gravity-forms-toolbar.php:423
 msgid "Import & Export"
 msgstr "Importavimas ir Eksportavimas"
 
-#: gravity-forms-toolbar.php:572
-#: gravity-forms-toolbar.php:574
+#: gravity-forms-toolbar.php:427
+#: gravity-forms-toolbar.php:429
 msgid "Export Entries"
 msgstr "Eksportuoti Įrašus"
 
-#: gravity-forms-toolbar.php:578
-#: gravity-forms-toolbar.php:580
+#: gravity-forms-toolbar.php:433
+#: gravity-forms-toolbar.php:435
 msgid "Export Forms"
 msgstr "Eksportuoti Formas"
 
-#: gravity-forms-toolbar.php:584
-#: gravity-forms-toolbar.php:586
+#: gravity-forms-toolbar.php:439
+#: gravity-forms-toolbar.php:441
 msgid "Import Forms"
 msgstr "Importuoti Formas"
 
@@ -443,94 +541,94 @@ msgstr "Importuoti Formas"
 msgid "Installed Add-Ons"
 msgstr "Įdiegti Papildiniai"
 
-#: lib/gftb-addons.php:90
-#: lib/gftb-addons.php:92
+#: lib/gftb-addons.php:101
+#: lib/gftb-addons.php:103
 msgid "AWeber Feeds"
 msgstr "AWeber Padavimai"
 
-#: lib/gftb-addons.php:102
-#: lib/gftb-addons.php:104
+#: lib/gftb-addons.php:113
+#: lib/gftb-addons.php:115
 msgid "AWeber Settings"
 msgstr "AWeber Nuostatos"
 
-#: lib/gftb-addons.php:116
-#: lib/gftb-addons.php:118
+#: lib/gftb-addons.php:130
+#: lib/gftb-addons.php:132
 msgid "Campaign Monitor Feeds"
 msgstr "Campaign Monitor Padavimai"
 
-#: lib/gftb-addons.php:128
-#: lib/gftb-addons.php:130
+#: lib/gftb-addons.php:142
+#: lib/gftb-addons.php:144
 msgid "Campaign Monitor Settings"
 msgstr "Campaign Monitor Nuostatos"
 
-#: lib/gftb-addons.php:142
-#: lib/gftb-addons.php:144
+#: lib/gftb-addons.php:159
+#: lib/gftb-addons.php:161
 msgid "FreshBooks Feeds"
 msgstr "FreshBooks Padavimai"
 
-#: lib/gftb-addons.php:154
-#: lib/gftb-addons.php:156
+#: lib/gftb-addons.php:171
+#: lib/gftb-addons.php:173
 msgid "FreshBooks Settings"
 msgstr "FreshBooks Nuostatos"
 
-#: lib/gftb-addons.php:168
-#: lib/gftb-addons.php:170
+#: lib/gftb-addons.php:188
+#: lib/gftb-addons.php:190
 msgid "MailChimp Feeds"
 msgstr "MailChimp Padavimai"
 
-#: lib/gftb-addons.php:180
-#: lib/gftb-addons.php:182
+#: lib/gftb-addons.php:200
+#: lib/gftb-addons.php:202
 msgid "MailChimp Settings"
 msgstr "MailChimp Nuostatos"
 
-#: lib/gftb-addons.php:194
-#: lib/gftb-addons.php:196
-#: lib/gftb-addons.php:222
+#: lib/gftb-addons.php:217
+#: lib/gftb-addons.php:219
+#: lib/gftb-addons.php:248
 msgid "PayPal Feeds"
 msgstr "PayPal Padavimai"
 
-#: lib/gftb-addons.php:206
-#: lib/gftb-addons.php:208
+#: lib/gftb-addons.php:229
+#: lib/gftb-addons.php:231
 msgid "PayPal Settings"
 msgstr "PayPal Nuostatos"
 
-#: lib/gftb-addons.php:246
-#: lib/gftb-addons.php:248
+#: lib/gftb-addons.php:292
+#: lib/gftb-addons.php:294
 msgid "Twilio Feeds"
 msgstr "Twilio Padavimai"
 
-#: lib/gftb-addons.php:258
-#: lib/gftb-addons.php:260
+#: lib/gftb-addons.php:304
+#: lib/gftb-addons.php:306
 msgid "Twilio Settings"
 msgstr "Twilio Nuostatos"
 
-#: lib/gftb-addons.php:272
-#: lib/gftb-addons.php:274
+#: lib/gftb-addons.php:322
+#: lib/gftb-addons.php:324
 msgid "User Registration Feeds"
 msgstr "Vartotojų Registracijos Padavimai"
 
-#: lib/gftb-addons.php:284
-#: lib/gftb-addons.php:286
+#: lib/gftb-addons.php:345
+#: lib/gftb-addons.php:347
 msgid "User Registration Settings"
 msgstr "Vartotojų Registracijos Nuostatos"
 
-#: lib/gftb-plugins.php:557
-#: lib/gftb-plugins.php:559
+#: lib/gftb-plugins.php:644
+#: lib/gftb-plugins.php:646
 msgid "Purchase more Add-Ons"
 msgstr "Pirkti daugiau Papildinių"
 
-#: gravity-forms-toolbar.php:618
-#: gravity-forms-toolbar.php:620
+#: gravity-forms-toolbar.php:473
+#: gravity-forms-toolbar.php:475
 msgid "Help &amp; Links"
 msgstr "Pagalba; Nuorodos"
 
 #: admin/tabs/settings.php:39
-#: gravity-forms-toolbar.php:634
-#: gravity-forms-toolbar.php:636
+#: gravity-forms-toolbar.php:489
+#: gravity-forms-toolbar.php:491
 msgid "Active Extensions"
 msgstr "Aktyvūs Plėtiniai"
 
-#: gravity-forms-toolbar.php:658
+#: gravity-forms-toolbar.php:554
 msgid "Gravity Forms"
 msgstr "Gravity Forms"
 
@@ -539,8 +637,8 @@ msgstr "Gravity Forms"
 msgid "Pronamic iDEAL Documentation"
 msgstr "Pronamic iDEAL Dokumentacija"
 
-#: lib/gftb-addons.php:50
-#: lib/gftb-addons.php:52
+#: lib/gftb-addons.php:55
+#: lib/gftb-addons.php:57
 msgid "Currently none"
 msgstr "Šiuo metu nieko"
 
@@ -616,23 +714,23 @@ msgstr "ExactTarget Nuostatos"
 msgid "ExactTarget Add-On Settings"
 msgstr "ExactTarget Papildinio Nuostatos"
 
-#: gravity-forms-toolbar.php:294
-#: gravity-forms-toolbar.php:296
+#: lib/gftb-resources.php:59
+#: lib/gftb-resources.php:61
 msgid "CSS: Targeting Specific Elements"
 msgstr "CSS: Nusitaikoma į Specifiniai Elementai"
 
-#: gravity-forms-toolbar.php:300
-#: gravity-forms-toolbar.php:302
+#: lib/gftb-resources.php:65
+#: lib/gftb-resources.php:67
 msgid "CSS Plugin: CSS Ready Class Selector"
 msgstr "CSS Papildinys: CSS Paruoštų Klasių Parinkėjas"
 
-#: gravity-forms-toolbar.php:421
-#: gravity-forms-toolbar.php:423
+#: gravity-forms-toolbar.php:276
+#: gravity-forms-toolbar.php:278
 msgid "Your User Profile at Gravity Help"
 msgstr "Jūsų Gravity Help Vartotojo Paskyra"
 
-#: gravity-forms-toolbar.php:486
-#: gravity-forms-toolbar.php:488
+#: gravity-forms-toolbar.php:341
+#: gravity-forms-toolbar.php:343
 msgid "Adjust User Roles &amp; Capabilities (Plugin: Members)"
 msgstr "Pritaikyti Vartotojų Lygius; Galimybės (Papildinys: Members)"
 
@@ -666,29 +764,31 @@ msgstr "Įrašyti Pakeitimus"
 msgid "David Decker - DECKERWEB / Milan Petrovic - Dev4Press"
 msgstr "David Decker - DECKERWEB.de / Milan Petrovic - Dev4Press.com"
 
-#: gravity-forms-toolbar.php:675
+#: gravity-forms-toolbar.php:571
 msgid "Unread Entries"
 msgstr "Nerperskaityti Įrašai"
 
-#: gravity-forms-toolbar.php:441
+#: gravity-forms-toolbar.php:296
 msgid "German language files for Gravity Forms and Add-Ons"
 msgstr "Vokiečių kalbos Gravity Forms ir Papildinių rinkmenos"
 
-#: gravity-forms-toolbar.php:400
+#: lib/gftb-admin.php:163
+#: lib/gftb-resources.php:165
 msgid "Gravity Forms News Planet"
 msgstr "Gravity Forms News Planet"
 
-#: gravity-forms-toolbar.php:402
+#: lib/gftb-admin.php:163
+#: lib/gftb-resources.php:167
 msgid "Gravity Forms News Planet (official and community news via FriendFeed service)"
 msgstr "Gravity Forms News Planet (oficialiosios ir bendruomenės žinios per FriendFeed paslaugą)"
 
-#: lib/gftb-addons.php:64
-#: lib/gftb-addons.php:66
+#: lib/gftb-addons.php:72
+#: lib/gftb-addons.php:74
 msgid "Authorize.Net Forms"
 msgstr "Authorize.Net Formos"
 
-#: lib/gftb-addons.php:76
-#: lib/gftb-addons.php:78
+#: lib/gftb-addons.php:84
+#: lib/gftb-addons.php:86
 msgid "Authorize.Net Settings"
 msgstr "Authorize.Net Nuostatos"
 
