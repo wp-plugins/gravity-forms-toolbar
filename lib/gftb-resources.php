@@ -11,7 +11,6 @@
  * @link       http://twitter.com/deckerweb
  *
  * @since 1.0.0
- * @version 1.1
  */
 
 /**

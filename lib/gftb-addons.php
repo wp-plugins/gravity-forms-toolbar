@@ -11,7 +11,6 @@
  * @link       http://twitter.com/deckerweb
  *
  * @since 1.0.0
- * @version 1.1
  */
 
 /** Official Add-Ons ('dummy' main entry for all capabalities!) */
@@ -23,31 +22,32 @@ $menu_items['gfaddonsinstalled'] = array(
 );
 
 	/** Display message if no Add-Ons are installed */
-	if ( ! class_exists( 'GFAuthorizeNet' ) &&
-		! class_exists( 'GFAWeber' ) &&
-		! class_exists( 'GFCampaignMonitor' ) &&
-		! class_exists( 'GFFreshBooks' ) &&
-		! class_exists( 'GFMailChimp' ) &&
-		! class_exists( 'GFPayPal' ) &&
-		! class_exists( 'GFPayPalPro' ) &&
-		! class_exists( 'GFPicatcha' ) &&
-		! class_exists( 'GFTwilio' ) &&
-		! class_exists( 'GFUser' ) &&
-		! class_exists( 'Pronamic_IDeal_IDeal' ) &&
-		! class_exists( 'GFStripe' ) &&
-		! class_exists( 'GFDirectory' ) &&
-		! class_exists( 'GFConstantContact' ) &&
-		! class_exists( 'GFSalesforce' ) &&
-		! class_exists( 'GFShootQ' ) &&
-		! class_exists( 'GFiContact' ) &&
-		! class_exists( 'GFMadMimi' ) &&
-		! class_exists( 'GFExactTarget' ) &&
-		! class_exists( 'GFHubspot' ) &&
-		! class_exists( 'GFCapsuleCRM' ) &&
-		! defined( 'GFEWAY_PLUGIN_ROOT' ) &&
-		! defined( 'GRAVITYFORMS_FATZEBRA_PATH' ) &&
-		! class_exists( 'Gravity_Forms_Survey_Funnel' ) &&
-		! class_exists( 'GFInfusionsoft' )
+	if ( ! class_exists( 'GFAuthorizeNet' )
+		&& ! class_exists( 'GFAWeber' )
+		&& ! class_exists( 'GFCampaignMonitor' )
+		&& ! class_exists( 'GFFreshBooks' )
+		&& ! class_exists( 'GFMailChimp' )
+		&& ! class_exists( 'GFPayPal' )
+		&& ! class_exists( 'GFPayPalPro' )
+		&& ! class_exists( 'GFPicatcha' )
+		&& ! class_exists( 'GFTwilio' )
+		&& ! class_exists( 'GFUser' )
+		&& ! class_exists( 'Pronamic_IDeal_IDeal' )
+		&& ! class_exists( 'GFStripe' )
+		&& ! class_exists( 'GFDirectory' )
+		&& ! class_exists( 'GFConstantContact' )
+		&& ! class_exists( 'GFSalesforce' )
+		&& ! class_exists( 'GFShootQ' )
+		&& ! class_exists( 'GFiContact' )
+		&& ! class_exists( 'GFMadMimi' )
+		&& ! class_exists( 'GFExactTarget' )
+		&& ! class_exists( 'GFHubspot' )
+		&& ! class_exists( 'GFCapsuleCRM' )
+		&& ! defined( 'GFEWAY_PLUGIN_ROOT' )
+		&& ! defined( 'GRAVITYFORMS_FATZEBRA_PATH' )
+		&& ! class_exists( 'Gravity_Forms_Survey_Funnel' )
+		&& ! class_exists( 'GFInfusionsoft' )
+		&& ! class_exists( 'GFYMLP' )
 	) {
 
 		$menu_items['gfaonone'] = array(
@@ -313,7 +313,6 @@ $menu_items['gfaddonsinstalled'] = array(
 	 * Add-On: User Registration
 	 *
 	 * @since 1.0.0
-	 * @version 1.1
 	 */
 	if ( class_exists( 'GFUser' ) && current_user_can( 'gravityforms_user_registration' ) ) {
 

@@ -10,7 +10,6 @@
  * @link       http://twitter.com/milangd
  *
  * @since 1.2.0
- * @version 1.1
  */
 
 add_action( 'admin_menu', 'ddw_gftb_admin_menu' );
@@ -18,7 +17,6 @@ add_action( 'admin_menu', 'ddw_gftb_admin_menu' );
  * Registrer plugin menu panel.
  *
  * @since 1.2.0
- * @version 1.2
  */
 function ddw_gftb_admin_menu() {
 
@@ -54,14 +52,22 @@ function ddw_gftb_admin_init() {
  * Validation of the options to save.
  *
  * @since 1.2.0
- * @version 1.2
  *
  * @param array $input raw options data
+ *
  * @return array valid options data
  */
 function ddw_gftb_options_validate( $input ) {
 
 	$default = ddw_gftb_default_options();
+
+	if ( ! isset( $input['toolbar_admin'] ) ) {
+		$default['toolbar_admin'] = false;
+	}
+
+	if ( ! isset( $input['toolbar_frontend'] ) ) {
+		$default['toolbar_frontend'] = false;
+	}
 
 	if ( ! isset( $input['help_and_support'] ) ) {
 		$default['help_and_support'] = false;

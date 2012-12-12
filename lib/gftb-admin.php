@@ -11,7 +11,6 @@
  * @link       http://twitter.com/deckerweb
  *
  * @since 1.0.0
- * @version 1.2
  */
 
 /**
@@ -42,14 +41,18 @@ if ( get_locale() == 'de_DE' || get_locale() == 'de_AT' || get_locale() == 'de_C
  *
  * @param  $gftb_links
  * @param  $gftb_settings_link
+ *
  * @return strings settings link
  */
 function ddw_gftb_settings_page_link( $gftb_links ) {
 
+	/** Plugin's settings page link */
 	$gftb_settings_link = sprintf( '<a href="%s" title="%s">%s</a>' , admin_url( 'options-general.php?page=ddw_gftb_options_page' ) , __( 'Go to the settings page', 'gravity-forms-toolbar' ) , __( 'Settings', 'gravity-forms-toolbar' ) );
-	
+
+	/** Set the order of the links */
 	array_unshift( $gftb_links, $gftb_settings_link );
 
+	/** Display plugin settings links */
 	return $gftb_links;
 
 }  // end of function ddw_gftb_settings_page_link
@@ -63,20 +66,29 @@ add_filter( 'plugin_row_meta', 'ddw_gftb_plugin_links', 10, 2 );
  *
  * @param  $gftb_links
  * @param  $gftb_file
+ *
  * @return strings plugin links
  */
 function ddw_gftb_plugin_links( $gftb_links, $gftb_file ) {
 
-	if ( ! current_user_can( 'install_plugins' ) )
+	/** Capability check */
+	if ( ! current_user_can( 'install_plugins' ) ) {
+
 		return $gftb_links;
 
+	}  // end-if cap check
+
+	/** List additional links only for this plugin */
 	if ( $gftb_file == GFTB_PLUGIN_BASEDIR . '/gravity-forms-toolbar.php' ) {
+
 		$gftb_links[] = '<a href="' . esc_url_raw( GFTB_URL_WPORG_FAQ ) . '" target="_new" title="' . __( 'FAQ', 'gravity-forms-toolbar' ) . '">' . __( 'FAQ', 'gravity-forms-toolbar' ) . '</a>';
 		$gftb_links[] = '<a href="' . esc_url_raw( GFTB_URL_WPORG_FORUM ) . '" target="_new" title="' . __( 'Support', 'gravity-forms-toolbar' ) . '">' . __( 'Support', 'gravity-forms-toolbar' ) . '</a>';
 		$gftb_links[] = '<a href="' . esc_url_raw( GFTB_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'gravity-forms-toolbar' ) . '">' . __( 'Translations', 'gravity-forms-toolbar' ) . '</a>';
-		$gftb_links[] = '<a href="' . esc_url_raw( GFTB_URL_DONATE ) . '" target="_new" title="' . __( 'Donate', 'gravity-forms-toolbar' ) . '">' . __( 'Donate', 'gravity-forms-toolbar' ) . '</a>';
-	}
+		$gftb_links[] = '<a href="' . esc_url_raw( GFTB_URL_DONATE ) . '" target="_new" title="' . __( 'Donate', 'gravity-forms-toolbar' ) . '"><strong>' . __( 'Donate', 'gravity-forms-toolbar' ) . '</strong></a>';
 
+	}  // end-if plugin links
+
+	/** Output the links */
 	return $gftb_links;
 
 }  // end of function ddw_gftb_plugin_links
@@ -97,8 +109,12 @@ function ddw_gftb_gravityforms_help_tab() {
 	$gftb_gravityforms_screen = get_current_screen();
 
 	/** Display help tabs only for WordPress 3.3 or higher */
-	if ( ! class_exists( 'WP_Screen' ) || ! $gftb_gravityforms_screen || ! GFTB_DISPLAY )
+	if ( ! class_exists( 'WP_Screen' )
+		|| ! $gftb_gravityforms_screen
+		|| ! GFTB_DISPLAY
+	) {
 		return;
+	}
 
 	/** Add the help tab */
 	$gftb_gravityforms_screen->add_help_tab( array(
@@ -165,7 +181,7 @@ function ddw_gftb_gravityforms_help_tab_content() {
 
 	echo '</ul>' .
 		'<p><strong>' . __( 'Important plugin links:', 'gravity-forms-toolbar' ) . '</strong>' . 
-		'<br /><a href="' . esc_url_raw( GFTB_URL_PLUGIN ) . '" target="_new" title="' . __( 'Plugin website', 'gravity-forms-toolbar' ) . '">' . __( 'Plugin website', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_WPORG_FAQ ) . '" target="_new" title="' . __( 'FAQ', 'gravity-forms-toolbar' ) . '">' . __( 'FAQ', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_WPORG_FORUM ) . '" target="_new" title="' . _x( 'Support', 'Translators: Plugin support links', 'gravity-forms-toolbar' ) . '">' . _x( 'Support', 'Translators: Plugin support links', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'gravity-forms-toolbar' ) . '">' . __( 'Translations', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_DONATE ) . '" target="_new" title="' . __( 'Donate', 'gravity-forms-toolbar' ) . '">' . __( 'Donate', 'gravity-forms-toolbar' ) . '</a></p>' .
+		'<br /><a href="' . esc_url_raw( GFTB_URL_PLUGIN ) . '" target="_new" title="' . __( 'Plugin website', 'gravity-forms-toolbar' ) . '">' . __( 'Plugin website', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_WPORG_FAQ ) . '" target="_new" title="' . __( 'FAQ', 'gravity-forms-toolbar' ) . '">' . __( 'FAQ', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_WPORG_FORUM ) . '" target="_new" title="' . _x( 'Support', 'Translators: Plugin support links', 'gravity-forms-toolbar' ) . '">' . _x( 'Support', 'Translators: Plugin support links', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_TRANSLATE ) . '" target="_new" title="' . __( 'Translations', 'gravity-forms-toolbar' ) . '">' . __( 'Translations', 'gravity-forms-toolbar' ) . '</a> | <a href="' . esc_url_raw( GFTB_URL_DONATE ) . '" target="_new" title="' . __( 'Donate', 'gravity-forms-toolbar' ) . '"><strong>' . __( 'Donate', 'gravity-forms-toolbar' ) . '</strong></a></p>' .
 		'<p><a href="http://www.opensource.org/licenses/gpl-license.php" target="_new" title="' . esc_attr( GFTB_PLUGIN_LICENSE ). '">' . esc_attr( GFTB_PLUGIN_LICENSE ). '</a> &copy; ' . date( 'Y' ) . ' <a href="' . esc_url_raw( ddw_gftb_plugin_get_data( 'AuthorURI' ) ) . '" target="_new" title="' . esc_attr__( ddw_gftb_plugin_get_data( 'Author' ) ) . '">' . esc_attr__( ddw_gftb_plugin_get_data( 'Author' ) ) . '</a></p>';
 
 }  // end of function ddw_gftb_gravityforms_help_tab_content

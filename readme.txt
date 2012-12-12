@@ -2,9 +2,9 @@
 Contributors: daveshine, deckerweb, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, ddwtoolbar, dev4press, gdragon
-Requires at least: 3.1
-Tested up to: 3.4.2
-Stable tag: 1.5.0
+Requires at least: 3.3
+Tested up to: 3.5
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -56,6 +56,7 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * Plugin: ["Gravity Forms Mad Mimi Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-mad-mimi/)
 * Plugin: ["Gravity Forms ExactTarget Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-exacttarget/)
 * Plugin: ["Gravity Forms Infusionsoft Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/infusionsoft/)
+* Plugin: ["Gravity Forms YMLP Add-on" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/ymlp/)
 * Plugin: ["Gravity Forms ShootQ Add-On" (free, by pussycatdev)](http://wordpress.org/extend/plugins/gravity-forms-shootq-add-on/)
 * Plugin: ["Gravity to Solve360" (free, by Steve Barnett)](http://wordpress.org/extend/plugins/gravity-to-solve360/)
 * Plugin: ["Gravity Forms HubSpot Add-On" (free, by Dan Zappone)](http://wordpress.org/extend/plugins/hubspot-for-gravity-forms/)
@@ -80,8 +81,8 @@ As the name suggests this plugin is primarily **intended towards website admins/
 = Localization =
 * English (default) - always included
 * German (de_DE) - always included
-* Serbian (sr_RS) by Dev4Press - currently 75% complete for v1.5.0
-* Lithuanian (lt_LT) by Vincent G. - currently 75% complete for v1.5.0
+* Serbian (sr_RS) by Dev4Press - currently 72% complete for v1.5.0
+* Lithuanian (lt_LT) by Vincent G. - currently 72% complete for v1.5.0
 * .pot file (`gravity-forms-toolbar.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Gravity Forms Toolbar"...](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
@@ -344,22 +345,38 @@ function custom_gftb_main_item_tooltip() {
 }
 `
 
-**Final note:** If you don't like to add your customizations to your theme's/child theme's `functions.php` file you can also add them to a functionality plugin or an mu-plugin. This way you can also use this better for Multisite environments. In general you are then more independent from child theme changes etc.
+
+**Final note:** I DON'T recommend to add customization code snippets to your main theme's/child theme's `functions.php` file! **Please use a functionality plugin or an MU-plugin instead!** This way you can also use this better for Multisite environments. In general you are then more independent from theme/child theme changes etc. If you don't know how to create such a plugin yourself just use one of my recommended 'Code Snippets' plugins. Read & bookmark these Sites:
+
+* [**"What is a functionality plugin and how to create one?"**](http://wpcandy.com/teaches/how-to-create-a-functionality-plugin) - *blog post by WPCandy*
+* [**"Creating a custom functions plugin for end users"**](http://justintadlock.com/archives/2011/02/02/creating-a-custom-functions-plugin-for-end-users) - *blog post by Justin Tadlock*
+* DON'T hack your `functions.php` file: [Resource One](http://thomasgriffinmedia.com/custom-snippets-plugin/) - [Resource Two](http://thomasgriffinmedia.com/blog/2012/09/calling-on-the-wordpress-community/) *(both by Thomas Griffin Media)*
+* [**"Code Snippets"** plugin by Shea Bunge](http://wordpress.org/extend/plugins/code-snippets/) - also network wide!
+* [**"Code With WP Code Snippets"** plugin by Thomas Griffin](https://github.com/thomasgriffin/CWWP-Custom-Snippets) - Note: Plugin currently in development at GitHub.
+* [**"Toolbox Modules"** plugin by Sergej Müller](http://wordpress.org/extend/plugins/toolbox/) - see also his [plugin instructions](http://playground.ebiene.de/toolbox-wordpress-plugin/).
 
 All the custom & branding stuff code above can also be found as a Gist on Github: https://gist.github.com/2732242 (you can also add your questions/ feedback there :)
 
 == Screenshots ==
 
-1. Gravity Forms Toolbar in default state (running with WordPress 3.3+ here)
-2. Gravity Forms Toolbar in action - a secondary level - form management (running with WordPress 3.3+ here)
-3. Gravity Forms Toolbar in action - a third level, for the official (and some third-party) Add-Ons (running with WordPress 3.3+ here)
-4. Gravity Forms Toolbar in action - a secondary level - docs (running with WordPress 3.3+ here)
-5. Gravity Forms Toolbar in action - a primary level - notification of new entries & updates (running with WordPress 3.3+ here)
-6. Gravity Forms Toolbar in action - notification of new entries & updates on top-level (running with WordPress 3.3+ here)
-7. Gravity Forms Toolbar - little admin settings page of the plugin (running with WordPress 3.3+ here)
-8. Gravity Forms Toolbar - help tab on admin settings page of the plugin ([Click to see larger version of image](https://www.dropbox.com/s/l23uais5v7jhvd0/screenshot-8.png))
+1. Gravity Forms Toolbar in default state. ([Click here for larger version of screenshot](https://www.dropbox.com/s/wo1iu3dicpndgyh/screenshot-1.png))
+2. Gravity Forms Toolbar in action - a secondary level - form management. ([Click here for larger version of screenshot](https://www.dropbox.com/s/w9a6rtr4i88t631/screenshot-2.png))
+3. Gravity Forms Toolbar in action - a third level, for the official (and some third-party) Add-Ons. ([https://www.dropbox.com/s/2zlvbaxw8mbat88/screenshot-3.png))
+4. Gravity Forms Toolbar in action - a secondary level - docs. ([Click here for larger version of screenshot](https://www.dropbox.com/s/eede0xkw5wpi8uo/screenshot-4.png))
+5. Gravity Forms Toolbar in action - a primary level - notification of new entries & updates. ([Click here for larger version of screenshot](https://www.dropbox.com/s/t5iy7zsvmgfp4ix/screenshot-5.png))
+6. Gravity Forms Toolbar in action - notification of new entries & updates on top-level. ([Click here for larger version of screenshot](https://www.dropbox.com/s/4m8wippyje1lja6/screenshot-6.png))
+7. Gravity Forms Toolbar - little admin settings page of the plugin.([Click here for larger version of screenshot](https://www.dropbox.com/s/fv5ibqebo66q86t/screenshot-7.png))
+8. Gravity Forms Toolbar - help tab on admin settings page of the plugin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/l23uais5v7jhvd0/screenshot-8.png))
 
 == Changelog ==
+
+= 1.5.1 (2012-12-12) =
+* NEW: Added new settings options to plugins own settings - thanks to co-author Milan! :) --- You can now set Toolbar Menu visibility for the plugin for frontend and backend!
+* NEW: Added plugin support for ["Gravity Forms YMLP Add-on" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/ymlp/).
+* CODE: Minor code/documentation updates & improvements.
+* UPDATE: Updated readme.txt file here.
+* UPDATE: Updated German translations and also the .pot file for all translators!
+* UPDATE: Moved screenshots to 'assets' folder in WP.org SVN to reduce plugin package size.
 
 = 1.5.0 (2012-09-16) =
 * *Extended Add-On/ Plugin support:*
@@ -461,6 +478,9 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.5.1 =
+Several additions & improvements: Added new plugin's frontend/ backend setting. Minor code/ documentation improvements. Updated German translations plus .pot file for translators.
 
 = 1.5.0 =
 Several additions & improvements: Extended Add-On/ plugin support, added help tab, a few code/ performance optimizations. Updated German translations plus .pot file for translators.

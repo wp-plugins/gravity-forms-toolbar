@@ -11,14 +11,12 @@
  * @link       http://twitter.com/deckerweb
  *
  * @since 1.0.0
- * @version 1.1
  */
 
 /**
  * Pronamic iDEAL settings pages (free, by Pronamic)
  *
  * @since 1.0.0
- * @version 1.1
  */
 if ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'pronamic-ideal/pronamic-ideal.php' ) ) || class_exists( 'Pronamic_IDeal_IDeal' ) ) {
 
@@ -160,7 +158,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Gravity Forms Directory & Addons (free, by Katz Web Services, Inc.)
  *
  * @since 1.0.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-addons/gravity-forms-addons.php' ) ) || class_exists( 'GFDirectory' ) ) && ( current_user_can( 'gravityforms_directory' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -186,7 +183,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Gravity Forms Salesforce Add-on (free, by Katz Web Services, Inc.)
  *
  * @since 1.0.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-salesforce/salesforce.php' ) ) || class_exists( 'GFSalesforce' ) ) && ( current_user_can( 'gravityforms_salesforce' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -212,7 +208,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Gravity Forms Contact Form 7 Importer (free, by Katz Web Services, Inc.)
  *
  * @since 1.0.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'contact-form-7-gravity-forms/contact-form-7-gravity-forms.php' ) ) || class_exists( 'GFCF7_Import' ) ) && ( current_user_can( 'administrator' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -230,7 +225,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'contact-for
  * Gravity Forms ShootQ Add-On (free, by pussycatdev)
  *
  * @since 1.1.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-shootq-add-on/shootq.php' ) ) || class_exists( 'GFShootQ' ) ) && ( current_user_can( 'gravityforms_shootq' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -305,7 +299,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Gravity Forms iContact Add-On (free, by Katz Web Services, Inc.)
  *
  * @since 1.1.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-icontact/icontact.php' ) ) || class_exists( 'GFiContact' ) ) && ( current_user_can( 'gravityforms_icontact' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -343,7 +336,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Gravity Forms Mad Mimi Add-On (free, by Katz Web Services, Inc.)
  *
  * @since 1.1.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-mad-mimi/madmimi.php' ) ) || class_exists( 'GFMadMimi' ) ) && ( current_user_can( 'gravityforms_madmimi' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -381,7 +373,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Gravity Forms ExactTarget Add-On (free, by Katz Web Services, Inc.)
  *
  * @since 1.1.0
- * @version 1.1
  */
 if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-forms-exacttarget/exacttarget.php' ) ) || class_exists( 'GFExactTarget' ) ) && ( current_user_can( 'gravityforms_exacttarget' ) || current_user_can( 'gform_full_access' ) ) ) {
 
@@ -450,6 +441,43 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'infusionsof
 		'meta'   => array( 'target' => '', 'title' => __( 'Infusionsoft Add-On Settings', 'gravity-forms-toolbar' ) )
 	);
 }  // end-if GF Infusionsoft
+
+
+/**
+ * Gravity Forms YMLP Add-On (free, by Katz Web Services, Inc.)
+ *
+ * @since 1.5.1
+ */
+if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'ymlp/ymlp.php' ) ) || class_exists( 'GFYMLP' ) ) && ( current_user_can( 'gravityforms_ymlp' ) || current_user_can( 'gform_full_access' ) ) ) {
+
+	/** Entry at "Add-Ons" level submenu */
+	$menu_items['gftpaoymlp'] = array(
+		'parent' => $gfaddonsinstalled,
+		'title'  => __( 'YMLP Feeds', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_ymlp' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'YMLP Feeds', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoymlp-newfeed'] = array(
+		'parent' => $gftpaoymlp,
+		'title'  => __( 'Add new Feed', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_ymlp&view=edit&id=0' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'Add new Feed', 'gravity-forms-toolbar' ) )
+	);
+	$menu_items['gftpaoymlp-settings'] = array(
+		'parent' => $gftpaoymlp,
+		'title'  => __( 'YMLP Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=YMLP' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'YMLP Settings', 'gravity-forms-toolbar' ) )
+	);
+
+	/** Entry at "Extensions" level submenu */
+	$menu_items['ext-gfymlp'] = array(
+		'parent' => $extensions,
+		'title'  => __( 'YMLP Add-On Settings', 'gravity-forms-toolbar' ),
+		'href'   => admin_url( 'admin.php?page=gf_settings&addon=Infusionsoft' ),
+		'meta'   => array( 'target' => '', 'title' => __( 'YMLP Add-On Settings', 'gravity-forms-toolbar' ) )
+	);
+}  // end-if GF YMLP
 
 
 /**
@@ -636,7 +664,6 @@ if ( ( ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'gravity-for
  * Placing of "Purchase more official Add-Ons" as very last entry of "Add-On" first-level menu
  *
  * @since 1.0.0
- * @version 1.1
  */
 if ( current_user_can( 'gravityforms_view_addons' ) || current_user_can( 'gravityforms_addon_browser' ) || current_user_can( 'gform_full_access' ) ) {
 	$menu_items['gfaddonsinstalled-purchase'] = array(

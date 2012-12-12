@@ -10,7 +10,6 @@
  * @link       http://twitter.com/milangd
  *
  * @since 1.2.0
- * @version 1.1
  */
 
 $options = ddw_gftb_get_options();
@@ -21,6 +20,22 @@ $options = ddw_gftb_get_options();
 
 	<table class="form-table">
 	<tbody>
+		<tr valign="top">
+			<th scope="row"><?php _e( 'Menu Visibility', 'gravity-forms-toolbar' ); ?></th>
+			<td>
+				<fieldset>
+					<legend class="screen-reader-text"><span><?php _e( 'Menu Visibility', 'gravity-forms-toolbar' ); ?></span></legend>
+					<label for="forms_details">
+						<input<?php if ( $options['toolbar_admin'] ) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_toolbar_admin" name="ddw_gftb[toolbar_admin]">
+						<?php _e( 'Show on admin side', 'gravity-forms-toolbar' ); ?>
+					</label><br />
+					<label for="forms_details">
+						<input<?php if ( $options['toolbar_frontend'] ) echo ' checked'; ?> type="checkbox" value="1" id="ddw_gftb_toolbar_frontend" name="ddw_gftb[toolbar_frontend]">
+						<?php _e( 'Show on frontend', 'gravity-forms-toolbar' ); ?>
+					</label>
+				</fieldset>
+			</td>
+		</tr>
 		<tr valign="top">
 			<th scope="row"><?php _e( 'Menu Items Visibility', 'gravity-forms-toolbar' ); ?></th>
 			<td>

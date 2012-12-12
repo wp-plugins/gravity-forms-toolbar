@@ -17,7 +17,7 @@
  * Plugin Name: Gravity Forms Toolbar
  * Plugin URI: http://genesisthemes.de/en/wp-plugins/gravity-forms-toolbar/
  * Description: This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
- * Version: 1.5.0
+ * Version: 1.5.1
  * Author: David Decker - DECKERWEB / Milan Petrovic - Dev4Press
  * Author URI: http://deckerweb.de/
  * License: GPLv2 or later
@@ -49,7 +49,6 @@
  * Setting constants
  *
  * @since 1.0.0
- * @version 1.1
  */
 /** Plugin directory */
 define( 'GFTB_PLUGIN_DIR', dirname( __FILE__ ) );
@@ -64,7 +63,6 @@ add_action( 'init', 'ddw_gftb_init' );
  * Load admin settings & helper functions - only within 'wp-admin'.
  * 
  * @since 1.0.0
- * @version 1.2
  */
 function ddw_gftb_init() {
 
@@ -121,20 +119,23 @@ function ddw_gftb_init() {
  * Get default plugin options.
  *
  * @since 1.2.0
- * @version 1.1
  *
  * @return array 
  */
 function ddw_gftb_default_options() {
+
 	return array(
-		'help_and_support' => true,
-		'extensions' => true,
-		'forms_details' => true,
-		'add_ons' => true,
+		'help_and_support'    => true,
+		'extensions'          => true,
+		'forms_details'       => true,
+		'add_ons'             => true,
 		'update_notification' => true,
-                'unread_notification' => true
+		'unread_notification' => true,
+		'toolbar_admin'       => true,
+		'toolbar_frontend'    => true
 	);
-}
+
+}  // end of function ddw_gftb_default_options
 
 
 /**
@@ -156,7 +157,6 @@ add_action( 'admin_bar_menu', 'ddw_gftb_admin_bar_menu', 98 );
  * Add new menu items to the WordPress Toolbar / Admin Bar.
  * 
  * @since 1.0.0
- * @version 1.1
  *
  * @global mixed $wp_admin_bar
  */
@@ -180,23 +180,31 @@ function ddw_gftb_admin_bar_menu() {
 	 * Only showing items if toolbar / admin bar is activated and user is logged in!
 	 *
 	 * @since 1.3.0
-	 * @version 1.1
 	 */
-	if ( ! is_user_logged_in() || 
-		! is_admin_bar_showing() || 
-		! current_user_can( $gftb_filter_capability ) ||  // allows for custom filtering the required role/capability
-		! GFTB_DISPLAY  // allows for custom disabling
-	)
+	if ( ! is_user_logged_in()
+		|| ! is_admin_bar_showing()
+		|| ! current_user_can( $gftb_filter_capability )	// allows for custom filtering the required role/capability
+		|| ! GFTB_DISPLAY	// allows for custom disabling
+	) {
 		return;
+	}
 
 	/** Defaults for plugin's options */
         $options = ddw_gftb_get_options();
+
+	if ( ( is_admin() && ! $options['toolbar_admin'] ) || ( ! is_admin() && ! $options['toolbar_frontend'] ) ) {
+		return;
+	}
+
         $update = $options['update_notification'] ? ddw_gftb_update_available() : false;
 
         $forms = array();
         $count = 0;
 
-        if ( class_exists( 'RGForms' ) && $options['forms_details'] && ( current_user_can( 'gform_full_access' ) || current_user_can( 'gravityforms_edit_forms' ) ) ) {
+        if ( class_exists( 'RGForms' )
+		&& $options['forms_details']
+		&& ( current_user_can( 'gform_full_access' ) || current_user_can( 'gravityforms_edit_forms' ) )
+	) {
 		$forms = RGFormsModel::get_form_summary();
         }
 
@@ -231,6 +239,7 @@ function ddw_gftb_admin_bar_menu() {
 		$gftpaomadmimi = $prefix . 'gftpaomadmimi';			// third level third-party add-on: madmimi
 		$gftpaoexacttarget = $prefix . 'gftpaoexacttarget';		// third level third-party add-on: exacttarget
 		$gftpaoinfusionsoft = $prefix . 'gftpaoinfusionsoft';		// third level third-party add-on: infusionsoft
+		$gftpaoymlp = $prefix . 'gftpaoymlp';				// third level third-party add-on: ymlp
 	$extensions = $prefix . 'extensions';				// sub level: extensions (very last main entry)
 		$extpideal = $prefix . 'extpideal';				// third level third-party add-on: pronamic ideal
 		$extgfsolve360 = $prefix . 'extgfsolve360';			// third level third-party add-on: solve360
@@ -481,7 +490,6 @@ function ddw_gftb_admin_bar_menu() {
 		 * ATTENTION: This is where plugins/extensions hook in on the sub-level hierarchy
 		 *
 		 * @since 1.0.0
-		 * @version 1.1
 		 */       
                 if ( $options['extensions'] && GFTB_EXTENSIONS_DISPLAY ) {
                     $menu_items['extensions'] = array(
@@ -542,6 +550,7 @@ function ddw_gftb_admin_bar_menu() {
 										$gftpaomadmimi,
 										$gftpaoexacttarget,
 										$gftpaoinfusionsoft,
+										$gftpaoymlp,
 									$extensions,
 									$extpideal,
 									$extgfsolve360,
@@ -665,13 +674,16 @@ add_action( 'admin_head', 'ddw_gftb_admin_style' );
  * Add the styles for new WordPress Toolbar / Admin Bar entry
  * 
  * @since 1.0.0
- * @version 1.1
  */
 function ddw_gftb_admin_style() {
 
 	/** No styles if admin bar is disabled or user is not logged in or items are disabled via constant */
-	if ( ! is_admin_bar_showing() || ! is_user_logged_in() || ! GFTB_DISPLAY )
+	if ( ! is_admin_bar_showing()
+		|| ! is_user_logged_in()
+		|| ! GFTB_DISPLAY
+	) {
 		return;
+	}
 
 	/**
 	 * Add CSS styles to wp_head/admin_head
@@ -757,7 +769,6 @@ function ddw_gftb_admin_style() {
  * Gravity Forms version compare for update check
  *
  * @since 1.3.0
- * @version 1.1
  *
  * @return version string
  */
@@ -772,7 +783,7 @@ function ddw_gftb_update_available() {
 
 	}  // end-if class check
 
-}
+}  // end of function ddw_gftb_update_available
 
 
 /**
@@ -795,12 +806,13 @@ function ddw_gftb_update_available() {
  * @param $gftb_plugin_folder
  * @param $gftb_plugin_file
  *
- * @return string Plugin version
+ * @return string Plugin data.
  */
 function ddw_gftb_plugin_get_data( $gftb_plugin_value ) {
 
-	if ( ! function_exists( 'get_plugins' ) )
+	if ( ! function_exists( 'get_plugins' ) ) {
 		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	}
 
 	$gftb_plugin_folder = get_plugins( '/' . plugin_basename( dirname( __FILE__ ) ) );
 	$gftb_plugin_file = basename( ( __FILE__ ) );
