@@ -2,18 +2,20 @@
 Contributors: daveshine, deckerweb, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, ddwtoolbar, dev4press, gdragon
-Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.5.1
-License: GPLv2 or later
+Requires at least: 3.6
+Tested up to: 3.9
+Stable tag: 1.6.0
+License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
 This plugin adds useful admin links and resources for Gravity Forms to the WordPress Toolbar / Admin Bar.
 
 == Description ==
 
-= Quick Access to Gravity Forms Resources - Time Saver & Helper Tool! =
-This **small and lightweight plugin** just adds a lot Gravity Forms related resources to your toolbar / admin bar. Also links to all admin settings pages pages of the plugin are included, making the life of form administrators/ developers a lot easier. So you might just switch from the fontend of your site to read current 'Entries' or just 'Add a new Form' etc. *How cool is that? :)* Also, support for all official and lots of third-party add-ons is included!
+> #### Quick Access to Gravity Forms Resources - Time Saver & Helper Tool!
+> This **small and lightweight plugin** just adds a lot Gravity Forms related resources to your toolbar / admin bar. Also links to all admin settings pages pages of the plugin are included, making the life of form administrators/ developers a lot easier. So you might just switch from the fontend of your site to read current 'Entries' or just 'Add a new Form' etc. *How cool is that? :)* Also, support for all official and lots of third-party add-ons is included!
+
+**Please note:** The plugin requires the *Gravity Forms* base plugin, a paid premium product released by Rocketgenius Inc. (via gravityforms.com).
 
 = General Features =
 * Display notifications when new Gravity Forms plugin update is available.
@@ -23,51 +25,66 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * Admin settings allow also to dynamically add existing *Forms* (link to their edit pages) and *Entries* of these forms.
 * Visual notification of new entries in the Toolbar (top level) and on "Entries" sub-level (if dynamic entries are activated).
 * A massive list of resource & community links is included: support forums, tutorials, code snippets, translations etc.
-* 3 action hooks included for hooking custom menu items in -- for all main sections plus the resource group section ([see FAQ section here for more info on that](http://wordpress.org/extend/plugins/gravity-forms-toolbar/faq/)).
+* 3 action hooks included for hooking custom menu items in -- for all main sections plus the resource group section ([see FAQ section here for more info on that](http://wordpress.org/plugins/gravity-forms-toolbar/faq/)).
 * 8 additional icon colors included :) (changeable via filters)
-* 5 filters included to change wording/tooltip and icon of the main item - for more info [see FAQ section here](http://wordpress.org/extend/plugins/gravity-forms-toolbar/faq/)
+* 5 filters included to change wording/tooltip and icon of the main item - for more info [see FAQ section here](http://wordpress.org/plugins/gravity-forms-toolbar/faq/)
 * Fully internationalized! Real-life tested and developed with international users in mind! Also supports update-secure custom language file (if you need special wording...)
 * Fully WPML compatible!
-* Tested with WordPress versions 3.2-branch, 3.3-branch and 3.4-branch releases - also in debug mode (no stuff there, ok? :)
+* Tested with latest WordPress branches 3.8, and upcoming 3.9 - also in debug mode (no stuff there, ok? :)
 
 = Official Add-Ons Support =
-*The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 10 to date (counting only the ones with settings pages!):*
+*The plugin out of the box supports links to settings pages of all officially available Gravity Forms Add-Ons, 15 to date (counting only the ones with settings pages!):*
 
-* User Registration (inluding v1.5+!)
-* PayPal
-* PayPal Pro
-* MailChimp
+* Authorize.Net
 * AWeber
 * Campaign Monitor
+* Coupons
 * Freshbooks
-* Twilio
-* Authorize.Net
+* MailChimp
+* PayPal
+* PayPal Pro
+* PayPal Payments Pro
 * Picatcha
+* Twilio
+* User Registration
+* Zapier
+* *Help tool:* Logging
+* *Help tool:* Meta Recovery Utility
 
 = Add-Ons/ Plugin Support =
 *At this time the plugin out of the box supports also all third-party Gravity Forms related plugins (only the ones with settings pages!):*
 
-* Plugin: ["Gravity Forms Directory & Addons" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-addons/)
-* Plugin: ["Pronamic iDEAL" Payment Gateway" (free, by Pronamic, NL)](http://wordpress.org/extend/plugins/pronamic-ideal/)
-* Plugin: ["Gravity Forms Stripe Add-On" (free, by Naomi C. Bush)](http://wordpress.org/extend/plugins/gravity-forms-stripe/)
-* Plugin: ["Gravity Forms Salesforce Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-salesforce/)
-* Plugin: ["Gravity Forms Constant Contact Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-constant-contact/)
-* Plugin: ["Gravity Forms iContact Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-icontact/)
-* Plugin: ["Gravity Forms Mad Mimi Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-mad-mimi/)
-* Plugin: ["Gravity Forms ExactTarget Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-exacttarget/)
-* Plugin: ["Gravity Forms Infusionsoft Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/infusionsoft/)
-* Plugin: ["Gravity Forms YMLP Add-on" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/ymlp/)
-* Plugin: ["Gravity Forms ShootQ Add-On" (free, by pussycatdev)](http://wordpress.org/extend/plugins/gravity-forms-shootq-add-on/)
-* Plugin: ["Gravity to Solve360" (free, by Steve Barnett)](http://wordpress.org/extend/plugins/gravity-to-solve360/)
-* Plugin: ["Gravity Forms HubSpot Add-On" (free, by Dan Zappone)](http://wordpress.org/extend/plugins/hubspot-for-gravity-forms/)
-* Plugin: ["Gravity Forms Fat Zebra Add-On" (free, by Matthew Savage)](http://wordpress.org/extend/plugins/gravityforms-fatzebra/)
-* Plugin: ["Gravity Forms CapsuleCRM Add-On" (free, by Alinea.im)](http://wordpress.org/extend/plugins/gravity-forms-capsulecrm-add-on/)
-* Plugin: ["GravityForms eWAY" (free, by WebAware)](http://wordpress.org/extend/plugins/gravityforms-eway/)
-* Plugin: ["PixCaptcha Image Captcha for Gravity Forms" (free, by Picatcha, Inc.)](http://wordpress.org/extend/plugins/picatcha-for-gravity-forms/)
-* Plugin: ["Gravity Forms Survey Funnel Add-On" (free, by Pronamic)](http://wordpress.org/extend/plugins/gravity-forms-survey-funnel/)
-* Plugin: ["Gravity Forms - SMS Notifications" (free, by Mediaburst)](http://wordpress.org/extend/plugins/gravity-forms-sms-notifications/)
-* Plugin: ["Gravity Forms Contact Form 7 Importer" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/contact-form-7-gravity-forms/)
-* Plugin: ["Members" (free, by Justin Tadlock)](http://wordpress.org/extend/plugins/members/)
+* Plugin: ["Gravity Forms Directory & Addons" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-addons/)
+* Plugin: ["Pronamic iDEAL" Payment Gateway" (free, by Pronamic, NL)](http://wordpress.org/plugins/pronamic-ideal/)
+* Plugin: ["Gravity Forms Stripe Add-On" (free, by Naomi C. Bush)](http://wordpress.org/plugins/gravity-forms-stripe/)
+* Plugin: ["Gravity Forms Salesforce Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-salesforce/)
+* Plugin: ["Gravity Forms Constant Contact Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-constant-contact/)
+* Plugin: ["Gravity Forms iContact Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-icontact/)
+* Plugin: ["Gravity Forms Mad Mimi Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-mad-mimi/)
+* Plugin: ["Gravity Forms ExactTarget Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-exacttarget/)
+* Plugin: ["Gravity Forms Infusionsoft Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/infusionsoft/)
+* Plugin: ["Gravity Forms YMLP Add-on" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/ymlp/)
+* Plugin: ["Gravity Forms ShootQ Add-On" (free, by pussycatdev)](http://wordpress.org/plugins/gravity-forms-shootq-add-on/)
+* Plugin: ["Gravity to Solve360" (free, by Steve Barnett)](http://wordpress.org/plugins/gravity-to-solve360/)
+* Plugin: ["Gravity Forms HubSpot Add-On" (free, by Dan Zappone)](http://wordpress.org/plugins/hubspot-for-gravity-forms/)
+* Plugin: ["Gravity Forms Fat Zebra Add-On" (free, by Matthew Savage)](http://wordpress.org/plugins/gravityforms-fatzebra/)
+* Plugin: ["Gravity Forms CapsuleCRM Add-On" (free, by Alinea.im)](http://wordpress.org/plugins/gravity-forms-capsulecrm-add-on/)
+* Plugin: ["GravityForms eWAY" (free, by WebAware)](http://wordpress.org/plugins/gravityforms-eway/)
+* Plugin: ["PixCaptcha Image Captcha for Gravity Forms" (free, by Picatcha, Inc.)](http://wordpress.org/plugins/picatcha-for-gravity-forms/)
+* Plugin: ["Gravity Forms Survey Funnel Add-On" (free, by Pronamic)](http://wordpress.org/plugins/gravity-forms-survey-funnel/)
+* Plugin: ["Gravity Forms - SMS Notifications" (free, by Mediaburst)](http://wordpress.org/plugins/gravity-forms-sms-notifications/)
+* Plugin: ["Gravity Forms Contact Form 7 Importer" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/contact-form-7-gravity-forms/)
+* Plugin: ["Gravity Forms Connect to Google Calendar™" (premium, by Eugen Oprea via CodeCanyon Marketplace)](http://ddwb.me/8p)
+* Plugin: "Gravity Perks" (premium, by David Smith/ gravitywiz.com), including support for Perks with extra settings/ admin pages (currently the case for the Perk "Email Users")
+* Plugin: ["Gravity Forms Survey Results" (free, by Daniel Grundel (dgrundel) and Mahmoud Kassassir (mkassassir), Web Presence Partners -  via GitHub)](https://github.com/dgrundel/gf_survey_results)
+* Plugin: ["Gravity Forms Conditional Notifications Add-On" (free, by Gennady Kovshenin via GitHub)](https://github.com/soulseekah/Gravity-Forms-Conditional-Notifications)
+* Plugin: ["Gravity Forms Saved Forms Add-On" (free, by Gennady Kovshenin via GitHub)](https://github.com/soulseekah/Gravity-Forms-Saved-Forms-Addon)
+* Plugin: ["Gravity Forms DPS PxPay" (free, by WebAware)](http://wordpress.org/plugins/gravity-forms-dps-pxpay/)
+* Plugin: ["Gravity Forms Mass Import" (free, by Aryan Duntley)](http://wordpress.org/plugins/gravity-forms-mass-import/)
+* Plugin: ["Gravity Forms Quantity Limiter" (free, by Ben Hays)](http://wordpress.org/plugins/gravity-forms-quantity-limits/)
+* Plugin: ["Gravity Forms Blue Pay Add-On" (free, by David Cramer)](https://github.com/sc0ttkclark/gravity-forms-bluepay)
+* Plugin: ["Are You A Human" (free, by Are You A Human)](http://wordpress.org/plugins/are-you-a-human/) -- a anti-spam solution and "CAPTCHA" replacement!
+* Plugin: ["Members" (free, by Justin Tadlock)](http://wordpress.org/plugins/members/)
 * *Your free or premium Gravity Forms specific plugin/add-on? - [Just contact me with specific data](http://genesisthemes.de/en/contact/)*
 
 = Special Features =
@@ -76,18 +93,16 @@ This **small and lightweight plugin** just adds a lot Gravity Forms related reso
 * Link to Dutch language/translation plugin - only displayed when Dutch locales are active (nl_NL or nl)
 * *NOTE:* I would be happy to add more language/locale specific resources and more useful third-party links - just contact me!
 
-As the name suggests this plugin is primarily **intended towards website admins/ developers**. Beside the forum, support links etc. the main plugin settings links will only appear if the current user has the appropiate rights/ capabillities for these. This just goes hand in hand with the very same user rights Gravity Forms itself uses to display its menu entries. So also *Editors* or any user with the proper rights could view 'Entries' etc (you could easily tweak all those roles & caps with the awesome ["Members" plugin](http://wordpress.org/extend/plugins/members/)!).
+As the name suggests this plugin is primarily **intended towards website admins/ developers**. Beside the forum, support links etc. the main plugin settings links will only appear if the current user has the appropiate rights/ capabillities for these. This just goes hand in hand with the very same user rights Gravity Forms itself uses to display its menu entries. So also *Editors* or any user with the proper rights could view 'Entries' etc (you could easily tweak all those roles & caps with the awesome ["Members" plugin](http://wordpress.org/plugins/members/)!).
 
-= Localization =
+= Translations: Internationalization (i18n) / Localization (L10n) =
 * English (default) - always included
 * German (de_DE) - always included
-* Serbian (sr_RS) by Dev4Press - currently 72% complete for v1.5.0
-* Lithuanian (lt_LT) by Vincent G. - currently 72% complete for v1.5.0
+* Serbian (sr_RS) by Dev4Press - currently 51% complete for v1.6.0
+* Lithuanian (lt_LT) by Vincent G. - currently 51% complete for v1.6.0
 * .pot file (`gravity-forms-toolbar.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Gravity Forms Toolbar"...](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
-
-Credit where credit is due: This plugin here is inspired and based on the work of Remkus de Vries @defries and his original "WooThemes Admin Bar Addition" plugin.
 
 *This plugin is a co-work from:*
 
@@ -99,22 +114,34 @@ Credit where credit is due: This plugin here is inspired and based on the work o
 
 = Feedback =
 * We are open for your suggestions and feedback - Thank you for using or trying out one of our plugins!
-* Drop us a line [@deckerweb](http://twitter.com/#!/deckerweb) or [@dev4press](http://twitter.com/#!/dev4press) on Twitter
-* Follow [DECKERWEB Facebook page](http://www.facebook.com/deckerweb.service) and [Dev4Press Facebook page](http://www.facebook.com/dev4press)
-* Or follow [+David Decker](http://deckerweb.de/gplus) on Google Plus ;-)
+* Drop us a line [@deckerweb](https://twitter.com/deckerweb) or [@dev4press](http://twitter.com/dev4press) on Twitter
+* Follow [DECKERWEB Facebook page](https://www.facebook.com/deckerweb.service) and [Dev4Press Facebook page](https://www.facebook.com/dev4press)
+* Or follow [+David Decker](https://plus.google.com/+DavidDecker/posts) on Google Plus ;-)
+
+= This Plugin... =
+* ...is *Quality Made in Germany*
+* ...was created with love (plus some coffee) on an [Ubuntu Linux](http://www.ubuntu.com/desktop) powered machine :)
 
 = Tips & More =
-* [See my Toolbar / Admin Bar plugin series](http://wordpress.org/extend/plugins/tags/ddwtoolbar) - great time savers and helper tools :)
+* [See my Toolbar / Admin Bar plugin series](http://wordpress.org/plugins/tags/ddwtoolbar) - great time savers and helper tools :)
 * [Also see my other plugins](http://genesisthemes.de/en/wp-plugins/) or see [my WordPress.org profile page](http://profiles.wordpress.org/daveshine/)
 * Tip: [*GenesisFinder* - Find then create. Your Genesis Framework Search Engine.](http://genesisfinder.com/)
 
 == Installation ==
 
-1. Upload the entire `gravity-forms-toolbar` folder to the `/wp-content/plugins/` directory -- or just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
+**NOTE:** Only works with *Gravity Forms* as active base plugin. This is a paid premium product by Rocketgenius Inc., available via gravityforms.com.
+
+= Installation Steps =
+1. Installing alternatives:
+ * *via Admin Dashboard:* Go to 'Plugins > Add New', search for "Gravity Forms Toolbar", click "install"
+ * *OR via direct ZIP upload:* Upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
+ * *OR via FTP upload:* Upload `gravity-forms-toolbar` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Look at your toolbar / admin bar and enjoy using the new Gravity Forms links there :)
 4. Adjust a few options on the settings page - under "General Settings > Gravity Forms Toolbar"
 5. Go and manage your entries and forms or develop new ones :)
+
+**Note:** The "Gravity Forms" base plugin is required for this add-on plugin in order to work. If you don't own a copy it yet, this premium plugin has to be bought. More info about that you'll find here: http://ddwb.me/getgravityforms
 
 **Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/gravity-forms-toolbar/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `gravity-forms-toolbar-en_US.mo/.po` to achieve that.
 
@@ -351,28 +378,60 @@ function custom_gftb_main_item_tooltip() {
 * [**"What is a functionality plugin and how to create one?"**](http://wpcandy.com/teaches/how-to-create-a-functionality-plugin) - *blog post by WPCandy*
 * [**"Creating a custom functions plugin for end users"**](http://justintadlock.com/archives/2011/02/02/creating-a-custom-functions-plugin-for-end-users) - *blog post by Justin Tadlock*
 * DON'T hack your `functions.php` file: [Resource One](http://thomasgriffinmedia.com/custom-snippets-plugin/) - [Resource Two](http://thomasgriffinmedia.com/blog/2012/09/calling-on-the-wordpress-community/) *(both by Thomas Griffin Media)*
-* [**"Code Snippets"** plugin by Shea Bunge](http://wordpress.org/extend/plugins/code-snippets/) - also network wide!
+* [**"Code Snippets"** plugin by Shea Bunge](http://wordpress.org/plugins/code-snippets/) - also network wide!
 * [**"Code With WP Code Snippets"** plugin by Thomas Griffin](https://github.com/thomasgriffin/CWWP-Custom-Snippets) - Note: Plugin currently in development at GitHub.
-* [**"Toolbox Modules"** plugin by Sergej Müller](http://wordpress.org/extend/plugins/toolbox/) - see also his [plugin instructions](http://playground.ebiene.de/toolbox-wordpress-plugin/).
+* [**"Toolbox Modules"** plugin by Sergej Müller](http://wordpress.org/plugins/toolbox/) - see also his [plugin instructions](http://playground.ebiene.de/toolbox-wordpress-plugin/).
 
 All the custom & branding stuff code above can also be found as a Gist on Github: https://gist.github.com/2732242 (you can also add your questions/ feedback there :)
 
 == Screenshots ==
 
 1. Gravity Forms Toolbar in default state. ([Click here for larger version of screenshot](https://www.dropbox.com/s/wo1iu3dicpndgyh/screenshot-1.png))
+
 2. Gravity Forms Toolbar in action - a secondary level - form management. ([Click here for larger version of screenshot](https://www.dropbox.com/s/w9a6rtr4i88t631/screenshot-2.png))
+
 3. Gravity Forms Toolbar in action - a third level, for the official (and some third-party) Add-Ons. ([https://www.dropbox.com/s/2zlvbaxw8mbat88/screenshot-3.png))
+
 4. Gravity Forms Toolbar in action - a secondary level - docs. ([Click here for larger version of screenshot](https://www.dropbox.com/s/eede0xkw5wpi8uo/screenshot-4.png))
+
 5. Gravity Forms Toolbar in action - a primary level - notification of new entries & updates. ([Click here for larger version of screenshot](https://www.dropbox.com/s/t5iy7zsvmgfp4ix/screenshot-5.png))
+
 6. Gravity Forms Toolbar in action - notification of new entries & updates on top-level. ([Click here for larger version of screenshot](https://www.dropbox.com/s/4m8wippyje1lja6/screenshot-6.png))
+
 7. Gravity Forms Toolbar - little admin settings page of the plugin.([Click here for larger version of screenshot](https://www.dropbox.com/s/fv5ibqebo66q86t/screenshot-7.png))
+
 8. Gravity Forms Toolbar - help tab on admin settings page of the plugin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/l23uais5v7jhvd0/screenshot-8.png))
 
 == Changelog ==
 
+= 1.6.0 (2014-02-24) =
+* NEW: Plugin's Toolbar settings now also accessable from the Gravity Forms settings page, as a sub settings link - like it's used by lots of other extensions as well.
+* UPDATE: Updated Gravity Forms settings links where necessary; added new "API" settings link.
+* UPDATE: Updated resource links where necessary.
+* UPDATE: Removed old CSS support for some older WordPress versions.
+* UPDATE: Improved some CSS styling for WordPress 3.8+.
+* CODE: Code/ documentation updates and improvements.
+* UPDATE: Updated readme.txt file here.
+* UPDATE: Updated German translations and also the .pot file for all translators!
+* *Extended official add-on support:*
+ * NEW: Added support for these official add-ons by Rocketgenius: *Coupons, PayPal Payments Pro, Zapier, Logging, Meta Recovery Utility*
+* *Extended plugin support:*
+ * NEW: Added plugin support for "Gravity Forms Connect to Google Calendar™" (premium, by Eugen Oprea via CodeCanyon Marketplace).
+ * NEW: Added plugin support for "Gravity Perks" (premium, by David Smith/ gravitywiz.com), including support for Perks with extra settings/ admin pages (currently the case for the Perk "Email Users").
+ * NEW: Added plugin support for "Gravity Forms Survey Results" (free, by Daniel Grundel (dgrundel) and Mahmoud Kassassir (mkassassir), Web Presence Partners -  via GitHub).
+ * NEW: Added plugin support for "Gravity Forms Conditional Notifications Add-On" (free, by Gennady Kovshenin via GitHub).
+ * NEW: Added plugin support for "Gravity Forms Saved Forms Add-On" (free, by Gennady Kovshenin via GitHub).
+ * NEW: Added plugin support for "Gravity Forms DPS PxPay" (free, by WebAware).
+ * NEW: Added plugin support for "Gravity Forms Mass Import" (free, by Aryan Duntley).
+ * NEW: Added plugin support for "Gravity Forms Quantity Limits" (free, by Ben Hays).
+ * NEW: Added plugin support for "Gravity Forms Blue Pay Add-On" (free, by David Cramer).
+ * NEW: Added plugin support for "Are You A Human" (free, by Are You A Human) -- a anti-spam solution and "CAPTCHA" replacement!
+ * NEW: Added plugin support for "Aviary Editor Addon For Gravity Forms" (free, by Leon Kiley - NetherWorks, LLC).
+ * UPDATE: Improved plugin support for "Pronamic iDEAL" - updated all settings; plus: code parts now only loaded if plugin is active - requires now add-on version v2.6.1 or higher!
+
 = 1.5.1 (2012-12-12) =
 * NEW: Added new settings options to plugins own settings - thanks to co-author Milan! :) --- You can now set Toolbar Menu visibility for the plugin for frontend and backend!
-* NEW: Added plugin support for ["Gravity Forms YMLP Add-on" (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/ymlp/).
+* NEW: Added plugin support for ["Gravity Forms YMLP Add-on" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/ymlp/).
 * CODE: Minor code/documentation updates & improvements.
 * UPDATE: Updated readme.txt file here.
 * UPDATE: Updated German translations and also the .pot file for all translators!
@@ -382,9 +441,9 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * *Extended Add-On/ Plugin support:*
  * NEW: Added support for newly released official "Picatcha Add-On" (anti spam).
  * UPDATE: Updated support for official "User Registration" Add-On to support new features introduced with v1.5+ of this Add-On.
- * NEW: Added plugin support for ["Gravity Forms Fat Zebra Add-On (free, by Matthew Savage)](http://wordpress.org/extend/plugins/gravityforms-fatzebra/).
- * NEW: Added plugin support for ["Gravity Forms Survey Funnel Add-On (free, by Pronamic)](http://wordpress.org/extend/plugins/gravity-forms-survey-funnel/).
- * NEW: Added plugin support for ["Gravity Forms Infusionsoft Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/infusionsoft/)
+ * NEW: Added plugin support for ["Gravity Forms Fat Zebra Add-On (free, by Matthew Savage)](http://wordpress.org/plugins/gravityforms-fatzebra/).
+ * NEW: Added plugin support for ["Gravity Forms Survey Funnel Add-On (free, by Pronamic)](http://wordpress.org/plugins/gravity-forms-survey-funnel/).
+ * NEW: Added plugin support for ["Gravity Forms Infusionsoft Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/infusionsoft/)
 * *More stuff:*
  * NEW: Added help tab on plugin's settings page.
  * NEW: Moved resources and links group from plugin main file to extra files for performance optimization if this group might be disabled via settings/ constant.
@@ -403,20 +462,20 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * *New features:*
  * NEW: Added new plugin setting (plus an additional constant) for removing the official add-on items/hook place in the menu.
  * COOL: Plugin can now be branded and customized a lot more!
- * NEW: Added 3 action hooks for hooking custom menu items in - see [FAQ section here](http://wordpress.org/extend/plugins/gravity-forms-toolbar/faq/) for more info on that.
- * NEW: Added 5 filters to change icon graphic, main item name, main capability and more! For these cases there are now the new built-in filters and helper functions available! [(See "FAQ" section here)](http://wordpress.org/extend/plugins/gravity-forms-toolbar/faq/)
+ * NEW: Added 3 action hooks for hooking custom menu items in - see [FAQ section here](http://wordpress.org/plugins/gravity-forms-toolbar/faq/) for more info on that.
+ * NEW: Added 5 filters to change icon graphic, main item name, main capability and more! For these cases there are now the new built-in filters and helper functions available! [(See "FAQ" section here)](http://wordpress.org/plugins/gravity-forms-toolbar/faq/)
  * NEW: Added alternate main Icon in 8 additional colors (changeable via filters).
  * NEW: Almost all sections can now be removed for special needs, capabilities etc. -- all done via `constants` in your active theme/child theme -- this way you can customize for your staff members or clients if you need some more users with extended or restricted admin bar/toolbar access (See "FAQ" section here) -- this is additional to the existing settings via plugin's options page!
 * *Extended Add-On/ Plugin support:*
  * NEW: Added support for newly released official "PayPal Pro Add-On"
- * NEW: Added plugin support for ["Gravity Forms Stripe Add-On (free, by Naomi C. Bush)](http://wordpress.org/extend/plugins/gravity-forms-stripe/)
- * NEW: Added plugin support for ["Gravity Forms Constant Contact Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-constant-contact/)
- * NEW: Added plugin support for ["Gravity to Solve360 (free, by Steve Barnett)](http://wordpress.org/extend/plugins/gravity-to-solve360/)
- * NEW: Added plugin support for ["Gravity Forms HubSpot Add-On (free, by Dan Zappone)](http://wordpress.org/extend/plugins/hubspot-for-gravity-forms/)
- * NEW: Added plugin support for ["Gravity Forms CapsuleCRM Add-On (free, by Alinea.im)](http://wordpress.org/extend/plugins/gravity-forms-capsulecrm-add-on/)
- * NEW: Added plugin support for ["PixCaptcha Image Captcha for Gravity Forms" (free, by Picatcha, Inc.)](http://wordpress.org/extend/plugins/picatcha-for-gravity-forms/)
- * NEW: Added plugin support for ["GravityForms eWAY" (free, by WebAware)](http://wordpress.org/extend/plugins/gravityforms-eway/)
- * NEW: Added plugin support for ["Gravity Forms - SMS Notifications" (free, by Mediaburst)](http://wordpress.org/extend/plugins/gravity-forms-sms-notifications/)
+ * NEW: Added plugin support for ["Gravity Forms Stripe Add-On (free, by Naomi C. Bush)](http://wordpress.org/plugins/gravity-forms-stripe/)
+ * NEW: Added plugin support for ["Gravity Forms Constant Contact Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-constant-contact/)
+ * NEW: Added plugin support for ["Gravity to Solve360 (free, by Steve Barnett)](http://wordpress.org/plugins/gravity-to-solve360/)
+ * NEW: Added plugin support for ["Gravity Forms HubSpot Add-On (free, by Dan Zappone)](http://wordpress.org/plugins/hubspot-for-gravity-forms/)
+ * NEW: Added plugin support for ["Gravity Forms CapsuleCRM Add-On (free, by Alinea.im)](http://wordpress.org/plugins/gravity-forms-capsulecrm-add-on/)
+ * NEW: Added plugin support for ["PixCaptcha Image Captcha for Gravity Forms" (free, by Picatcha, Inc.)](http://wordpress.org/plugins/picatcha-for-gravity-forms/)
+ * NEW: Added plugin support for ["GravityForms eWAY" (free, by WebAware)](http://wordpress.org/plugins/gravityforms-eway/)
+ * NEW: Added plugin support for ["Gravity Forms - SMS Notifications" (free, by Mediaburst)](http://wordpress.org/plugins/gravity-forms-sms-notifications/)
 * *More stuff:*
  * NEW: Added link to plugin's settings page on 'Plugins' page in 'wp-admin'.
  * NEW: Added Lithuanian translations by Vincent G. :)
@@ -462,13 +521,13 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 = 1.1.0 (2012-01-31) =
 * Extended the third-party plugin support even more:
  * NEW: Added link to user profile at Gravity Help - for even easier access to your forum favorites etc. (only displaying for admins)
- * NEW: Added link to official blog post, documenting about "Gravity Forms CSS: Targeting Specific Elements" (Rocket Genius Blog)
+ * NEW: Added link to official blog post, documenting about "Gravity Forms CSS: Targeting Specific Elements" (Rocketgenius Blog)
  * NEW: Added useful resource link for CSS styling (plugin "Gravity Forms CSS Ready Class Selector")
- * NEW: Added plugin support for ["Gravity Forms iContact Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-icontact/)
- * NEW: Added plugin support for ["Gravity Forms Mad Mimi Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-mad-mimi/)
- * NEW: Added plugin support for ["Gravity Forms ExactTarget Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/extend/plugins/gravity-forms-exacttarget/)
- * NEW: Added plugin support for ["Gravity Forms ShootQ Add-On (free, by pussycatdev)](http://wordpress.org/extend/plugins/gravity-forms-shootq-add-on/)
- * NEW: Added plugin support for ["Members (free, by Justin Tadlock)](http://wordpress.org/extend/plugins/members/)
+ * NEW: Added plugin support for ["Gravity Forms iContact Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-icontact/)
+ * NEW: Added plugin support for ["Gravity Forms Mad Mimi Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-mad-mimi/)
+ * NEW: Added plugin support for ["Gravity Forms ExactTarget Add-On (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-exacttarget/)
+ * NEW: Added plugin support for ["Gravity Forms ShootQ Add-On (free, by pussycatdev)](http://wordpress.org/plugins/gravity-forms-shootq-add-on/)
+ * NEW: Added plugin support for ["Members (free, by Justin Tadlock)](http://wordpress.org/plugins/members/)
 * BUGFIX: Corrected variable for Dutch language plugin, making link display finally work :)
 * CODE: Minor tweaks and improvements.
 * UPDATE: Updated German and translations and also the .pot file for all translators!
@@ -478,6 +537,9 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.6.0 =
+Major additions & improvements: Updated settings & resource links; extended plugin support; code improvements. Updated all translations plus .pot file for translators.
 
 = 1.5.1 =
 Several additions & improvements: Added new plugin's frontend/ backend setting. Minor code/ documentation improvements. Updated German translations plus .pot file for translators.
@@ -509,7 +571,7 @@ Just released into the wild.
 == Plugin Links ==
 * [Translations (GlotPress)](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 * [User support forums](http://wordpress.org/support/plugin/gravity-forms-toolbar)
-* [Code snippets archive for customizing, GitHub Gist](https://gist.github.com/2732242)
+* [Code snippets archive for customizing, GitHub Gist](https://gist.github.com/deckerweb/2732242)
 
 == Donate ==
 Enjoy using *Gravity Forms Toolbar*? Please consider [making a small donation](http://genesisthemes.de/en/donate/) to support the project's continued development.
@@ -524,7 +586,7 @@ Enjoy using *Gravity Forms Toolbar*? Please consider [making a small donation](h
 
 **Easy plugin translation platform with GlotPress tool:** [**Translate "Gravity Forms Toolbar"...**](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 
-*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
+*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
 
 == Additional Info ==
 **Idea Behind / Philosophy:** Just a little leightweight plugin for all the form developers and managers out there working 
@@ -535,3 +597,6 @@ with the incredible Gravity Forms to make their daily admin life a bit easier. I
 == Credits ==
 * **Big thanks** to Milan Petrovic of Dev4Press who made the options panel for this plugin - so it's still lightweight but even more useful!
 * Also big thanks to all translators for providing other languages for this plugin!
+
+== Last but not least ==
+David: **Special Thanks go out to my family for allowing me to do such spare time projects (aka free plugins) and supporting me in every possible way!**
