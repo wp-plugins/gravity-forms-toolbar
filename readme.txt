@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, ddwtoolbar, dev4press, gdragon
 Requires at least: 3.6
 Tested up to: 3.9
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -83,14 +83,28 @@ This plugin adds useful admin links and resources for Gravity Forms to the WordP
 * Plugin: ["Gravity Forms Mass Import" (free, by Aryan Duntley)](http://wordpress.org/plugins/gravity-forms-mass-import/)
 * Plugin: ["Gravity Forms Quantity Limiter" (free, by Ben Hays)](http://wordpress.org/plugins/gravity-forms-quantity-limits/)
 * Plugin: ["Gravity Forms Blue Pay Add-On" (free, by David Cramer)](https://github.com/sc0ttkclark/gravity-forms-bluepay)
+* Plugin: ["Gravity Forms Styler" (premium, by WordPress Gurus via CodeCanyon Marketplace)](http://ddwb.me/af)
+* Plugin: ["SP Gravity Forms MySQL Connect" (premium, by Ralf Fuhrmann/ profine GmbH via CodeCanyon Marketplace)](http://ddwb.me/ag)
+* Plugin: ["Rcwd Upload for Gravity Forms" (premium, by Roberto Cantarano via CodeCanyon Marketplace)](http://ddwb.me/ah)
+* Plugin: ["Groups Gravity Forms Integration" (premium, by itthinx/ Karim Rahimpur via CodeCanyon Marketplace)](http://ddwb.me/ae)
+* Plugin: ["Gravity Forms MailPoet/ Wysija Add-on" (free, by Ben Hays)](http://wordpress.org/plugins/gravity-forms-wysija-add-on/)
+* Plugin: ["Gravity Forms Marketo Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/marketo/)
+* Plugin: ["Gravity Forms Advanced File Uploader" (free, by Benjamin Moody)](http://wordpress.org/plugins/gravity-forms-advanced-file-uploader/)
+* Plugin: ["Gravity Forms Paystation (3 party hosted)" (free, by Paystation Limited)](http://wordpress.org/plugins/gravity-forms-paystation-3-party-hosted/)
+* Plugin: ["Gravity Forms + First Data Global Gateway e4℠" (free, by Aubrey Portwood of Excion)](http://wordpress.org/plugins/gravity-forms-first-data-global-gateway-addon/)
+* Plugin: ["Gravity Forms Highrise CRM" (free, by Ben Hays)](http://wordpress.org/plugins/gravity-forms-highrise-crm/)
+* Plugin: ["Gravity Forms Convio Add-on" (free, by Ben Hays)](http://wordpress.org/plugins/gravity-forms-convio-add-on/)
+* Plugin: ["Gravity Forms Highrise Add-On" (free, by Katz Web Services, Inc.)](http://wordpress.org/plugins/gravity-forms-highrise/)
+* Plugin: ["Gravity Forms Periodic Notification" E-Mails (free, by Weptile)](http://wordpress.org/plugins/gravity-forms-periodic-notification-e-mails-by-weptile/)
 * Plugin: ["Are You A Human" (free, by Are You A Human)](http://wordpress.org/plugins/are-you-a-human/) -- a anti-spam solution and "CAPTCHA" replacement!
 * Plugin: ["Members" (free, by Justin Tadlock)](http://wordpress.org/plugins/members/)
 * *Your free or premium Gravity Forms specific plugin/add-on? - [Just contact me with specific data](http://genesisthemes.de/en/contact/)*
 
 = Special Features =
 * Not only supporting official Gravity Forms/ Gravity Help sites ALSO third-party and user links - so just the whole Gravity Forms ecosystem :)
-* Link to downloadable German language packs - only displayed when German locales are active (de_DE, de_AT, de_CH, de_LU)
-* Link to Dutch language/translation plugin - only displayed when Dutch locales are active (nl_NL or nl)
+* Link to downloadable German language packs - only displayed when German locales are active (de_DE, de_AT, de_CH, de_LU, gsw)
+* Link to Dutch language/ translation plugin - only displayed when Dutch locales are active (nl_NL or nl)
+* Link to Spanish language/ translation plugin - only displayed when Spanish locales are active (es_ES or es_PE)
 * *NOTE:* I would be happy to add more language/locale specific resources and more useful third-party links - just contact me!
 
 As the name suggests this plugin is primarily **intended towards website admins/ developers**. Beside the forum, support links etc. the main plugin settings links will only appear if the current user has the appropiate rights/ capabillities for these. This just goes hand in hand with the very same user rights Gravity Forms itself uses to display its menu entries. So also *Editors* or any user with the proper rights could view 'Entries' etc (you could easily tweak all those roles & caps with the awesome ["Members" plugin](http://wordpress.org/plugins/members/)!).
@@ -98,8 +112,8 @@ As the name suggests this plugin is primarily **intended towards website admins/
 = Translations: Internationalization (i18n) / Localization (L10n) =
 * English (default) - always included
 * German (de_DE) - always included
-* Serbian (sr_RS) by Dev4Press - currently 51% complete for v1.6.0
-* Lithuanian (lt_LT) by Vincent G. - currently 51% complete for v1.6.0
+* Serbian (sr_RS) by Dev4Press - currently 43% complete for v1.7.0
+* Lithuanian (lt_LT) by Vincent G. - currently 43% complete for v1.7.0
 * .pot file (`gravity-forms-toolbar.pot`) for translators is also always included :)
 * Easy plugin translation platform with GlotPress tool: [Translate "Gravity Forms Toolbar"...](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar)
 * *Your translation? - [Just send it in](http://genesisthemes.de/en/contact/)*
@@ -114,7 +128,7 @@ As the name suggests this plugin is primarily **intended towards website admins/
 
 = Feedback =
 * We are open for your suggestions and feedback - Thank you for using or trying out one of our plugins!
-* Drop us a line [@deckerweb](https://twitter.com/deckerweb) or [@dev4press](http://twitter.com/dev4press) on Twitter
+* Drop us a line [@deckerweb](https://twitter.com/deckerweb) or [@dev4press](https://twitter.com/dev4press) on Twitter
 * Follow [DECKERWEB Facebook page](https://www.facebook.com/deckerweb.service) and [Dev4Press Facebook page](https://www.facebook.com/dev4press)
 * Or follow [+David Decker](https://plus.google.com/+DavidDecker/posts) on Google Plus ;-)
 
@@ -152,10 +166,10 @@ Yes, this plugin works really fine with WordPress 3.3 and 3.3.1!
 It also works great with WP 3.2 - and also should with WP 3.1 - but we only tested extensively with WP 3.3+ this time. So you always should run the latest WordPress version for a lot of reasons.
 
 = How are new resources being added to the toolbar / admin bar? =
-Just drop me a note on [my Twitter @deckerweb](http://twitter.com/deckerweb) or via my contact page and I'll add the link(s) if it is useful for admins/ webmasters and the Gravity Forms community.
+Just drop me a note on [my Twitter @deckerweb](https://twitter.com/deckerweb) or via my contact page and I'll add the link(s) if it is useful for admins/ webmasters and the Gravity Forms community.
 
 = How could my plugin/extension settings page be added to the admin bar links? =
-This is possible of course and highly welcomed! Just drop me a note on [my Twitter @deckerweb](http://twitter.com/deckerweb) or via my contact page and we sort out the details!
+This is possible of course and highly welcomed! Just drop me a note on [my Twitter @deckerweb](https://twitter.com/deckerweb) or via my contact page and we sort out the details!
 Particularly, I need the admin url for the primary options page (like so `wp-admin/admin.php?page=foo`). I also need the correct name of the main PHP class or function (to check if the plugin extension exists or not). (I don't own all the premium stuff myself yet so you're more than welcomed to help me out with these things. Thank you!)
 
 = There are still some other plugins for Gravity Forms out there why aren't these included by default? =
@@ -203,6 +217,9 @@ define( 'GFTB_DE_DISPLAY', FALSE );
 
 /** Gravity Forms Toolbar: Remove Dutch Language Items */
 define( 'GFTB_NL_DISPLAY', FALSE );
+
+/** Gravity Forms Toolbar: Remove Spanish Language Items */
+define( 'GFTB_ES_DISPLAY', FALSE );
 `
 
 = Can the the whole toolbar entry be removed, especially for certain users? =
@@ -404,6 +421,28 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 
 == Changelog ==
 
+= 1.7.0 (2014-02-26) =
+* NEW: Added little user message if base plugin "Gravity Forms" is not active on activation of toolbar add-on.
+* UPDATE: Fixed API Settings link for all non-translated installs.
+* UPDATE: Improved language plugins/ files support.
+* CODE: More internal code/ documentation updates and improvements.
+* UPDATE: Updated German translations, plus all user-submitted trnaslations and also the .pot file for all translators!
+* *Extended plugin support:*
+ * NEW: Added plugin support for "Gravity Forms Styler" (premium, by WordPress Gurus via CodeCanyon Marketplace).
+ * NEW: Added plugin support for "SP Gravity Forms MySQL Connect" (premium, by Ralf Fuhrmann/ profine GmbH via CodeCanyon Marketplace).
+ * NEW: Added plugin support for "Rcwd Upload for Gravity Forms" (premium, by Roberto Cantarano via CodeCanyon Marketplace).
+ * NEW: Added plugin support for "Groups Gravity Forms Integration" (premium, by itthinx/ Karim Rahimpur via CodeCanyon Marketplace).
+ * NEW: Added plugin support for "Gravity Forms MailPoet/ Wysija Add-on" (free, by Ben Hays).
+ * NEW: Added plugin support for "Gravity Forms Marketo Add-On" (free, by Katz Web Services, Inc.).
+ * NEW: Added plugin support for "Gravity Forms Advanced File Uploader" (free, by Benjamin Moody).
+ * NEW: Added plugin support for "Gravity Forms Paystation (3 party hosted)" (free, by Paystation Limited).
+ * NEW: Added plugin support for "Gravity Forms + First Data Global Gateway e4℠" (free, by Aubrey Portwood of Excion).
+ * NEW: Added plugin support for "Gravity Forms Highrise CRM" (free, by Ben Hays).
+ * NEW: Added plugin support for "Gravity Forms Convio Add-on" (free, by Ben Hays).
+ * NEW: Added plugin support for "Gravity Forms Highrise Add-On" (free, by Katz Web Services, Inc.).
+ * NEW: Added plugin support for "Gravity Forms Periodic Notification" E-Mails (free, by Weptile).
+ * NEW: Added language plugin support for "Gravity Forms (Spanish)" (free, by Closemarketing).
+
 = 1.6.0 (2014-02-24) =
 * NEW: Plugin's Toolbar settings now also accessable from the Gravity Forms settings page, as a sub settings link - like it's used by lots of other extensions as well.
 * UPDATE: Updated Gravity Forms settings links where necessary; added new "API" settings link.
@@ -537,6 +576,9 @@ All the custom & branding stuff code above can also be found as a Gist on Github
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.7.0 =
+Some updates & improvements: Extended plugin support. Updated all translations plus .pot file for translators.
 
 = 1.6.0 =
 Major additions & improvements: Updated settings & resource links; extended plugin support; code improvements. Updated all translations plus .pot file for translators.
