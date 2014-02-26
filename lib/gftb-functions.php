@@ -87,7 +87,7 @@ function ddw_gftb_info_values() {
 	/** Array of values */
 	$gftb_info = array(
 
-		'url_translate'     => 'http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/gravity-forms-toolbar',
+		'url_translate'     => 'http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/gravity-forms-toolbar',
 		'url_wporg_faq'     => 'http://wordpress.org/plugins/gravity-forms-toolbar/faq/',
 		'url_wporg_forum'   => 'http://wordpress.org/support/plugin/gravity-forms-toolbar',
 		'url_wporg_profile' => 'http://profiles.wordpress.org/daveshine/',
