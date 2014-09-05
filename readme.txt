@@ -3,7 +3,7 @@ Contributors: daveshine, deckerweb, GDragoN
 Donate link: http://genesisthemes.de/en/donate/
 Tags: toolbar, tool bar, adminbar, admin bar, gravity forms, gravityforms, forms, add-ons, addons, administration, resources, links, deckerweb, ddwtoolbar, dev4press, gdragon
 Requires at least: 3.6
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: 1.7.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
